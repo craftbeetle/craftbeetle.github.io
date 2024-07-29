@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    color: white;
+    font-family:
+        Courier New,
+        sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: flex-start; /* Aligns content to the top */
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    width: 600; /* Allows the container to use full width up to the max-width */
+    margin: 0 auto; /* Center horizontally with auto margins */
+    padding: 20px;
+}
+
+.sidebar {
+    position: fixed; /* Fixes the sidebar position */
+    top: 150px; /* Center vertically in the viewport */
+    right: calc(50% - 550px); /* Aligns to the right edge */
+    width: 200px; /* Adjust the width as needed */
+    background-color: black;
+    color: white;
+    padding: 10px;
+    overflow-y: auto; /* Ensures sidebar content is scrollable if needed */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    width: 600px;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+p {
+    margin: 20px 0;
+}
+
+img {
+    max-width: 560px; /* Ensures the image fits within the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+a {
+    color: white; /* Default link color */
+}
+
+a:visited {
+    color: #6f42c1; /* Color after the link has been visited */
+}
+
+a:hover {
+    color: #ff5722; /* Color when the mouse is over the link */
+}
+
+a:active {
+    color: #d32f2f; /* Color when the link is clicked */
+}
