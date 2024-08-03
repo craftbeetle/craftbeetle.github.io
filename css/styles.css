@@ -22,7 +22,7 @@ body {
     position: fixed; /* Fixes the sidebar position */
     top: 150px; /* Center vertically in the viewport */
     right: calc(50% - 550px); /* Aligns to the right edge */
-    width: 200px; /* Adjust the width as needed */
+    width: 150px; /* Adjust the width as needed */
     background-color: black;
     color: white;
     padding: 10px;
@@ -86,3 +86,59 @@ a:active {
     color: #d32f2f; /* Color when the link is clicked */
 }
 
+.image-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%; /* Full height of the container */
+    padding: 0 10px; /* Example padding between images */
+    box-sizing: border-box;
+}
+
+.image-wrapper img {
+    height: 170px;
+    object-fit: cover; /* Ensure images cover the height properly */
+    margin: 0 5px; /* Padding between images */
+}
+
+.image-wrapper img:first-child {
+    margin-left: 0; /* Remove left margin for the first image */
+}
+
+.image-wrapper img:last-child {
+    margin-right: 0; /* Remove right margin for the last image */
+}
+
+/* Scrollable container */
+.scroll-box {
+    width: 100%; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    overflow-y: auto; /* Vertical scrolling */
+    padding-right: 10px; /* Padding for content */
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+/* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+.scroll-box::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar color on hover */
+}
+
+/* Scrollbar styles for Firefox */
+.scroll-box {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #888 #ffffff; /* Scrollbar thumb and track color */
+}
