@@ -13,42 +13,70 @@ body {
 }
 
 .container {
-    width: 600; /* Allows the container to use full width up to the max-width */
     margin: 0 auto; /* Center horizontally with auto margins */
     padding: 20px;
 }
 
-.sidebar {
-    position: fixed; /* Fixes the sidebar position */
-    top: 150px; /* Center vertically in the viewport */
-    right: calc(50% - 550px); /* Aligns to the right edge */
-    width: 150px; /* Adjust the width as needed */
-    background-color: black;
-    color: white;
-    padding: 10px;
-    overflow-y: auto; /* Ensures sidebar content is scrollable if needed */
+@media only screen and (min-width: 1000px) {
+    .sidebar {
+        position: fixed; /* Fixes the sidebar position */
+        top: 94px; /* Center vertically in the viewport */
+        right: calc(50% - 500px); /* Aligns to the right edge */
+        width: 150px; /* Adjust the width as needed */
+        background-color: black;
+        color: white;
+        padding: 10px;
+        overflow-y: auto; /* Ensures sidebar content is scrollable if needed */
+    }
+    .sidebar h2 {
+        margin-top: 0;
+    }
+
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin: 10px 0;
+    }
+
+    .sidebar ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .sidebar ul li a:hover {
+        text-decoration: underline;
+    }
+    nav {
+        display: none;
+    }
 }
 
-.sidebar h2 {
-    margin-top: 0;
-}
+@media only screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
 
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-    text-decoration: underline;
+    nav a:hover {
+        text-decoration: underline;
+    }
+    td {
+        height: 25px;
+        text-align: left;
+    }
+    table {
+        width: 100%;
+    }
 }
 
 .content {
@@ -137,8 +165,13 @@ a:active {
     background: #555; /* Scrollbar color on hover */
 }
 
-/* Scrollbar styles for Firefox */
-.scroll-box {
-    scrollbar-width: thin; /* Thin scrollbar */
-    scrollbar-color: #888 #ffffff; /* Scrollbar thumb and track color */
+.parent img {
+    width: 150px;
+    height: 100%;
+    margin-right: 20px;
+    margin-top: 22px;
+}
+
+.parent {
+    display: flex;
 }
