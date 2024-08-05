@@ -136,29 +136,6 @@ a:active {
     color: #d32f2f; /* Color when the link is clicked */
 }
 
-.image-wrapper {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    height: 100%; /* Full height of the container */
-    padding: 0 10px; /* Example padding between images */
-    box-sizing: border-box;
-}
-
-.image-wrapper img {
-    height: 170px;
-    object-fit: cover; /* Ensure images cover the height properly */
-    margin: 0 5px; /* Padding between images */
-}
-
-.image-wrapper img:first-child {
-    margin-left: 0; /* Remove left margin for the first image */
-}
-
-.image-wrapper img:last-child {
-    margin-right: 0; /* Remove right margin for the last image */
-}
-
 /* Scrollable container */
 .scroll-box {
     width: 100%; /* Adjust width as needed */
@@ -196,4 +173,46 @@ a:active {
 
 .parent {
     display: flex;
+}
+
+.image-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.image-wrapper img {
+    width: auto;
+    height: 200px;
+    object-fit: contain; /* Ensure images cover the height properly */
+    margin: 0 5px; /* Padding between images */
+
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.image-wrapper img:first-child {
+    margin-left: 0; /* Remove left margin for the first image */
+}
+
+.image-wrapper img:last-child {
+    margin-right: 0; /* Remove right margin for the last image */
+}
+
+/* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+.image-wrapper::-webkit-scrollbar {
+    height: 5px; /* Width of the scrollbar */
+}
+
+.image-wrapper::-webkit-scrollbar-track {
+    background: #ffffff; /* Track color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.image-wrapper::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.image-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar color on hover */
 }
