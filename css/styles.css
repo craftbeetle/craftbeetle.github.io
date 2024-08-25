@@ -182,7 +182,7 @@ a:active {
 
 .image-wrapper img {
     width: auto;
-    height: 190px;
+    height: 185px;
     object-fit: contain; /* Ensure images cover the height properly */
     margin: 0 5px; /* Padding between images */
 
