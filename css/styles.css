@@ -178,15 +178,17 @@ a:active {
     background: #555; /* Scrollbar color on hover */
 }
 
-.parent img {
+.floated {
+    float: left;
     width: 150px;
     height: 100%;
     margin-right: 20px;
-    margin-top: 22px;
 }
 
-.parent {
-    display: flex;
+.parent::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Regular Image Wrapper */
