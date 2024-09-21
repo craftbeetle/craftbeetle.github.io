@@ -1,1 +1,1 @@
-exiftool -r -all:all= -overwrite_original .
+exiftool -r -autoRotate -all= -overwrite_original .
