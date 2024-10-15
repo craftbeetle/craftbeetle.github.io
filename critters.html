@@ -40,7 +40,6 @@
             <h1><a href="index.html" target="_self">CRAFT BEETLE</a></h1>
             <div class="container">
                 <hr />
-
                 <nav>
                     <table class="nav-table">
                         <tr>
@@ -70,16 +69,40 @@
                     </table>
                     <hr />
                 </nav>
+                <form>
+                    <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+                </form>
+                <script>
+                    window.onscroll = function () {
+                        const button = document.querySelector(".back-to-top-mobile");
+                        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                            button.style.display = "block"; // Show button
+                        } else {
+                            button.style.display = "none"; // Hide button
+                        }
+                    };
+                </script>
 
                 <!-- body -->
 
                 <h2 id="section1">Critters</h2>
                 <p>
-                    The insects and animals I have enountered in my life. If you've ever talked to me in real life then
+                    The insects and animals I have encountered in my life. If you've ever talked to me in real life then
                     you know I will stop midway through a sentence to crouch low and take a picture of a bug. I will
                     then proudly show anyone who will look.
                     <br /><br />
                 </p>
+
+                <p><strong>2024.10.12</strong> - Perfectly camouflaged grasshopper.</p>
+                <img src="images/critters/20241012_100424.jpg" />
+
+                <p><strong>2024.10.05</strong> - Dragonfly being coy.</p>
+                <img src="images/critters/20241005_102136.jpg" />
+                <img src="images/critters/20241005_101814.jpg" />
+
+                <p><strong>2024.09.28</strong> - Butterflies are abound.</p>
+                <img src="images/critters/20240928_095846.jpg" />
+                <img src="images/critters/20240928_094507.jpg" />
 
                 <p><strong>2024.09.21</strong> - Bug, Snail, and Frogs in the Community Garden</p>
                 <img src="images/critters/20240921_112840.jpg" />
@@ -143,7 +166,7 @@
                 <p><strong>2024.02.29</strong> - Ladybug</p>
                 <img src="images/critters/20240229_163744.jpg" />
 
-                <p><strong>2023.11.14</strong> - Brown Grasshopper and Spikey Caterpillar</p>
+                <p><strong>2023.11.14</strong> - Brown Grasshopper and Spiky Caterpillar</p>
                 <img src="images/critters/20231114_135748.jpg" />
                 <img src="images/critters/20231114_091529.jpg" />
 

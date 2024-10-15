@@ -40,7 +40,6 @@
             <h1><a href="index.html" target="_self">CRAFT BEETLE</a></h1>
             <div class="container">
                 <hr />
-
                 <nav>
                     <table class="nav-table">
                         <tr>
@@ -70,6 +69,19 @@
                     </table>
                     <hr />
                 </nav>
+                <form>
+                    <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+                </form>
+                <script>
+                    window.onscroll = function () {
+                        const button = document.querySelector(".back-to-top-mobile");
+                        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                            button.style.display = "block"; // Show button
+                        } else {
+                            button.style.display = "none"; // Hide button
+                        }
+                    };
+                </script>
 
                 <!-- body -->
                 

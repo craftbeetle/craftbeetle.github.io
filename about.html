@@ -40,7 +40,6 @@
             <h1><a href="index.html" target="_self">CRAFT BEETLE</a></h1>
             <div class="container">
                 <hr />
-
                 <nav>
                     <table class="nav-table">
                         <tr>
@@ -70,6 +69,19 @@
                     </table>
                     <hr />
                 </nav>
+                <form>
+                    <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+                </form>
+                <script>
+                    window.onscroll = function () {
+                        const button = document.querySelector(".back-to-top-mobile");
+                        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                            button.style.display = "block"; // Show button
+                        } else {
+                            button.style.display = "none"; // Hide button
+                        }
+                    };
+                </script>
 
                 <!-- body -->
 
@@ -98,7 +110,7 @@
                     updating this website and adding to it. I know that if I don't like the layout I can just change it.
                     I can make it exactly how I like.<br /><br />
                     I'm in love with the personal web. The beauty that people create and share using these small
-                    websites. Algorithms are designed to extract profit by casuing you to develop addiction by
+                    websites. Algorithms are designed to extract profit by causing you to develop addiction by
                     activating the 7 deadly sins: pride, greed, wrath, envy, lust, gluttony, and sloth. If you've been
                     scrolling through social media and asked yourself why you keep returning to it, even though it makes
                     you feel bad, this is why. <br /><br />

@@ -40,7 +40,6 @@
             <h1><a href="index.html" target="_self">CRAFT BEETLE</a></h1>
             <div class="container">
                 <hr />
-
                 <nav>
                     <table class="nav-table">
                         <tr>
@@ -70,13 +69,26 @@
                     </table>
                     <hr />
                 </nav>
+                <form>
+                    <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+                </form>
+                <script>
+                    window.onscroll = function () {
+                        const button = document.querySelector(".back-to-top-mobile");
+                        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                            button.style.display = "block"; // Show button
+                        } else {
+                            button.style.display = "none"; // Hide button
+                        }
+                    };
+                </script>
 
                 <!-- body -->
                 <h2 id="section1">BOOKS</h2>
                 <p>
                     Reading is a fundamental pillar of my life and the way I was raised. I find that while other forms
                     of media have great value and strengths, books remain the best way to delve deeply into a subject. A
-                    book's demand for exclusive conginite attention makes gives it the ability to convey more than any
+                    book's demand for exclusive cognitive attention makes gives it the ability to convey more than any
                     other medium. My goal is to read 50 books a year, which is about a book a week. Here are my thoughts
                     on the books I have read.
                 </p>
@@ -84,10 +96,21 @@
                 <h2>2024</h2>
 
                 <div class="parent">
+                    <div class="floated"><img src="images\books\2024\ishmael.jpg" /></div>
+                    <p>
+                        <strong>Ishmael</strong><br /><br />
+                        Thinking...
+                    </p>
+                </div>
+
+                <div class="parent">
                     <div class="floated"><img src="images\books\2024\value_price_and_profit.jpeg" /></div>
                     <p>
                         <strong>Value, Price and Profit</strong><br /><br />
-                        Reading...
+                        Marx makes the relationship of value, price, and profit very clear. We often still hear about
+                        how increasing wages would increase the price of goods and services but in reality that is not
+                        the case. It simply reduces profits for the bourgeoisie, profits they derive from the unpaid
+                        portion of the proletariat's labor.
                     </p>
                 </div>
 
@@ -200,7 +223,7 @@
                     <p>
                         <strong>2001: A Space Odyssey</strong><br /><br />
                         Written with the intent of being adapted into a film, 2001 A Space Odyssey is mostly vibes and
-                        aesthetics. I had vivid images of the stations, space ships, and the comos. I hadn't watched the
+                        aesthetics. I had vivid images of the stations, space ships, and the cosmos. I hadn't watched the
                         film until after I read the book and I found it quite enjoyable. You can read my thoughts on the
                         film here.
                     </p>
@@ -210,14 +233,14 @@
                     <div class="floated"><img src="images\books\2023\children_of_ruin.jpg" /></div>
                     <p>
                         <strong>Children of Ruin</strong><br /><br />
-                        So jumping spiders, ancient human AI, and neohumans weren't enough? Now you want octopus and
-                        truely alien life? Okay! The second book in the Children of Series explores another set of
+                        So jumping spiders, ancient human AI, and neo-humans weren't enough? Now you want octopus and
+                        truly alien life? Okay! The second book in the Children of Series explores another set of
                         worlds with new life forms and the way they developed. I am personally very fond of the octopus,
                         I identify with and strive to argue like they do. They give it their all, use their logic and
                         emotion, then, if they are truly convinced, they go all in and spread the message as if it were
                         their own. The trick to this method is balance, you have to be sufficiently hard headed that
                         only the best ideas with the best evidence can convince you, but you also have to be
-                        sufficiently sincere that once convinced you become a becon of that idea. If the octopus's
+                        sufficiently sincere that once convinced you become a beacon of that idea. If the octopus's
                         motive force is expression, then the other alien's motive is experience. The other alien seeks
                         novelty at all costs, but in doing so is apt to destroy what it loves. There is much to learn
                         from both creatures, and of forgiveness. Another banger from Tchaikovsky.

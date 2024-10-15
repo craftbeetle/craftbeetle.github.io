@@ -40,7 +40,6 @@
             <h1><a href="index.html" target="_self">CRAFT BEETLE</a></h1>
             <div class="container">
                 <hr />
-
                 <nav>
                     <table class="nav-table">
                         <tr>
@@ -70,6 +69,19 @@
                     </table>
                     <hr />
                 </nav>
+                <form>
+                    <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+                </form>
+                <script>
+                    window.onscroll = function () {
+                        const button = document.querySelector(".back-to-top-mobile");
+                        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                            button.style.display = "block"; // Show button
+                        } else {
+                            button.style.display = "none"; // Hide button
+                        }
+                    };
+                </script>
 
                 <!-- body -->
 
@@ -84,6 +96,13 @@
                 </p>
 
                 <div class="parent">
+                    <div>
+                        <p>
+                            <strong>Nautilus Tank - Mini Jam Game #14 - 2023</strong><br /><br />
+                            A friend and I made Nautilus Tank over a weekend. He did the art and I programmed it. We had
+                            a really fun time and ended up making a neat little mini-game.
+                        </p>
+                    </div>
                     <iframe
                         title=""
                         style="border: 0; padding-right: 20px; padding-bottom: 20px"
@@ -91,15 +110,17 @@
                         width="208"
                         height="167">
                     </iframe>
-                    <div>
-                        <p>
-                            <strong>Mini Jam Game #14 - 2023</strong><br /><br />
-                            Description coming...
-                        </p>
-                    </div>
                 </div>
 
                 <div class="parent">
+                    <div>
+                        <p>
+                            <strong>Strat-a-Dice - GMTK 2022</strong><br /><br />
+                            Strat-a-Dice was supposed to be an XCOM style game but the probability calculations were
+                            themselves random. I sure made an effort but the theme just didn't click. I finished and
+                            submitted the game but I don't even remember what was the point.
+                        </p>
+                    </div>
                     <iframe
                         title=""
                         style="border: 0; padding-right: 20px; padding-bottom: 20px"
@@ -107,15 +128,18 @@
                         width="208"
                         height="167">
                     </iframe>
-                    <div>
-                        <p>
-                            <strong>GTMK 2022</strong><br /><br />
-                            Description coming...
-                        </p>
-                    </div>
                 </div>
 
                 <div class="parent">
+                    <div>
+                        <p>
+                            <strong>Heart Attack - GMTK 2020</strong><br /><br />
+                            Three teammates and I make Heart Attack together. My teammates made the art, music, and
+                            sound effects, while I programmed it. This game remains one of my most successful gamejam
+                            games, ranking 179/5261 or top 4%! Give it a play (it plays better when downloaded, might
+                            run too fast depending on your monitor refresh speed.)
+                        </p>
+                    </div>
                     <iframe
                         title=""
                         style="border: 0; padding-right: 20px; padding-bottom: 20px"
@@ -123,12 +147,6 @@
                         width="208"
                         height="167">
                     </iframe>
-                    <div>
-                        <p>
-                            <strong>GMTK 2020</strong><br /><br />
-                            Description coming...
-                        </p>
-                    </div>
                 </div>
 
                 <!-- footer -->

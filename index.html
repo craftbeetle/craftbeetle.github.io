@@ -40,7 +40,6 @@
             <h1><a href="index.html" target="_self">CRAFT BEETLE</a></h1>
             <div class="container">
                 <hr />
-
                 <nav>
                     <table class="nav-table">
                         <tr>
@@ -70,12 +69,25 @@
                     </table>
                     <hr />
                 </nav>
+                <form>
+                    <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+                </form>
+                <script>
+                    window.onscroll = function () {
+                        const button = document.querySelector(".back-to-top-mobile");
+                        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                            button.style.display = "block"; // Show button
+                        } else {
+                            button.style.display = "none"; // Hide button
+                        }
+                    };
+                </script>
 
                 <!-- body -->
 
                 <h2 id="section1">Welcome, take a look around!</h2>
                 <p>
-                    Hello! I'm the craft beetle. Take a minute and look around. Check out all the various pages.<br /><br />
+                    Hello! I'm the Craft Beetle. Take a minute and look around. Check out all the various pages.<br /><br />
                     Come back often and see all the new things I share.<br /><br />
                     You'll find the projects I am working on, what I'm growing in my garden, my thoughts on the media
                     I'm consuming, my thoughts on various things in blog form, and links to the things I think are
@@ -88,6 +100,11 @@
 
                 <strong>Website Changelog</strong>
                 <div class="scroll-box">
+                    <p>
+                        <strong>2024.10.14</strong> - Updated the Garden and the Critters. Added descriptions and a
+                        videos to the Crafts page. Added some missing engineering projects and crafts. Added
+                        descriptions for all Game Dev. projects. Added a much needed "Back to Top" button. Spellchecked, oh boy...
+                    </p>
                     <p>
                         <strong>2024.09.21</strong> - Completed most book and show reviews. Renamed Bugs to Critters.
                         Added many critters and plants.

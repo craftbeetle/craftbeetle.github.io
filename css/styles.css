@@ -293,3 +293,35 @@ a:active {
     display: block;
     object-fit: cover; /* Ensures images cover the grid cell */
 }
+
+.back-to-top {
+    background-color: black; /* Change to your desired color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 40px 10px 0px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.back-to-top:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.back-to-top-mobile {
+    position: fixed; /* Fixes the button to the viewport */
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    background-color: transparent; /* Change to your desired color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 10px; /* Padding */
+    font-size: 32px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition:
+        background-color 0.3s,
+        text-decoration 0.3s; /* Smooth transition */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    display: none; /* Hide by default */
+}
