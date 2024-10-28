@@ -59,6 +59,7 @@
         "SUPERHOT",
         "THANGS",
         "THINGIVERSE",
+        "TOLG",
         "Transmetropolitan",
         "uhhh",
         "Vecna",
@@ -67,5 +68,6 @@
         "Witcher",
         "Wonka",
         "XCOM"
-    ]
+    ],
+    "livePreview.defaultPreviewPath": "/games copy.html"
 }
