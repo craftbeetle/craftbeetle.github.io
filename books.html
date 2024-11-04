@@ -1,483 +1,502 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Craft Beetle</title>
-        <link rel="icon" type="image/x-icon" href="/images/branding/favicon.ico" />
-        <link rel="stylesheet" href="css\styles.css" />
-    </head>
-    <body>
-        <aside class="sidebar">
-            <ul>
-                <li><a href="index.html" target="_self">☕ Home</a></li>
-            </ul>
-            <hr />
-            <ul>
-                <li><a href="game_dev.html" target="_self">🕹️ Game Dev.</a></li>
-                <li><a href="projects.html" target="_self">🛠️ Projects</a></li>
-                <li><a href="crafts.html" target="_self">🖌️ Crafts</a></li>
-                <li><a href="garden.html" target="_self">🍄 Garden</a></li>
-                <li><a href="critters.html" target="_self">🐝 Critters</a></li>
-                <li><a href="misc.html" target="_self">🎲 Misc</a></li>
-            </ul>
-            <hr />
-            <ul>
-                <li><a href="books.html" target="_self">📚 Books</a></li>
-                <li><a href="shows.html" target="_self">📺 Shows</a></li>
-                <li><a href="films.html" target="_self">🎬 Films</a></li>
-                <li><a href="games.html" target="_self">🎮 Games</a></li>
-            </ul>
-            <hr />
-            <ul>
-                <li><a href="blog.html" target="_self">🗒️ Blog</a></li>
-                <li><a href="about.html" target="_self">💾 About</a></li>
-                <li><a href="links.html" target="_self">🔗 Links</a></li>
-            </ul>
-        </aside>
-        <main class="content">
-            <h1><a href="index.html" target="_self">CRAFT BEETLE</a></h1>
-            <div class="container">
-                <hr />
-                <nav>
-                    <table class="nav-table">
-                        <tr>
-                            <td><a href="index.html" target="_self">☕ Home</a></td>
-                            <td><a href="blog.html" target="_self">🗒️ Blog</a></td>
-                            <td><a href="about.html" target="_self">💾 About</a></td>
-                            <td><a href="links.html" target="_self">🔗 Links</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="game_dev.html" target="_self">🕹️ Game Dev.</a></td>
-                            <td><a href="projects.html" target="_self">🛠️ Projects</a></td>
-                            <td><a href="crafts.html" target="_self">🖌️ Crafts</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="garden.html" target="_self">🍄 Garden</a></td>
-                            <td><a href="critters.html" target="_self">🐝 Critters</a></td>
-                            <td><a href="misc.html" target="_self">🎲 Misc</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><a href="books.html" target="_self">📚 Books</a></td>
-                            <td><a href="shows.html" target="_self">📺 Shows</a></td>
-                            <td><a href="films.html" target="_self">🎬 Films</a></td>
-                            <td><a href="games.html" target="_self">🎮 Games</a></td>
-                        </tr>
-                    </table>
-                    <hr />
-                </nav>
-                <form>
-                    <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
-                </form>
-                <script>
-                    window.onscroll = function () {
-                        const button = document.querySelector(".back-to-top-mobile");
-                        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                            button.style.display = "block"; // Show button
-                        } else {
-                            button.style.display = "none"; // Hide button
-                        }
-                    };
-                </script>
 
-                <!-- body -->
-                 
-                <h2 id="section1">BOOKS</h2>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craft Beetle</title>
+    <link rel="icon" type="image/x-icon" href="/images/branding/favicon.ico" />
+    <link rel="stylesheet" href="css\styles.css" />
+</head>
+
+<body>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="index.html" target="_self">☕ Home</a></li>
+        </ul>
+        <hr />
+        <ul>
+            <li><a href="game_dev.html" target="_self">🕹️ Game Dev.</a></li>
+            <li><a href="projects.html" target="_self">🛠️ Projects</a></li>
+            <li><a href="crafts.html" target="_self">🖌️ Crafts</a></li>
+            <li><a href="garden.html" target="_self">🍄 Garden</a></li>
+            <li><a href="critters.html" target="_self">🐝 Critters</a></li>
+            <li><a href="misc.html" target="_self">🎲 Misc</a></li>
+        </ul>
+        <hr />
+        <ul>
+            <li><a href="books.html" target="_self">📚 Books</a></li>
+            <li><a href="shows.html" target="_self">📺 Shows</a></li>
+            <li><a href="films.html" target="_self">🎬 Films</a></li>
+            <li><a href="games.html" target="_self">🎮 Games</a></li>
+        </ul>
+        <hr />
+        <ul>
+            <li><a href="blog.html" target="_self">🗒️ Blog</a></li>
+            <li><a href="about.html" target="_self">💾 About</a></li>
+            <li><a href="links.html" target="_self">🔗 Links</a></li>
+        </ul>
+    </aside>
+    <main class="content">
+        <h1><a href="index.html" target="_self">CRAFT BEETLE</a></h1>
+        <div class="container">
+            <hr />
+            <nav>
+                <table class="nav-table">
+                    <tr>
+                        <td><a href="index.html" target="_self">☕ Home</a></td>
+                        <td><a href="blog.html" target="_self">🗒️ Blog</a></td>
+                        <td><a href="about.html" target="_self">💾 About</a></td>
+                        <td><a href="links.html" target="_self">🔗 Links</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="game_dev.html" target="_self">🕹️ Game Dev.</a></td>
+                        <td><a href="projects.html" target="_self">🛠️ Projects</a></td>
+                        <td><a href="crafts.html" target="_self">🖌️ Crafts</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="garden.html" target="_self">🍄 Garden</a></td>
+                        <td><a href="critters.html" target="_self">🐝 Critters</a></td>
+                        <td><a href="misc.html" target="_self">🎲 Misc</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="books.html" target="_self">📚 Books</a></td>
+                        <td><a href="shows.html" target="_self">📺 Shows</a></td>
+                        <td><a href="films.html" target="_self">🎬 Films</a></td>
+                        <td><a href="games.html" target="_self">🎮 Games</a></td>
+                    </tr>
+                </table>
+                <hr />
+            </nav>
+            <form>
+                <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+            </form>
+            <script>
+                window.onscroll = function () {
+                    const button = document.querySelector(".back-to-top-mobile");
+                    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        button.style.display = "block"; // Show button
+                    } else {
+                        button.style.display = "none"; // Hide button
+                    }
+                };
+            </script>
+
+            <!-- body -->
+
+            <h2 id="section1">BOOKS</h2>
+            <p>
+                Reading is a fundamental pillar of my life and the way I was raised. I find that while other forms
+                of media have great value and strengths, books remain the best way to delve deeply into a subject. A
+                book's demand for exclusive cognitive attention makes gives it the ability to convey more than any
+                other medium. My goal is to read 50 books a year, which is about a book a week. Here are my thoughts
+                on the books I have read.
+            </p>
+
+            <h2>2024</h2>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\a_dying_colonialism.jpg" /></div>
                 <p>
-                    Reading is a fundamental pillar of my life and the way I was raised. I find that while other forms
-                    of media have great value and strengths, books remain the best way to delve deeply into a subject. A
-                    book's demand for exclusive cognitive attention makes gives it the ability to convey more than any
-                    other medium. My goal is to read 50 books a year, which is about a book a week. Here are my thoughts
-                    on the books I have read.
+                    <strong>A Dying Colonialism</strong><br /><br />
+                    Reading...
                 </p>
-
-                <h2>2024</h2>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\a_dying_colonialism.jpg" /></div>
-                    <p>
-                        <strong>A Dying Colonialism</strong><br /><br />
-                        Reading...
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\ishmael.jpg" /></div>
-                    <p>
-                        <strong>Ishmael</strong><br /><br />
-                        My whole experience with Ishmael was wonderful. It started off with a conversation with great 
-                        friend about this, that or the other. She then told me she brought something for me and produced 
-                        an old copy of Ishmael, bought from a thrift store some time ago, her bookmark still in it. I was 
-                        so touched by the gift that I hungry read the book in a few days. The paper was yellowed with time, 
-                        the cellulose broken down into a sweet sent.
-                        <br /><br />
-                        Ishmael teaches the main character, and in doing so teaches the reader, that the world is not 
-                        made for humans, but that humans were made for it. That when people see the world as theirs, 
-                        they inherently seek to conquer and invariably destroy it. And while I disagree on the theological 
-                        points, I do agree that humanity should seek to better live in the world, alongside all of creation, 
-                        than to dominate and annihilate it.
-                        <br /><br />
-                        In the spirit of being gifted the book, I then passed it along to my parents. And after they 
-                        finish it I'll give it to a friend, so that all may read what Ishmael has to teach.
-                        <br /><br />
-                        You can't escape the cage if you can't find the bars.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\value_price_and_profit.jpeg" /></div>
-                    <p>
-                        <strong>Value, Price and Profit</strong><br /><br />
-                        Marx makes the relationship of value, price, and profit very clear. We often still hear about
-                        how increasing wages would increase the price of goods and services but in reality that is not
-                        the case. It simply reduces profits for the bourgeoisie, profits they derive from the unpaid
-                        portion of the proletariat's labor.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\wage-labour_and_capital.jpg" /></div>
-                    <p>
-                        <strong>Wage-Labour and Capital</strong><br /><br />
-                        I was already familiar with Real Wages, but I had not thought of Relative Wages which are really
-                        the root of the income inequality by definition. As well I have a new appreciation for the gig
-                        economy as as the ideal capitalist labor market, where all tasks are fractalized and staccato,
-                        disconnecting the laborer from the labor and for each other, opening the door for infinite
-                        scabs.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\abandoned_palestine_refugee.jpg" /></div>
-                    <p>
-                        <strong>Abandoned Palestine Refugee</strong><br /><br />
-                        I met Ihmayed Ali and his daughter at a Palestinian book talk where they shared about their
-                        lives and experiences as Palestinian refugees. The talk was moving and eye opening. I then
-                        bought and read his book and was blown away by the images he shared. Ihmayed's autobiography is
-                        written in a very vivid and honest way. The things he goes through, the oppression and abuse,
-                        the survival and success. His story is representative of large portions of the Palestinian
-                        population, a people who endure despite incredible hardship. I highly recommend this book to
-                        anyone seeking a personal look at the Palestinian story.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\moby_dick.jpg" /></div>
-                    <p>
-                        <strong>Moby Dick</strong><br /><br />
-                        This book is absolutely massive. Melville clearly loves and knows much about whaling and he
-                        wants to share it all and it takes 600 pages to do so. I didn't love the book in all honesty but
-                        I do respect it. It is one of the oldest books I've read and had it come out in recent decades
-                        someone would have made him cut it down but I'm glad it exists in its entirety. A book about
-                        whales ought to be massive. I wouldn't recommend most people read it but the audiobook by
-                        William Hootkins is very good. I switch to it about half way through reading my physical copy.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\principles_of_communism.jpg" /></div>
-                    <p>
-                        <strong>Principles of Communism</strong><br /><br />
-                        An easy introduction into communist theory. This is absolutely a must read that lays out
-                        communism for the layman. I found it put already known and understood concepts into a new
-                        perspective, shed a light on some connection previously missed.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\strong_towns.jpg" /></div>
-                    <p>
-                        <strong>Strong Towns</strong><br /><br />
-                        In Strong Towns, Charles explains the way in which cities use to be built gradually and how that
-                        has changed into an unsustainable model of growth. He makes points about how single family homes
-                        are subsidized by downtown businesses, and about the debt cities find themselves with when they
-                        try to make themselves attractive to developments. What Charles fails to do is question the
-                        underlying economic system, and is instead content on working within capitalism. This is not
-                        surprising and he identifies as a conservative.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\to_kill_a_mockingbird.jpg" /></div>
-                    <p>
-                        <strong>To Kill A Mockingbird</strong><br /><br />
-                        If ever there was a manual on how to be a good father, this would be a contender. This also goes
-                        for what it means to be a man. The way Harper Lee describes Atticus's interactions with his
-                        children and his community and the high regard in which they hold him shows what a man of
-                        integrity is, and shoots dead the idea that people in the past were simply a product of their
-                        time. A wonderful read and a pretty good movie.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2024\the_dispossessed.jpg" /></div>
-                    <p>
-                        <strong>The Dispossessed</strong><br /><br />
-                        A beautiful book that explores one possible way that anarcho-communism could exist. Le Guin does
-                        a great job of constructing a believable society with all of its struggles and beauty. Even if
-                        this isn't the exact way I imagine an ideal world, I find inspiration and hope in the refutation
-                        of the status quo as all that there ever could be. If this is a plausible formulation of
-                        society, what else is possible? A worthwhile and captivating read.
-                    </p>
-                </div>
-
-                <br />
-                <h2>2023</h2>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2023\children_of_memory.jpg" /></div>
-                    <p>
-                        <strong>Children of Memory</strong><br /><br />
-                        So far we've had spiders, octopus, true aliens (insert "Nano Machines, Son!" audio sting), as
-                        well an increasingly moody human AI, and neo-humans. What's left? Why it's psychically linked
-                        corvids and a twist so good I won't even explain. Unlike the other two books, this one is a real
-                        mental trip. Elder race is linear but jumps perspectives. The Children of Time has a spider past
-                        and human present timeline it jumps between. And the Children of Ruin has two pasts, one on each
-                        planet, and a present. This book has a looping, recursive, bleeding timeline. As if you wrote
-                        the events of the story on a stack of paper and it got wet, words from one time transferring to
-                        another. It won't make total sense until it all makes sense in the end. Definitely worth a read.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2023\2001_a_space_odyssey.jpg" /></div>
-                    <p>
-                        <strong>2001: A Space Odyssey</strong><br /><br />
-                        Written with the intent of being adapted into a film, 2001 A Space Odyssey is mostly vibes and
-                        aesthetics. I had vivid images of the stations, space ships, and the cosmos. I hadn't watched the
-                        film until after I read the book and I found it quite enjoyable. You can read my thoughts on the
-                        film here.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2023\children_of_ruin.jpg" /></div>
-                    <p>
-                        <strong>Children of Ruin</strong><br /><br />
-                        So jumping spiders, ancient human AI, and neo-humans weren't enough? Now you want octopus and
-                        truly alien life? Okay! The second book in the Children of Series explores another set of
-                        worlds with new life forms and the way they developed. I am personally very fond of the octopus,
-                        I identify with and strive to argue like they do. They give it their all, use their logic and
-                        emotion, then, if they are truly convinced, they go all in and spread the message as if it were
-                        their own. The trick to this method is balance, you have to be sufficiently hard headed that
-                        only the best ideas with the best evidence can convince you, but you also have to be
-                        sufficiently sincere that once convinced you become a beacon of that idea. If the octopus's
-                        motive force is expression, then the other alien's motive is experience. The other alien seeks
-                        novelty at all costs, but in doing so is apt to destroy what it loves. There is much to learn
-                        from both creatures, and of forgiveness. Another banger from Tchaikovsky.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2023\born.jpg" /></div>
-                    <p>
-                        <strong>Born</strong><br /><br />
-                        A neat view into the origins of the Punisher. One can easily see how plausible this course of
-                        character development is and how it leads to one to believe that they are the law and that their
-                        violence is justified. A valuable window into cop culture.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2023\head_lopper.jpg" /></div>
-                    <p>
-                        <strong>Head Lopper</strong><br /><br />
-                        Head Lopper achieved exactly what it set out to do. It was beautiful and entertaining. At no
-                        point do you feel the head lopper could fail, and that's okay. I enjoyed reading the printed
-                        trade in one quiet summer night. I may read the other entries in the series in the future.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2023\children_of_time.jpg" /></div>
-                    <p>
-                        <strong>Children of Time</strong><br /><br />
-                        I don't think it's possible to read this book and not fall in love with jumping spiders, and
-                        don't get me started on Dr. Avarna Kern. Tchaikovsky has a gift for perspective. He has the
-                        ability to turn his mind into a blank slate, throw away our human preconceptions, and start a
-                        new from an alien perspective. How would a spiders build a society? How would they react if we
-                        suddenly wanted to take their planet? How would one of humanity's brightest minds deal with
-                        isolation and a fundamental change in cognitive ability? All beautifully explored question in
-                        this book and much more.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2023\1984.jpg" /></div>
-                    <p>
-                        <strong>1984</strong><br /><br />
-                        What can I say about 1984 that hadn't been said already? I originally decided to read this book
-                        so that I could confidently say "I read 1984". I only half joke. But as I got into the book I
-                        discovered what all the hype was about. It wasn't mind blowing but I also read it in a post 1984
-                        world which has for nearly 80 years been deeply affected by it. My most appreciated part of the
-                        book is how long ago it was written and how it remains relevant today.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2023\solaris.jpg" /></div>
-                    <p>
-                        <strong>Solaris</strong><br /><br />
-                        Solaris was originally written in Russian and the translation is of disputed quality. This
-                        matters particularly because this book, while set on an alien planet, occurs mainly in the
-                        thoughts of the main character. I enjoyed the explorations of sentience and cognition, and the
-                        soft dreamlike horror that builds up.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2023\elder_race.jpg" /></div>
-                    <p>
-                        <strong>Elder Race</strong><br /><br />
-                        I was in the mall book store with a friend just killing time when the cover of this book caught
-                        my eye. I knew nothing of Tchaikovsky at the time so I had no idea that this was a soft sequel
-                        to his Children of Series. I read the first few pages in that book store and immediately loved
-                        it. I bought it on mid day Saturday, and by Sunday I had finished it. That's not a testament to
-                        my reading speed so much as it is of the books quality. The dual language concept and the
-                        science as magic concept were so good that I needed to know what else he had written, and a few
-                        days later the Children of Series arrived at my doorstep.
-                    </p>
-                </div>
-
-                <br />
-                <h2>2022</h2>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2022\transmetropolitan.jpg" /></div>
-                    <p>
-                        <strong>Transmetropolitan</strong><br /><br />
-                        This comic, and Spider Jerusalem, are one of my favorites. Real politics and journalism in a
-                        near future US city. It gave me the same feeling of appreciation for journalism that A Taxi
-                        Driver (the Korean film) gave me. The world needs more Spider Jerusalem's that do true honest
-                        journalism at all costs and by all means necessary.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2022\snow_crash.png" /></div>
-                    <p>
-                        <strong>Snow Crash</strong><br /><br />
-                        Right as the Cyberpunk 2077 conversation was warming up, and after watching Action Button's 8
-                        hour review (yes, in one sitting), I was still unwilling to give the game a chance. But, what I
-                        getting really interested in was science fiction and cyberpunk. I decided to pick this book up
-                        and I was not disappointed. One of the seminal works in the cyberpunk genre, and the origin of
-                        the term "metaverse", it paints a funny version of the cyberpunk dystopia we've come to expect.
-                        Yes, the killing, poverty, and misery are all there as substrate for the tech megacorps to
-                        exploit. But the characters and narration lift the mood and focuses on the fun. Easily
-                        recommended.
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2022\brave_new_world.jpg" /></div>
-                    <p>
-                        <strong>Brave New World</strong><br /><br />
-                        I was recommended this book by a friend. They described it as "The Other 1984". I see the
-                        similarities but the themes not the same. The most striking aspect of the book is how normal
-                        creating people for specific roles is, and how the few intellectual elites are still bound up in
-                        the odd society they are a part of.
-                    </p>
-                </div>
-
-                <h2>2021</h2>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2021\galaxy_in_flames.jpg" /></div>
-                    <p>
-                        <strong>Galaxy in Flame</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2021\false_gods.jpg" /></div>
-                    <p>
-                        <strong>False Gods</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2021\horus_rising.jpg" /></div>
-                    <p>
-                        <strong>Horus Rising</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2021\hereticus.jpg" /></div>
-                    <p>
-                        <strong>Hereticus</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2021\malleus.jpg" /></div>
-                    <p>
-                        <strong>Malleus</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2021\xenos.jpg" /></div>
-                    <p>
-                        <strong>Xenos</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <h2>2020</h2>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2020\paper_girls.jpg" /></div>
-                    <p>
-                        <strong>Paper Girls</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2020\dune_book.jpg" /></div>
-                    <p>
-                        <strong>Dune</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <h2>2019 and Before</h2>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2019_and_Before\enders_game.jpg" /></div>
-                    <p>
-                        <strong>Ender's Game</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <div class="parent">
-                    <div class="floated"><img src="images\books\2019_and_Before\majoras_mask_manga.jpg" /></div>
-                    <p>
-                        <strong>The Legend of Zelda - Major's Mask Manga</strong><br /><br />
-                        Thinking...
-                    </p>
-                </div>
-
-                <!-- footer -->
-
-                <hr />
-                <p>craftbeetleofficial@gmail.com</p>
-                <a href="https://thangs.com/designer/CraftBeetle" target="_blank">THANGS</a>
-                <a href="https://cults3d.com/en/users/CraftBeetle" target="_blank">CULTS3D</a>
-                <a href="https://www.printables.com/@CraftBeetle_1580352/" target="_blank">PRINTABLES</a>
-                <a href="https://www.thingiverse.com/craftbeetle" target="_blank">THINGIVERSE</a>
-                <a href="https://www.instagram.com/craft_beetle/" target="_blank">INSTAGRAM</a>
-                <a href="https://www.youtube.com/@craftbeetle" target="_blank">YOUTUBE</a>
-                <a href="https://craft-beetle.itch.io/" target="_blank">ITCH</a>
             </div>
-        </main>
-    </body>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\ishmael.jpg" /></div>
+                <p>
+                    <strong>Ishmael</strong><br /><br />
+                    My whole experience with Ishmael was wonderful. It started off with a conversation with great
+                    friend about this, that or the other. She then told me she brought something for me and produced
+                    an old copy of Ishmael, bought from a thrift store some time ago, her bookmark still in it. I was
+                    so touched by the gift that I hungry read the book in a few days. The paper was yellowed with time,
+                    the cellulose broken down into a sweet sent.
+                    <br /><br />
+                    Ishmael teaches the main character, and in doing so teaches the reader, that the world is not
+                    made for humans, but that humans were made for it. That when people see the world as theirs,
+                    they inherently seek to conquer and invariably destroy it. And while I disagree on the theological
+                    points, I do agree that humanity should seek to better live in the world, alongside all of creation,
+                    than to dominate and annihilate it.
+                    <br /><br />
+                    In the spirit of being gifted the book, I then passed it along to my parents. And after they
+                    finish it I'll give it to a friend, so that all may read what Ishmael has to teach.
+                    <br /><br />
+                    You can't escape the cage if you can't find the bars.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\value_price_and_profit.jpeg" /></div>
+                <p>
+                    <strong>Value, Price and Profit</strong><br /><br />
+                    Marx makes the relationship of value, price, and profit very clear. We often still hear about
+                    how increasing wages would increase the price of goods and services but in reality that is not
+                    the case. It simply reduces profits for the bourgeoisie, profits they derive from the unpaid
+                    portion of the proletariat's labor.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\wage-labour_and_capital.jpg" /></div>
+                <p>
+                    <strong>Wage-Labour and Capital</strong><br /><br />
+                    I was already familiar with Real Wages, but I had not thought of Relative Wages which are really
+                    the root of the income inequality by definition. As well I have a new appreciation for the gig
+                    economy as as the ideal capitalist labor market, where all tasks are fractalized and staccato,
+                    disconnecting the laborer from the labor and for each other, opening the door for infinite
+                    scabs.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\abandoned_palestine_refugee.jpg" /></div>
+                <p>
+                    <strong>Abandoned Palestine Refugee</strong><br /><br />
+                    I met Ihmayed Ali and his daughter at a Palestinian book talk where they shared about their
+                    lives and experiences as Palestinian refugees. The talk was moving and eye opening. I then
+                    bought and read his book and was blown away by the images he shared. Ihmayed's autobiography is
+                    written in a very vivid and honest way. The things he goes through, the oppression and abuse,
+                    the survival and success. His story is representative of large portions of the Palestinian
+                    population, a people who endure despite incredible hardship. I highly recommend this book to
+                    anyone seeking a personal look at the Palestinian story.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\moby_dick.jpg" /></div>
+                <p>
+                    <strong>Moby Dick</strong><br /><br />
+                    This book is absolutely massive. Melville clearly loves and knows much about whaling and he
+                    wants to share it all and it takes 600 pages to do so. I didn't love the book in all honesty but
+                    I do respect it. It is one of the oldest books I've read and had it come out in recent decades
+                    someone would have made him cut it down but I'm glad it exists in its entirety. A book about
+                    whales ought to be massive. I wouldn't recommend most people read it but the audiobook by
+                    William Hootkins is very good. I switch to it about half way through reading my physical copy.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\principles_of_communism.jpg" /></div>
+                <p>
+                    <strong>Principles of Communism</strong><br /><br />
+                    An easy introduction into communist theory. This is absolutely a must read that lays out
+                    communism for the layman. I found it put already known and understood concepts into a new
+                    perspective, shed a light on some connection previously missed.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\strong_towns.jpg" /></div>
+                <p>
+                    <strong>Strong Towns</strong><br /><br />
+                    In Strong Towns, Charles explains the way in which cities use to be built gradually and how that
+                    has changed into an unsustainable model of growth. He makes points about how single family homes
+                    are subsidized by downtown businesses, and about the debt cities find themselves with when they
+                    try to make themselves attractive to developments. What Charles fails to do is question the
+                    underlying economic system, and is instead content on working within capitalism. This is not
+                    surprising and he identifies as a conservative.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\to_kill_a_mockingbird.jpg" /></div>
+                <p>
+                    <strong>To Kill A Mockingbird</strong><br /><br />
+                    If ever there was a manual on how to be a good father, this would be a contender. This also goes
+                    for what it means to be a man. The way Harper Lee describes Atticus's interactions with his
+                    children and his community and the high regard in which they hold him shows what a man of
+                    integrity is, and shoots dead the idea that people in the past were simply a product of their
+                    time. A wonderful read and a pretty good movie.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2024\the_dispossessed.jpg" /></div>
+                <p>
+                    <strong>The Dispossessed</strong><br /><br />
+                    A beautiful book that explores one possible way that anarcho-communism could exist. Le Guin does
+                    a great job of constructing a believable society with all of its struggles and beauty. Even if
+                    this isn't the exact way I imagine an ideal world, I find inspiration and hope in the refutation
+                    of the status quo as all that there ever could be. If this is a plausible formulation of
+                    society, what else is possible? A worthwhile and captivating read.
+                </p>
+            </div>
+
+            <br />
+            <h2>2023</h2>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2023\children_of_memory.jpg" /></div>
+                <p>
+                    <strong>Children of Memory</strong><br /><br />
+                    So far we've had spiders, octopus, true aliens (insert "Nano Machines, Son!" audio sting), as
+                    well an increasingly moody human AI, and neo-humans. What's left? Why it's psychically linked
+                    corvids and a twist so good I won't even explain. Unlike the other two books, this one is a real
+                    mental trip. Elder race is linear but jumps perspectives. The Children of Time has a spider past
+                    and human present timeline it jumps between. And the Children of Ruin has two pasts, one on each
+                    planet, and a present. This book has a looping, recursive, bleeding timeline. As if you wrote
+                    the events of the story on a stack of paper and it got wet, words from one time transferring to
+                    another. It won't make total sense until it all makes sense in the end. Definitely worth a read.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2023\2001_a_space_odyssey.jpg" /></div>
+                <p>
+                    <strong>2001: A Space Odyssey</strong><br /><br />
+                    Written with the intent of being adapted into a film, 2001 A Space Odyssey is mostly vibes and
+                    aesthetics. I had vivid images of the stations, space ships, and the cosmos. I hadn't watched the
+                    film until after I read the book and I found it quite enjoyable. You can read my thoughts on the
+                    film here.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2023\children_of_ruin.jpg" /></div>
+                <p>
+                    <strong>Children of Ruin</strong><br /><br />
+                    So jumping spiders, ancient human AI, and neo-humans weren't enough? Now you want octopus and
+                    truly alien life? Okay! The second book in the Children of Series explores another set of
+                    worlds with new life forms and the way they developed. I am personally very fond of the octopus,
+                    I identify with and strive to argue like they do. They give it their all, use their logic and
+                    emotion, then, if they are truly convinced, they go all in and spread the message as if it were
+                    their own. The trick to this method is balance, you have to be sufficiently hard headed that
+                    only the best ideas with the best evidence can convince you, but you also have to be
+                    sufficiently sincere that once convinced you become a beacon of that idea. If the octopus's
+                    motive force is expression, then the other alien's motive is experience. The other alien seeks
+                    novelty at all costs, but in doing so is apt to destroy what it loves. There is much to learn
+                    from both creatures, and of forgiveness. Another banger from Tchaikovsky.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2023\born.jpg" /></div>
+                <p>
+                    <strong>Born</strong><br /><br />
+                    A neat view into the origins of the Punisher. One can easily see how plausible this course of
+                    character development is and how it leads to one to believe that they are the law and that their
+                    violence is justified. A valuable window into cop culture.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2023\head_lopper.jpg" /></div>
+                <p>
+                    <strong>Head Lopper</strong><br /><br />
+                    Head Lopper achieved exactly what it set out to do. It was beautiful and entertaining. At no
+                    point do you feel the head lopper could fail, and that's okay. I enjoyed reading the printed
+                    trade in one quiet summer night. I may read the other entries in the series in the future.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2023\children_of_time.jpg" /></div>
+                <p>
+                    <strong>Children of Time</strong><br /><br />
+                    I don't think it's possible to read this book and not fall in love with jumping spiders, and
+                    don't get me started on Dr. Avarna Kern. Tchaikovsky has a gift for perspective. He has the
+                    ability to turn his mind into a blank slate, throw away our human preconceptions, and start a
+                    new from an alien perspective. How would a spiders build a society? How would they react if we
+                    suddenly wanted to take their planet? How would one of humanity's brightest minds deal with
+                    isolation and a fundamental change in cognitive ability? All beautifully explored question in
+                    this book and much more.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2023\1984.jpg" /></div>
+                <p>
+                    <strong>1984</strong><br /><br />
+                    What can I say about 1984 that hadn't been said already? I originally decided to read this book
+                    so that I could confidently say "I read 1984". I only half joke. But as I got into the book I
+                    discovered what all the hype was about. It wasn't mind blowing but I also read it in a post 1984
+                    world which has for nearly 80 years been deeply affected by it. My most appreciated part of the
+                    book is how long ago it was written and how it remains relevant today.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2023\solaris.jpg" /></div>
+                <p>
+                    <strong>Solaris</strong><br /><br />
+                    Solaris was originally written in Russian and the translation is of disputed quality. This
+                    matters particularly because this book, while set on an alien planet, occurs mainly in the
+                    thoughts of the main character. I enjoyed the explorations of sentience and cognition, and the
+                    soft dreamlike horror that builds up.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2023\elder_race.jpg" /></div>
+                <p>
+                    <strong>Elder Race</strong><br /><br />
+                    I was in the mall book store with a friend just killing time when the cover of this book caught
+                    my eye. I knew nothing of Tchaikovsky at the time so I had no idea that this was a soft sequel
+                    to his Children of Series. I read the first few pages in that book store and immediately loved
+                    it. I bought it on mid day Saturday, and by Sunday I had finished it. That's not a testament to
+                    my reading speed so much as it is of the books quality. The dual language concept and the
+                    science as magic concept were so good that I needed to know what else he had written, and a few
+                    days later the Children of Series arrived at my doorstep.
+                </p>
+            </div>
+
+            <br />
+            <h2>2022</h2>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2022\transmetropolitan.jpg" /></div>
+                <p>
+                    <strong>Transmetropolitan</strong><br /><br />
+                    This comic, and Spider Jerusalem, are one of my favorites. Real politics and journalism in a
+                    near future US city. It gave me the same feeling of appreciation for journalism that A Taxi
+                    Driver (the Korean film) gave me. The world needs more Spider Jerusalem's that do true honest
+                    journalism at all costs and by all means necessary.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2022\snow_crash.png" /></div>
+                <p>
+                    <strong>Snow Crash</strong><br /><br />
+                    Right as the Cyberpunk 2077 conversation was warming up, and after watching Action Button's 8
+                    hour review (yes, in one sitting), I was still unwilling to give the game a chance. But, what I
+                    getting really interested in was science fiction and cyberpunk. I decided to pick this book up
+                    and I was not disappointed. One of the seminal works in the cyberpunk genre, and the origin of
+                    the term "metaverse", it paints a funny version of the cyberpunk dystopia we've come to expect.
+                    Yes, the killing, poverty, and misery are all there as substrate for the tech megacorps to
+                    exploit. But the characters and narration lift the mood and focuses on the fun. Easily
+                    recommended.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2022\brave_new_world.jpg" /></div>
+                <p>
+                    <strong>Brave New World</strong><br /><br />
+                    I was recommended this book by a friend. They described it as "The Other 1984". I see the
+                    similarities but the themes not the same. The most striking aspect of the book is how normal
+                    creating people for specific roles is, and how the few intellectual elites are still bound up in
+                    the odd society they are a part of.
+                </p>
+            </div>
+
+            <h2>2021</h2>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2021\galaxy_in_flames.jpg" /></div>
+                <p>
+                    <strong>Galaxy in Flame</strong><br /><br />
+                    Thinking...
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2021\false_gods.jpg" /></div>
+                <p>
+                    <strong>False Gods</strong><br /><br />
+                    Thinking...
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2021\horus_rising.jpg" /></div>
+                <p>
+                    <strong>Horus Rising</strong><br /><br />
+                    Thinking...
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2021\hereticus.jpg" /></div>
+                <p>
+                    <strong>Hereticus</strong><br /><br />
+                    Thinking...
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2021\malleus.jpg" /></div>
+                <p>
+                    <strong>Malleus</strong><br /><br />
+                    Thinking...
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2021\xenos.jpg" /></div>
+                <p>
+                    <strong>Xenos</strong><br /><br />
+                    Thinking...
+                </p>
+            </div>
+
+            <h2>2020</h2>
+
+            <div class="parent">
+                <div id="paper_girls_book_review" class="floated"><img src="images\books\2020\paper_girls.jpg" /></div>
+                <p>
+                    <strong>Paper Girls</strong><br /><br />
+                    Hands down one of my favorite graphic novels. I love every character and their development. The time
+                    travel is done really well and, like many great stories, all the fun action and science fiction
+                    ultimately serve a very personal coming of age story. <a href="shows.html#paper_girls_show_review">The Amazon show</a> was really good too but it was
+                    canceled after the first season. We cannot have nice things.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2020\dune_book.jpg" /></div>
+                <p>
+                    <strong>Dune</strong><br /><br />
+                    Thinking...
+                </p>
+            </div>
+
+            <h2>2019 and Before</h2>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2019_and_Before\pathfinder.jpg" /></div>
+                <p>
+                    <strong>Pathfinder</strong><br /><br />
+                    Thinking...
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2019_and_Before\enders_game.jpg" /></div>
+                <p>
+                    <strong>Ender's Game</strong><br /><br />
+                    I read Ender's Game a long time ago in elementary school and I still remember it well. Card paints a
+                    fascinating picture of a fascist future fighting aliens and the consequences thereof. I won't spoil
+                    the ending but I will say that this book really clicked with a really young me.
+                </p>
+            </div>
+
+            <div class="parent">
+                <div class="floated"><img src="images\books\2019_and_Before\majoras_mask_manga.jpg" /></div>
+                <p>
+                    <strong>The Legend of Zelda - Major's Mask Manga</strong><br /><br />
+                    This is a neat adaptation of Majora's Mask into a manga. I think adapting relatively linear video
+                    games may be the easiest type of adaptation to pull off and pull it off they did. While I haven't
+                    actually played Majora's Mask I have watched my fair share of walkthroughs, analysis, and speedruns.
+                    The manga was pretty darn good.
+                </p>
+            </div>
+
+            <!-- footer -->
+
+            <hr />
+            <p>craftbeetleofficial@gmail.com</p>
+            <a href="https://thangs.com/designer/CraftBeetle" target="_blank">THANGS</a>
+            <a href="https://cults3d.com/en/users/CraftBeetle" target="_blank">CULTS3D</a>
+            <a href="https://www.printables.com/@CraftBeetle_1580352/" target="_blank">PRINTABLES</a>
+            <a href="https://www.thingiverse.com/craftbeetle" target="_blank">THINGIVERSE</a>
+            <a href="https://www.instagram.com/craft_beetle/" target="_blank">INSTAGRAM</a>
+            <a href="https://www.youtube.com/@craftbeetle" target="_blank">YOUTUBE</a>
+            <a href="https://craft-beetle.itch.io/" target="_blank">ITCH</a>
+        </div>
+    </main>
+</body>
+
 </html>

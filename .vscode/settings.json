@@ -16,9 +16,11 @@
         "copaganda",
         "corvids",
         "Darko",
+        "Digimon",
         "Downwell",
         "Dragonfall",
         "Earthsea",
+        "Edgerunners",
         "Elden",
         "Evangelion",
         "fractalized",
@@ -41,6 +43,7 @@
         "Krieg",
         "megacorps",
         "metaverse",
+        "Mewtwo",
         "Moby",
         "Mordor",
         "Nailsmith",
@@ -55,6 +58,7 @@
         "Silverhand",
         "Skyrim",
         "Snowpiercer",
+        "speedruns",
         "Stormcast",
         "Strat",
         "SUPERHOT",
@@ -70,5 +74,5 @@
         "Wonka",
         "XCOM"
     ],
-    "livePreview.defaultPreviewPath": "/games copy.html"
+    "livePreview.defaultPreviewPath": "/critters.html"
 }
