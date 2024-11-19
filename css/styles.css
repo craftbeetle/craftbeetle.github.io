@@ -185,6 +185,13 @@ a:active {
     margin-right: 20px;
 }
 
+.floated_game {
+    float: left;
+    width: 200px;
+    height: 100%;
+    margin-right: 20px;
+}
+
 .parent::after {
     content: "";
     display: table;
@@ -244,7 +251,7 @@ a:active {
 
 .image-wrapper-tall img {
     width: 100%;
-    height: 450px;
+    max-height: 450px;
     object-fit: contain; /* Ensure images cover the height properly */
     margin: 0 5px; /* Padding between images */
 
