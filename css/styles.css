@@ -7,13 +7,17 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: flex-start; /* Aligns content to the top */
-    height: 100vh; /* Full viewport height */
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: flex-start;
+    /* Aligns content to the top */
+    height: 100vh;
+    /* Full viewport height */
 }
 
 .container {
-    margin: 0 auto; /* Center horizontally with auto margins */
+    margin: 0 auto;
+    /* Center horizontally with auto margins */
     width: 90vw;
     max-width: 600px;
     padding: 20px;
@@ -35,15 +39,21 @@ body {
 
 @media only screen and (min-width: 1000px) {
     .sidebar {
-        position: fixed; /* Fixes the sidebar position */
-        top: 94px; /* Center vertically in the viewport */
-        right: calc(50% - 500px); /* Aligns to the right edge */
-        width: 150px; /* Adjust the width as needed */
+        position: fixed;
+        /* Fixes the sidebar position */
+        top: 94px;
+        /* Center vertically in the viewport */
+        right: calc(50% - 500px);
+        /* Aligns to the right edge */
+        width: 150px;
+        /* Adjust the width as needed */
         background-color: black;
         color: white;
         padding: 10px;
-        overflow-y: auto; /* Ensures sidebar content is scrollable if needed */
+        overflow-y: auto;
+        /* Ensures sidebar content is scrollable if needed */
     }
+
     .sidebar h2 {
         margin-top: 0;
     }
@@ -65,6 +75,7 @@ body {
     .sidebar ul li a:hover {
         text-decoration: underline;
     }
+
     nav {
         display: none;
     }
@@ -86,6 +97,7 @@ body {
     .sidebar {
         display: none;
     }
+
     nav ul li {
         margin: 10px 0;
     }
@@ -98,13 +110,16 @@ body {
     nav a:hover {
         text-decoration: underline;
     }
+
     td {
         height: 25px;
         text-align: left;
     }
+
     table {
         width: 100%;
     }
+
     body {
         font-size: 14px;
     }
@@ -130,52 +145,69 @@ p {
 }
 
 img {
-    width: 100%; /* Ensures the image fits within the container */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%;
+    /* Ensures the image fits within the container */
+    height: auto;
+    /* Maintains aspect ratio */
 }
 
 a {
-    color: white; /* Default link color */
+    color: white;
+    /* Default link color */
 }
 
 a:visited {
-    color: #6f42c1; /* Color after the link has been visited */
+    color: #6f42c1;
+    /* Color after the link has been visited */
 }
 
 a:hover {
-    color: #ff5722; /* Color when the mouse is over the link */
+    color: #ff5722;
+    /* Color when the mouse is over the link */
 }
 
 a:active {
-    color: #d32f2f; /* Color when the link is clicked */
+    color: #d32f2f;
+    /* Color when the link is clicked */
 }
 
 /* Scrollable container */
 .scroll-box {
-    width: 100%; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
-    overflow-y: auto; /* Vertical scrolling */
-    padding-right: 10px; /* Padding for content */
-    box-sizing: border-box; /* Include padding in width/height */
+    width: 100%;
+    /* Adjust width as needed */
+    height: 100px;
+    /* Adjust height as needed */
+    overflow-y: auto;
+    /* Vertical scrolling */
+    padding-right: 10px;
+    /* Padding for content */
+    box-sizing: border-box;
+    /* Include padding in width/height */
 }
 
 /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
 .scroll-box::-webkit-scrollbar {
-    width: 5px; /* Width of the scrollbar */
+    width: 5px;
+    /* Width of the scrollbar */
 }
 
 .scroll-box::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Track color */
-    border-radius: 10px; /* Rounded corners */
+    background: #f1f1f1;
+    /* Track color */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
 .scroll-box::-webkit-scrollbar-thumb {
-    background: #888; /* Scrollbar color */
-    border-radius: 10px; /* Rounded corners */
+    background: #888;
+    /* Scrollbar color */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
 .scroll-box::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Scrollbar color on hover */
+    background: #555;
+    /* Scrollbar color on hover */
 }
 
 .floated {
@@ -208,38 +240,50 @@ a:active {
 .image-wrapper img {
     width: auto;
     height: 185px;
-    object-fit: contain; /* Ensure images cover the height properly */
-    margin: 0 5px; /* Padding between images */
+    object-fit: contain;
+    /* Ensure images cover the height properly */
+    margin: 0 5px;
+    /* Padding between images */
 
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
 }
 
 .image-wrapper img:first-child {
-    margin-left: 0; /* Remove left margin for the first image */
+    margin-left: 0;
+    /* Remove left margin for the first image */
 }
 
 .image-wrapper img:last-child {
-    margin-right: 0; /* Remove right margin for the last image */
+    margin-right: 0;
+    /* Remove right margin for the last image */
 }
 
 /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
 .image-wrapper::-webkit-scrollbar {
-    height: 5px; /* Width of the scrollbar */
+    height: 5px;
+    /* Width of the scrollbar */
 }
 
 .image-wrapper::-webkit-scrollbar-track {
-    background: #ffffff; /* Track color */
-    border-radius: 5px; /* Rounded corners */
+    background: #ffffff;
+    /* Track color */
+    border-radius: 5px;
+    /* Rounded corners */
 }
 
 .image-wrapper::-webkit-scrollbar-thumb {
-    background: #888; /* Scrollbar color */
-    border-radius: 5px; /* Rounded corners */
+    background: #888;
+    /* Scrollbar color */
+    border-radius: 5px;
+    /* Rounded corners */
 }
 
 .image-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Scrollbar color on hover */
+    background: #555;
+    /* Scrollbar color on hover */
 }
 
 /* Tall Image Wrapper */
@@ -252,44 +296,56 @@ a:active {
 .image-wrapper-tall img {
     width: 100%;
     max-height: 450px;
-    object-fit: contain; /* Ensure images cover the height properly */
-    margin: 0 5px; /* Padding between images */
-
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    object-fit: contain;
+    /* Ensure images cover the height properly */
+    margin: 0 5px;
+    /* Padding between images */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
 }
 
 .image-wrapper-tall img:first-child {
-    margin-left: 0; /* Remove left margin for the first image */
+    margin-left: 0;
+    /* Remove left margin for the first image */
 }
 
 .image-wrapper-tall img:last-child {
-    margin-right: 0; /* Remove right margin for the last image */
+    margin-right: 0;
+    /* Remove right margin for the last image */
 }
 
 /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
 .image-wrapper-tall::-webkit-scrollbar {
-    height: 5px; /* Width of the scrollbar */
+    height: 5px;
+    /* Width of the scrollbar */
 }
 
 .image-wrapper-tall::-webkit-scrollbar-track {
-    background: #ffffff; /* Track color */
-    border-radius: 5px; /* Rounded corners */
+    background: #ffffff;
+    /* Track color */
+    border-radius: 5px;
+    /* Rounded corners */
 }
 
 .image-wrapper-tall::-webkit-scrollbar-thumb {
-    background: #888; /* Scrollbar color */
-    border-radius: 5px; /* Rounded corners */
+    background: #888;
+    /* Scrollbar color */
+    border-radius: 5px;
+    /* Rounded corners */
 }
 
 .image-wrapper-tall::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Scrollbar color on hover */
+    background: #555;
+    /* Scrollbar color on hover */
 }
 
 .button-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
-    gap: 10px; /* Adjust the gap between images */
+    gap: 10px;
+    /* Adjust the gap between images */
     padding: 10px;
     box-sizing: border-box;
 }
@@ -298,37 +354,140 @@ a:active {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover; /* Ensures images cover the grid cell */
+    object-fit: cover;
+    /* Ensures images cover the grid cell */
 }
 
 .back-to-top {
-    background-color: black; /* Change to your desired color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    padding: 10px 40px 10px 0px; /* Padding */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
+    background-color: black;
+    /* Change to your desired color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* No border */
+    padding: 10px 40px 10px 0px;
+    /* Padding */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition */
 }
 
 .back-to-top:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
+    /* Underline on hover */
 }
 
 .back-to-top-mobile {
-    position: fixed; /* Fixes the button to the viewport */
-    bottom: 10px; /* Distance from the bottom */
-    right: 10px; /* Distance from the right */
-    background-color: transparent; /* Change to your desired color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    padding: 10px 10px; /* Padding */
-    font-size: 32px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 5px; /* Rounded corners */
+    position: fixed;
+    /* Fixes the button to the viewport */
+    bottom: 10px;
+    /* Distance from the bottom */
+    right: 10px;
+    /* Distance from the right */
+    background-color: transparent;
+    /* Change to your desired color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* No border */
+    padding: 10px 10px;
+    /* Padding */
+    font-size: 32px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    border-radius: 5px;
+    /* Rounded corners */
     transition:
         background-color 0.3s,
-        text-decoration 0.3s; /* Smooth transition */
-    z-index: 1000; /* Ensures it stays on top of other elements */
-    display: none; /* Hide by default */
+        text-decoration 0.3s;
+    /* Smooth transition */
+    z-index: 1000;
+    /* Ensures it stays on top of other elements */
+    display: none;
+    /* Hide by default */
+}
+
+
+
+
+
+
+
+
+
+/* New Tall Image Wrapper */
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    /* Ensure images cover the height properly */
+    margin: 0 5px;
+    /* Padding between images */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
 }
