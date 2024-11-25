@@ -411,20 +411,7 @@ a:active {
     /* Hide by default */
 }
 
-
-
-
-
-
-
-
-
 /* New Tall Image Wrapper */
-
-* {
-    box-sizing: border-box
-}
-
 .mySlides {
     display: none
 }
