@@ -175,7 +175,7 @@ a:active {
 .scroll-box {
     width: 100%;
     /* Adjust width as needed */
-    height: 100px;
+    height: 150px;
     /* Adjust height as needed */
     overflow-y: auto;
     /* Vertical scrolling */
