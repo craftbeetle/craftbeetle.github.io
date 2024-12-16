@@ -151,6 +151,13 @@ img {
     /* Maintains aspect ratio */
 }
 
+video {
+    width: 100%;
+    /* Ensures the image fits within the container */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
 a {
     color: white;
     /* Default link color */
