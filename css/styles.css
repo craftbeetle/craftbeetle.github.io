@@ -37,6 +37,10 @@ body {
     font-style: normal;
 }
 
+.profile_img {
+    width: 200px;
+}
+
 @media only screen and (min-width: 1000px) {
     .sidebar {
         position: fixed;
@@ -128,6 +132,9 @@ body {
 @media only screen and (max-width: 800px) {
     body {
         font-size: 13px;
+    }
+    .profile_img {
+        width: 170px;
     }
 }
 
