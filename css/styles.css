@@ -171,17 +171,17 @@ a {
 }
 
 a:visited {
-    color: #6f42c1;
+    color: white;
     /* Color after the link has been visited */
 }
 
 a:hover {
-    color: #ff5722;
+    color: white;
     /* Color when the mouse is over the link */
 }
 
 a:active {
-    color: #d32f2f;
+    color: white;
     /* Color when the link is clicked */
 }
 
