@@ -45,6 +45,7 @@
         "Killteams",
         "kitbash",
         "Krieg",
+        "Kvothe's",
         "managerialism",
         "megacorps",
         "metaverse",
@@ -84,4 +85,5 @@
         "Wonka",
         "XCOM"
     ],
+    "livePreview.defaultPreviewPath": "/index.html",
 }
