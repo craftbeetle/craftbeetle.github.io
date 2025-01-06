@@ -233,7 +233,7 @@ a:active {
     margin-right: 20px;
 }
 
-.parent::after{
+.parent::after {
     display: inline-block;
     content: "";
     display: table;
@@ -486,5 +486,11 @@ img {
     .next,
     .text {
         font-size: 11px
+    }
+}
+
+.change_log {
+    li {
+        padding-left: 20px;
     }
 }
