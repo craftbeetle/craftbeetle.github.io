@@ -86,7 +86,7 @@
         "Wonka",
         "XCOM"
     ],
-    "livePreview.defaultPreviewPath": "/index.html",
+    "livePreview.defaultPreviewPath": "/shows.html",
     "gutterpreview.imagePreviewMaxWidth": 100,
     "gutterpreview.imagePreviewMaxHeight": 500,
 }
