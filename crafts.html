@@ -156,6 +156,24 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
 
+            <div id="crafts_stacked_container_slums">
+                <h3>Stacked Container Slums</h3>
+                <p>
+                    Description...
+                </p>
+
+                <div class="slideshow-container" id="stacked_container_slums">
+                    <div class="mySlides fade"><img src="images/crafts/20250201_110919.jpg"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20250201_110941.jpg"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20250201_110955.jpg"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20250201_111013.jpg"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20250201_111029.jpg"></div>
+
+                    <a class="prev" onclick="plusSlides(-1, 'stacked_container_slums')">❮</a>
+                    <a class="next" onclick="plusSlides(1, 'stacked_container_slums')">❯</a>
+                </div>
+            </div>
+
             <div id="crafts_deatchwatch_watch_master">
                 <h3>Deathwatch Watch Master</h3>
                 <p>
@@ -299,6 +317,18 @@
                 <p>
                     Coming Soon...
                 </p>
+
+                <div class="slideshow-container" id="bell_tower">
+                    <div class="mySlides fade"><img src="images/crafts/20250201_111127.jpg"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20250201_111138.jpg"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20250201_111148.jpg"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20250201_111158.jpg"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20250201_111235.jpg"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20250201_111244.jpg"></div>
+
+                    <a class="prev" onclick="plusSlides(-1, 'bell_tower')">❮</a>
+                    <a class="next" onclick="plusSlides(1, 'bell_tower')">❯</a>
+                </div>
             </div>
 
             <div id="crafts_rucksack">
@@ -306,12 +336,9 @@
                 <p>
                     I designed and made this rucksack in my junior year of highschool and it has served me well for many
                     years. I used it daily through the end of high school, all of college, and for years at work. I
-                    recently
-                    purchased a Goruck GR1 for travel and work and I am very happy with it, but this rucksack is still
-                    my
-                    go-to for outings to the beach or event near home. I made it with real canvas and Palestinian suede.
-                    The
-                    inner lining is a cotton. I hand stitched it all while binge watching Narcos.
+                    recently purchased a Goruck GR1 for travel and work and I am very happy with it, but this rucksack
+                    is still my go-to for outings to the beach or event near home. I made it with real canvas and
+                    Palestinian suede. The inner lining is a cotton. I hand stitched it all while binge watching Narcos.
                 </p>
 
                 <div class="slideshow-container" id="rucksack">
@@ -331,12 +358,9 @@
                 <h3>Following Ibn Battuta</h3>
                 <p>
                     I wrote this historical fiction travel diary following the footsteps of the famous traveler Ibn
-                    Battuta
-                    for my highschool sophomore world history class. The teacher only asked for a regular report, typed
-                    out
-                    and printed MLA style but he also didn't I couldn't be creative with the presentation. You can read
-                    it
-                    below.
+                    Battuta for my highschool sophomore world history class. The teacher only asked for a regular
+                    report, typed out and printed MLA style but he also didn't I couldn't be creative with the
+                    presentation. You can read it below.
                 </p>
 
                 <div class="slideshow-container" id="ibn_battuta">
@@ -402,6 +426,17 @@
                 </div>
             </div>
 
+            <div id="crafts_borderlands_psycho_mask">
+                <h3>Borderlands Psycho Mask</h3>
+                <p>
+                    Description...
+                </p>
+
+                <div class="image-wrapper-tall">
+                    <img src="images/crafts/20250201_110112.jpg" />
+                </div>
+            </div>
+
             <br />
 
             <!-- footer -->
@@ -436,12 +471,14 @@
         let slideIndex = {
             ThreeD_scanned_man: 1,
             stormcast_eternal: 1,
+            stacked_container_slums: 1,
             deathwatch_watch_master: 1,
             industrial_terrain: 1,
             dragon_diorama: 1,
             krieg_soldier: 1,
             knolls: 1,
             village_pillage: 1,
+            bell_tower: 1,
             rucksack: 1,
             ibn_battuta: 1,
             avatar_cards: 1
@@ -450,12 +487,14 @@
         // Show initial slides for each gallery
         showSlides('ThreeD_scanned_man', slideIndex.ThreeD_scanned_man);
         showSlides('stormcast_eternal', slideIndex.stormcast_eternal);
+        showSlides('stacked_container_slums', slideIndex.stacked_container_slums);
         showSlides('deathwatch_watch_master', slideIndex.deathwatch_watch_master);
         showSlides('industrial_terrain', slideIndex.industrial_terrain);
         showSlides('dragon_diorama', slideIndex.dragon_diorama);
         showSlides('krieg_soldier', slideIndex.krieg_soldier);
         showSlides('knolls', slideIndex.knolls);
         showSlides('village_pillage', slideIndex.village_pillage);
+        showSlides('bell_tower', slideIndex.bell_tower);
         showSlides('rucksack', slideIndex.rucksack);
         showSlides('ibn_battuta', slideIndex.ibn_battuta);
         showSlides('avatar_cards', slideIndex.avatar_cards);
