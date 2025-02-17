@@ -133,6 +133,11 @@ body {
     }
 }
 
+.taxonomy {
+    text-align: center; /* Center the text */
+    font-style: italic; /* Italicize the text */
+}
+
 .content {
     padding: 20px;
 }
