@@ -138,6 +138,12 @@ body {
     font-style: italic; /* Italicize the text */
 }
 
+.micro-blog {
+    padding: 20px 20px 0px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
 .content {
     padding: 20px;
 }
@@ -145,6 +151,13 @@ body {
 h1 {
     margin-top: 50px;
     text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 300; /* Adjust the weight to make it thinner */
+    font-size: 48px; /* Change this value to your desired size */
+}
+
+h1 a {
+    text-decoration: none; /* Removes the underline */
 }
 
 p {
