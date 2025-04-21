@@ -134,8 +134,10 @@ body {
 }
 
 .taxonomy {
-    text-align: center; /* Center the text */
-    font-style: italic; /* Italicize the text */
+    text-align: center;
+    /* Center the text */
+    font-style: italic;
+    /* Italicize the text */
 }
 
 .micro-blog {
@@ -153,12 +155,15 @@ h1 {
     margin-top: 20px;
     text-align: center;
     font-family: 'Berkshire Swash', cursive;
-    font-weight: 300; /* Adjust the weight to make it thinner */
-    font-size: 48px; /* Change this value to your desired size */
+    font-weight: 300;
+    /* Adjust the weight to make it thinner */
+    font-size: 48px;
+    /* Change this value to your desired size */
 }
 
 h1 a {
-    text-decoration: none; /* Removes the underline */
+    text-decoration: none;
+    /* Removes the underline */
 }
 
 p {
@@ -238,18 +243,12 @@ a:active {
     /* Scrollbar color on hover */
 }
 
-.floated {
-    float: left;
-    width: 150px;
-    height: 100%;
-    margin-right: 20px;
+.parent {
+    width: 100%;
 }
 
-.floated_game {
-    float: left;
-    width: 200px;
-    height: 100%;
-    margin-right: 20px;
+.parent p {
+    margin-bottom: 0;
 }
 
 .parent::after {
@@ -257,6 +256,21 @@ a:active {
     content: "";
     display: table;
     clear: both;
+}
+
+.floated {
+    float: left;
+    width: 150px;
+    height: 100%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.floated_game {
+    float: left;
+    width: 200px;
+    height: 100%;
+    margin-right: 20px;
 }
 
 /* Regular Image Wrapper */
@@ -506,4 +520,41 @@ img {
     .text {
         font-size: 11px
     }
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    /* Space between button groups */
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 5px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.1s;
+    border: 1px solid white;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    /* Darker green on hover */
+}
+
+.button.is-checked {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: black;
+    color: white;
+    transform: scale(0.95);
 }
