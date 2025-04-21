@@ -79,17 +79,12 @@
 
             <h2 id="section1">ECOLOGY</h2>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
+                I take a lot of pictures the living things around me. Be it plant, bug, animal, mushroom, or whatever
+                else, it's here.
                 <br />
             </p>
 
-            <div
-                class="grid-item title new best animalia plantae fungi f2025 f2024 f2023 f2022 f2021_and_before">
+            <div class="grid-item title new best animalia plantae fungi f2025 f2024 f2023 f2022 f2021_and_before">
                 <div class="filters">
                     <div class="button-group" data-filter-group="best">
                         <button class="button is-checked" data-filter="">all</button>
@@ -149,7 +144,8 @@
                     <img loading="lazy" src="/images/ecology/20250413_224404.jpg" alt="" />
                     <p>From olive flowers to olive fruit!<br />
                         <br />
-                        2025.04.13</p>
+                        2025.04.13
+                    </p>
                 </div>
 
                 <div class="grid-item animalia f2025">
@@ -1981,7 +1977,8 @@
             <script>
                 var iso; // Declare the iso variable in a broader scope
 
-                window.onload = function () {
+                // Function to initialize Isotope
+                function initIsotope() {
                     // Select the grid element
                     var grid = document.querySelector('.grid');
 
@@ -2001,8 +1998,10 @@
                         // Call layout once the images are loaded
                         iso.layout();
                     });
+                }
 
-                    // Set up filtering logic
+                // Function to set up filtering logic
+                function setupFiltering() {
                     var filters = {};
                     var filtersElem = document.querySelector(".filters");
                     filtersElem.addEventListener("click", function (event) {
@@ -2029,7 +2028,21 @@
                             event.target.classList.add("is-checked");
                         });
                     });
-                };
+                }
+
+                // Function to handle lazy loading
+                function lazyLoadImages() {
+                    const galleryContainer = document.querySelector('.grid');
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                initIsotope(); // Initialize Isotope when the grid is in view
+                                observer.unobserve(entry.target); // Stop observing after initialization
+                            }
+                        });
+                    });
+                    observer.observe(galleryContainer); // Start observing the grid
+                }
 
                 // Flatten object by concatenating values
                 function concatValues(obj) {
@@ -2039,6 +2052,12 @@
                     }
                     return value;
                 }
+
+                // Initialize lazy loading on window load
+                window.onload = function () {
+                    lazyLoadImages();
+                    setupFiltering();
+                };
             </script>
 
             <!-- footer -->
