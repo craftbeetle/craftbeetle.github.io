@@ -138,6 +138,7 @@ body {
     /* Center the text */
     font-style: italic;
     /* Italicize the text */
+    margin-top: 10px;
 }
 
 .micro-blog {

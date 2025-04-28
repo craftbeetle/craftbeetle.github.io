@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craft Beetle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="//images/branding/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/assets/js/style.js" defer></script>
+    <style>
+        img {
+            margin-bottom: 10px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="content">
+        <h1><a href="/index.html" target="_self">Craft Beetle</a></h1>
+        <div class="container">
+            <form>
+                <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+            </form>
+            <script>
+                window.onscroll = function () {
+                    const button = document.querySelector(".back-to-top-mobile");
+                    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        button.style.display = "block"; // Show button
+                    } else {
+                        button.style.display = "none"; // Hide button
+                    }
+                };
+            </script>
+
+            <!-- body -->
+
+            <hr />
+
+            <h2 id="blog_24_12_15">Inner Monologue</h2>
+            24.12.15
+            <p>
+                Some people have internal monologues and some people do not. It's also likely that people can
+                transition between the two, and use the two modes depending on the task. Could this be analogous to
+                the generative AI's pure vector math and its abstraction through the transformer?<br /><br />
+
+                I use both the internal monologue as well as the wordless mode of thinking. Some of my thoughts are
+                rhetorical and so it is as if I am having a conversation with myself. An internal dialectic that
+                produces synthesized ideas. Other thoughts are physical, like 3D objects and physics calculations,
+                and those I process wordlessly, often accompanied with either mental images or just mathematical
+                intuition, like mental vectors.<br /><br />
+
+                One interesting consequence of this is that for technical projects most of the work I do is entirely
+                in my head. I design, manufacture, test, and iterate completely in my imagination. If asked to
+                describe my thoughts to a fellow engineer, I give exact step by step instructions that will
+                perfectly reproduce what I am thinking, and I am usually correct in my designs. Going back to the AI
+                analogy, it is as if I load a pruned physics model into my mind's RAM, add in LORAs and embeddings
+                for whatever material or special condition I am working with, and do all my work in this virtual
+                environment. Then, when I sit at a computer with SolidWorks or an IDE I simply export my thoughts
+                into reality. I am so familiar with SolidWorks and Python that by the time I actually sit down to
+                export, my fingers do all the work and my mind is off.<br /><br />
+
+                I don't think this is unique for me. My guess is that most people trained in certain tasks do this.
+                Musicians can compose music in their minds, architects imagine buildings, writers create characters
+                away from the page, mathematicians wrestle numbers away from the chalkboard. I asked a fellow
+                engineer if this was the case for them as well and they replied in the affirmative, perfectly
+                describing my own process.<br /><br />
+
+                This isn't to say that there is never a need to work things out outside of the mind. This mostly
+                works for things we are really good at, as for the rest, and usually more complicated things with
+                unknown variables, a more systematic and deliberate approach is needed.<br /><br />
+
+                There seems to be a need for both types of thinking. The question usually asked is:<br /><br />
+
+                How do people with/without an inner monologue think?<br /><br />
+
+                I think the more interesting question is:<br /><br />
+
+                Why doesn't everyone use both modes of thinking?<br /><br />
+                <img src="/images/blog/20240902_140551.jpg" />
+            </p>
+
+            <!-- footer -->
+
+            <hr />
+            <p align="center">craftbeetleofficial@gmail.com</p>
+        </div>
+    </main>
+</body>
+
+</html>

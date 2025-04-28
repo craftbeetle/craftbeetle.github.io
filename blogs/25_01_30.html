@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craft Beetle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="//images/branding/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/assets/js/style.js" defer></script>
+    <style>
+        img {
+            margin-bottom: 10px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="content">
+        <h1><a href="/index.html" target="_self">Craft Beetle</a></h1>
+        <div class="container">
+            <form>
+                <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+            </form>
+            <script>
+                window.onscroll = function () {
+                    const button = document.querySelector(".back-to-top-mobile");
+                    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        button.style.display = "block"; // Show button
+                    } else {
+                        button.style.display = "none"; // Hide button
+                    }
+                };
+            </script>
+
+            <!-- body -->
+
+            <hr />
+
+            <h2 id="blog_25_01_30">Web Reflections</h2>
+            25.01.30
+            <p>
+                This website has been a lot of fun so far. I have enjoyed learning HTML, CSS, and JavaScript, and
+                the creative process of designing a user experience. The most rewarding part has been the feedback I
+                get from my friends after they visit my site and learn about the things I make, the plants and
+                animals I see, and my thoughts on the media I enjoy.<br /><br />
+
+                It started out very simple and I have successfully kept it consistent and easy to manage. The
+                content is easy to post and update and the organization and feel of the site has matured over
+                time.<br /><br />
+
+                Now that the site is stabilized and matured, I think it would be interesting to experiment some
+                more. I have fallen into a pattern, which has been immensely helpful in keeping me on track, but now
+                I want to try new things. I also want to break out of the idea that all content has to be perfect
+                before I post it. As I have thought, written, and created more, I have realized that the old adage
+                that "Perfect is the enemy of good." is true here as well. Why hold back on writing my thought on a
+                thing just because I don't think I'll perfectly express everything I want to express? These are the
+                inhibitions of the big social media platforms, where creation is product, not art.<br /><br />
+
+                In short I will try to be a bit more organic and less inhibited in this site. This has never been a
+                professional product to be sold, so I shouldn't treat it as such. It's my personal website and I
+                invite you to continue enjoying it, flaws and all.<br /><br />
+                <img src="/images/blog/20220926_192802.jpg" />
+            </p>
+
+            <!-- footer -->
+
+            <hr />
+            <p align="center">craftbeetleofficial@gmail.com</p>
+        </div>
+    </main>
+</body>
+
+</html>
