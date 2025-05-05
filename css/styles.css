@@ -559,3 +559,17 @@ img {
     color: white;
     transform: scale(0.95);
 }
+
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    /* This will place items on opposite sides */
+    align-items: center;
+    /* This will vertically center the items */
+}
+
+.blog-img {
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
