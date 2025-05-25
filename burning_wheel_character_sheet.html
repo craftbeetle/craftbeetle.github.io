@@ -7,6 +7,7 @@
     <title>Craft Beetle</title>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="//images/branding/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/burning_wheel_styles.css" />
     <script src="/assets/js/style.js" defer></script>
 </head>
@@ -28,7 +29,7 @@
 
             <div id="formContainer">
                 <form id="characterForm">
-                    <details open>
+                    <details open> <!-- Character Index -->
                         <summary>Character Index</summary><br>
 
                         <div class="form-group">
@@ -61,7 +62,7 @@
                         </div><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Beliefs -->
                         <summary>Beliefs</summary><br>
 
                         <div class="belief_instinct">
@@ -113,7 +114,7 @@
                         </div><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Instincts -->
                         <summary>Instincts</summary><br>
 
                         <div class="belief_instinct">
@@ -153,7 +154,7 @@
                         </div><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Traits -->
                         <summary>Traits</summary>
                         <label for="character_traits">Character Traits</label>
                         <textarea id="character_traits"></textarea>
@@ -163,7 +164,7 @@
                         <textarea id="call-on_traits"></textarea><br><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Relationships -->
                         <summary>Relationships</summary>
                         <label for="relationships">Relationships</label>
                         <textarea id="relationships"></textarea>
@@ -175,78 +176,65 @@
                         <textarea id="enemy_circles"></textarea><br><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Gear, Possessions, and Property -->
                         <summary>Gear, Possessions, and Property</summary>
                         <textarea id="inventory"></textarea><br><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Notes -->
                         <summary>Notes</summary>
                         <textarea id="notes"></textarea><br><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Spells -->
                         <summary>Spells</summary>
                         <label for="spells"></label>
                         <textarea id="spells"></textarea><br><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Stats -->
                         <summary>Stats</summary><br>
                         <div class="form-group">
                             <label for="name">Will</label>
-                            <select id="options" required>
+                            <select style="width: 30px; text-align: center;" id="options" required>
                                 <option value="B" selected>B</option>
                                 <option value="G">G</option>
                                 <option value="W">W</option>
                             </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
+                            <input type="text" id="name" style="margin-left: 10px; width: 20px; text-align: center;">
+                            <div class="checkbox-grid"  style="width: 200px; margin-right: 10px;">
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">R</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
 
-                            <label style="margin-left: 15px" for="name">Power</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">D</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
 
-                            <label style="margin-left: 15px" for="name">Agility</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
-
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Perception</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
-
-                            <label style="margin-left: 15px" for="name">Forte</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
-
-                            <label style="margin-left: 15px" for="name">Speed</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">C</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="F" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="P" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="D" id="name">
+                            </div>
                         </div><br>
                     </details>
 
-                    <details open>
+                    <details> <!-- Attributes -->
                         <summary>Attributes</summary><br>
                         <div class="form-group">
                             <label for="name">Health</label>
@@ -256,6 +244,7 @@
                                 <option value="W">W</option>
                             </select>
                             <input style="width: 25px; display: inline-block;" type="text" id="name">
+
                             <div class="checkbox-grid">
                                 <label>R</label>
                                 <label><input type="checkbox" name="option1" value="1"></label>
@@ -373,7 +362,7 @@
                         </div><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Skills -->
                         <summary>Skills</summary>
 
                         <h4>Artha and Epiphanies</h4>
@@ -410,7 +399,6 @@
                                 <label><input type="checkbox" name="option10" value="10"></label>
                                 <label><input type="checkbox" name="option11" value="11"></label>
                             </div>
-
                         </div>
 
 
@@ -418,224 +406,160 @@
                         <button type="button" id="addSkillBtn">+</button><br><br>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Physical Tolerance Grayscale -->
                         <summary>Physical Tolerance Grayscale</summary>
                         <p><strong>Incidental</strong> - 1/2 Mark (round up)<br>
                             <strong>Mark</strong> - Power stat exponent + Weapon Power exponent.<br>
                             <strong>Superb</strong> - 1.5x Mark (round down)<br>
                         </p>
 
-                        <table>
+                        <table class="physical_tolerance_grayscale">
                             <tr>
                                 <td>Tolerance</td>
                                 <td>Coordinate</td>
-                                <td colspan="3">Injury</td>
+                                <td>Injury</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB1"></td>
                                 <td>B1</td>
                                 <td>
                                     <input type="checkbox" name="optionB1" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB1" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB1" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>B4</td>
+                                <td><input type="text" name="toleranceB2"></td>
+                                <td>B2</td>
                                 <td>
                                     <input type="checkbox" name="optionB2" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB2" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB2" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>B5</td>
+                                <td><input type="text" name="toleranceB3"></td>
+                                <td>B3</td>
                                 <td>
                                     <input type="checkbox" name="optionB3" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB3" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB3" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>B5</td>
+                                <td><input type="text" name="toleranceB4"></td>
+                                <td>B4</td>
                                 <td>
                                     <input type="checkbox" name="optionB4" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB4" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB4" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>B6</td>
+                                <td><input type="text" name="toleranceB5"></td>
+                                <td>B5</td>
                                 <td>
                                     <input type="checkbox" name="optionB5" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB5" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB5" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>B7</td>
+                                <td><input type="text" name="toleranceB6"></td>
+                                <td>B6</td>
                                 <td>
                                     <input type="checkbox" name="optionB6" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB6" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB6" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB7"></td>
                                 <td>B7</td>
                                 <td>
                                     <input type="checkbox" name="optionB7" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB7" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB7" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB8"></td>
                                 <td>B8</td>
                                 <td>
                                     <input type="checkbox" name="optionB8" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB8" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB8" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB9"></td>
                                 <td>B9</td>
                                 <td>
                                     <input type="checkbox" name="optionB9" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB9" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB9" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB10"></td>
                                 <td>B10</td>
                                 <td>
                                     <input type="checkbox" name="optionB10" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB10" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB10" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB11"></td>
                                 <td>B11</td>
                                 <td>
                                     <input type="checkbox" name="optionB11" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB11" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB11" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB12"></td>
                                 <td>B12</td>
                                 <td>
                                     <input type="checkbox" name="optionB12" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB12" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB12" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB13"></td>
                                 <td>B13</td>
                                 <td>
                                     <input type="checkbox" name="optionB13" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB13" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB13" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB14"></td>
                                 <td>B14</td>
                                 <td>
                                     <input type="checkbox" name="optionB14" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB14" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB14" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB15"></td>
                                 <td>B15</td>
                                 <td>
                                     <input type="checkbox" name="optionB15" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB15" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB15" value="3">
                                 </td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><input type="text" name="toleranceB16"></td>
                                 <td>B16</td>
                                 <td>
                                     <input type="checkbox" name="optionB16" value="1">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB16" value="2">
-                                </td>
-                                <td>
                                     <input type="checkbox" name="optionB16" value="3">
                                 </td>
                             </tr>
@@ -647,11 +571,21 @@
                             <tr>
                                 <th>Wound</th>
                                 <th>Penalty</th>
-                                <th><div class="rotate">Obstacle Penalties</div></th>
-                                <th><div class="rotate">Wounded Dice</div></th>
-                                <th><div class="rotate">Injury Recovery</div></th>
-                                <th><div class="rotate">Injury Recovery</div></th>
-                                <th><div class="rotate">Injury Recovery</div></th>
+                                <th>
+                                    <div class="rotate">Obstacle Penalties</div>
+                                </th>
+                                <th>
+                                    <div class="rotate">Wounded Dice</div>
+                                </th>
+                                <th>
+                                    <div class="rotate">Injury Recovery</div>
+                                </th>
+                                <th>
+                                    <div class="rotate">Injury Recovery</div>
+                                </th>
+                                <th>
+                                    <div class="rotate">Injury Recovery</div>
+                                </th>
                             </tr>
                             <tr>
                                 <td>Superficial</td>
@@ -714,7 +648,7 @@
                             third Superficial wound is suffered, the obstacle penalty is replaced with a -1D penalty</p>
                     </details>
 
-                    <details open>
+                    <details open> <!-- Weapons and Armor -->
                         <summary>Weapons and Armor</summary>
 
                         <h4>Melee Weapons</h4>

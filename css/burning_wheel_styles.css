@@ -151,7 +151,7 @@ select::after {
 .checkbox-grid {
     display: grid;
     /* Use CSS Grid */
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     /* 4 columns */
     grid-template-rows: repeat(3, auto);
     /* 3 rows */
@@ -217,6 +217,10 @@ td {
     vertical-align: middle;
 }
 
+details summary {
+    font-size: large;
+}
+
 /* ---------------- Character Index ---------------- */
 
 /* ------------- Beliefs and Instincts ------------- */
@@ -250,3 +254,75 @@ td {
 }
 
 /* -------------------- Traits --------------------- */
+
+/* ----------------- Relationships ----------------- */
+
+/* -------- Gear, Possessions, and Property -------- */
+
+/* -------------------- Notes ---------------------- */
+
+/* -------------------- Spells --------------------- */
+
+/* -------------------- Stats ---------------------- */
+
+
+
+/* ------------------ Attributes ------------------- */
+
+/* -------------------- Skills --------------------- */
+
+/* --------- Physical Tolerance Grayscale ---------- */
+
+.physical_tolerance_grayscale table {
+    border-collapse: collapse;
+    /* Ensures that borders are collapsed */
+}
+
+.physical_tolerance_grayscale td {
+    padding: 8px;
+    /* Adjust padding as needed */
+}
+
+.physical_tolerance_grayscale input[type="text"] {
+    border: none;
+    /* Remove border */
+    background: none;
+    /* Remove background */
+    width: 100%;
+    /* Make input take full width of the cell */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    font-size: inherit;
+    /* Inherit font size from the table */
+    color: inherit;
+    /* Inherit text color from the table */
+    outline: none;
+    /* Remove outline on focus */
+}
+
+.physical_tolerance_grayscale input[type="text"]:focus {
+    outline: none;
+    /* Remove outline on focus */
+}
+
+.physical_tolerance_grayscale input[type="checkbox"] {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    width: auto;
+    /* Set width to auto */
+    height: auto;
+    /* Set height to auto */
+    display: inline-block;
+    /* Ensure checkboxes are inline */
+}
+
+.physical_tolerance_grayscale input[type="checkbox"]:focus {
+    outline: none;
+    /* Remove outline on focus */
+}
+
+/* --------------- Weapons and Armor --------------- */
