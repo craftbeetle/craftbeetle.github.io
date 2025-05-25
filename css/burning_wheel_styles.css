@@ -277,7 +277,7 @@ details summary {
 }
 
 .physical_tolerance_grayscale td {
-    padding: 8px;
+    padding: 0 8px;
     /* Adjust padding as needed */
 }
 
