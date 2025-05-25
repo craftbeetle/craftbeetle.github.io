@@ -1,0 +1,252 @@
+body {
+    background-color: black;
+    color: white;
+    font-family:
+        JetBrains Mono,
+        monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: flex-start;
+    /* Aligns content to the top */
+    height: 100vh;
+    /* Full viewport height */
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90vw;
+    max-width: 600px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    /* Center-align the text */
+}
+
+h2 {
+    color: white;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    /* Use 100% width for better responsiveness */
+    margin-top: 5px;
+    padding: 8px;
+    background-color: black;
+    /* Black background for input */
+    color: white;
+    /* White text color */
+    border: 1px solid white;
+    /* White outline */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: border-color 0.3s;
+    /* Smooth transition for border color */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #7a0711;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #7a0711;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #4f0209;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    /* Aligns items vertically centered */
+}
+
+.form-group label {
+    margin-right: 10px;
+    /* Space between label and input */
+}
+
+textarea {
+    width: 100%;
+    /* Full width */
+    resize: none;
+    /* Prevent manual resizing */
+    overflow: hidden;
+    /* Hide overflow */
+    padding: 8px;
+    /* Add padding for better appearance */
+    line-height: 1.2;
+    /* Adjust line height to reduce extra space */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+
+select {
+    width: 30px;
+    /* Full width */
+    height: 35px;
+    /* Full width */
+    padding: 5px;
+    /* Padding for better appearance */
+    background-color: black;
+    /* Background color */
+    color: white;
+    /* Text color */
+    border: 1px solid white;
+    /* Border color */
+    border-radius: 5px;
+    /* Rounded corners */
+    appearance: none;
+    /* Remove default arrow */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    transition: border-color 0.3s;
+    /* Smooth transition for border color */
+}
+
+select:focus {
+    border-color: #7a0711;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Optional: Add a custom arrow */
+select::after {
+    content: "▼";
+    /* Custom arrow */
+    position: absolute;
+    /* Position it absolutely */
+    right: 10px;
+    /* Position from the right */
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust for vertical centering */
+    pointer-events: none;
+    /* Prevent interaction */
+}
+
+.checkbox-grid {
+    display: grid;
+    /* Use CSS Grid */
+    grid-template-columns: repeat(5, 1fr);
+    /* 4 columns */
+    grid-template-rows: repeat(3, auto);
+    /* 3 rows */
+    gap: 0px;
+    /* Reduced space between grid items */
+}
+
+.checkbox-grid label {
+    display: flex;
+    /* Align items in a row */
+    align-items: center;
+    /* Center items vertically */
+    background-color: black;
+    /* Background color */
+    color: white;
+    /* Text color */
+    padding: 0px;
+    /* Padding for better appearance */
+    border-radius: 0px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+.checkbox-grid input[type="checkbox"] {
+    margin-right: 0;
+    /* Remove space between checkbox and label */
+}
+
+.checkbox-grid label:hover {
+    background-color: #7a0711;
+    /* Change background on hover */
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+/* -------------------- General -------------------- */
+
+textarea {
+    width: 100%;
+    min-height: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ---------------- Character Index ---------------- */
+
+/* ------------- Beliefs and Instincts ------------- */
+
+.belief_instinct {
+    display: flex;
+    align-items: center;
+}
+
+.belief_instinct label {
+    white-space: nowrap;
+    /* Prevents the label from wrapping */
+    margin-right: 0px;
+    /* Add some space between the label and the radio buttons */
+}
+
+.belief_instinct_left {
+    margin-right: 10px;
+}
+
+.belief_instinct_radio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100px;
+}
+
+.belief_instinct_radio p {
+    margin: 0px;
+    /* Add some space between the text and the radio buttons */
+}
+
+/* -------------------- Traits --------------------- */
