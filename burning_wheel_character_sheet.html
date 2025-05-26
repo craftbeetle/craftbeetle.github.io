@@ -36,25 +36,37 @@
                         <summary>Character Index</summary><br>
 
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" required>
+                            <div class="upload-container">
+                                <input type="file" id="imageUpload" accept="image/*" />
+                                <div id="imagePreview" class="image-preview"></div>
+                                <div class="plus-button" id="plusButton">+</div>
+                                <button id="deleteImage" class="delete-button" style="display: none;">X</button>
+                            </div>
+                            <script src="script.js"></script>
+
+                            <div style="width: 100%">
+                                <div class="form-group">
+                                    <label for="name">Name&nbsp;</label>
+                                    <input type="text" id="name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name">Stock</label>
+                                    <input type="text" id="stock">
+
+                                    <label style="margin-left: 10px" for="name">Age</label>
+                                    <input style="width: 25px; display: inline-block;" type="text" id="age">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name">Alias</label>
+                                    <input type="text" id="alias">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="name">Stock</label>
-                            <input type="text" id="stock">
-
-                            <label style="margin-left: 15px" for="name">Age</label>
-                            <input style="width: 25px; display: inline-block;" type="text" id="age">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="name">Alias</label>
-                            <input type="text" id="alias">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="name">Homeland</label>
+                            <label for="name">Homeland&nbsp;</label>
                             <input type="text" id="homeland">
                         </div>
 
@@ -64,9 +76,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="name">Features</label>
+                            <label for="name">Features&nbsp;</label>
                             <textarea rows="1" id="features"></textarea>
-                        </div><br>
+                        </div>
                     </details>
 
                     <details open> <!-- Beliefs -->
@@ -76,12 +88,9 @@
                             <div class="belief_instinct_left">
                                 <label for="belief1">Belief 1</label>
                                 <div style="display: flex; flex-direction: row;">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="belief_1_f">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="belief_1_p">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="belief_1_d">
+                                    <input type="text" placeholder="F" id="belief_1_f">
+                                    <input type="text" placeholder="P" id="belief_1_p">
+                                    <input type="text" placeholder="D" id="belief_1_d">
                                 </div>
                             </div>
                             <textarea id="belief_1"></textarea>
@@ -91,12 +100,9 @@
                             <div class="belief_instinct_left">
                                 <label for="belief1">Belief 2</label>
                                 <div style="display: flex; flex-direction: row;">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="belief_2_f">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="belief_2_p">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="belief_2_d">
+                                    <input placeholder="F" id="belief_2_f">
+                                    <input placeholder="P" id="belief_2_p">
+                                    <input placeholder="D" id="belief_2_d">
                                 </div>
                             </div>
                             <textarea id="belief_2"></textarea>
@@ -106,12 +112,9 @@
                             <div class="belief_instinct_left">
                                 <label for="belief1">Belief 3</label>
                                 <div style="display: flex; flex-direction: row;">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="belief_3_f">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="belief_3_p">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="belief_3_d">
+                                    <input placeholder="F" id="belief_3_f">
+                                    <input placeholder="P" id="belief_3_p">
+                                    <input placeholder="D" id="belief_3_d">
                                 </div>
                             </div>
                             <textarea id="belief_3"></textarea>
@@ -121,16 +124,13 @@
                             <div class="belief_instinct_left">
                                 <label for="belief1">Belief Special</label>
                                 <div style="display: flex; flex-direction: row;">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="belief_special_f">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="belief_special_p">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="belief_special_d">
+                                    <input placeholder="F" id="belief_special_f">
+                                    <input placeholder="P" id="belief_special_p">
+                                    <input placeholder="D" id="belief_special_d">
                                 </div>
                             </div>
                             <textarea id="belief_special"></textarea>
-                        </div><br>
+                        </div>
                     </details>
 
                     <details open> <!-- Instincts -->
@@ -140,12 +140,9 @@
                             <div class="belief_instinct_left">
                                 <label for="belief1">Instinct 1</label>
                                 <div style="display: flex; flex-direction: row;">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="name">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="name">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="name">
+                                    <input placeholder="F" id="name">
+                                    <input placeholder="P" id="name">
+                                    <input placeholder="D" id="name">
                                 </div>
                             </div>
                             <textarea id="features"></textarea>
@@ -155,12 +152,9 @@
                             <div class="belief_instinct_left">
                                 <label for="belief1">Instinct 2</label>
                                 <div style="display: flex; flex-direction: row;">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="name">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="name">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="name">
+                                    <input placeholder="F" id="name">
+                                    <input placeholder="P" id="name">
+                                    <input placeholder="D" id="name">
                                 </div>
                             </div>
                             <textarea id="features"></textarea>
@@ -170,93 +164,83 @@
                             <div class="belief_instinct_left">
                                 <label for="belief1">Instinct 3</label>
                                 <div style="display: flex; flex-direction: row;">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="name">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="name">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="name">
+                                    <input placeholder="F" id="name">
+                                    <input placeholder="P" id="name">
+                                    <input placeholder="D" id="name">
                                 </div>
                             </div>
                             <textarea id="features"></textarea>
-                        </div><br>
+                        </div>
                     </details>
 
                     <details open> <!-- Traits -->
                         <summary>Traits</summary>
                         <label for="character_traits">Character Traits</label>
-                        <textarea id="character_traits"></textarea>
+                        <textarea rows="1" id="character_traits"></textarea>
                         <label for="die_traits">Die Traits</label>
-                        <textarea id="die_traits"></textarea>
+                        <textarea rows="1" id="die_traits"></textarea>
                         <label for="call-on_traits">Call-On Traits</label>
-                        <textarea id="call-on_traits"></textarea><br><br>
+                        <textarea rows="1" id="call-on_traits"></textarea>
                     </details>
 
                     <details open> <!-- Relationships -->
                         <summary>Relationships</summary>
                         <label for="relationships">Relationships</label>
-                        <textarea id="relationships"></textarea>
+                        <textarea rows="1" id="relationships"></textarea>
                         <label for="circles">Circles</label>
-                        <textarea id="circles"></textarea>
+                        <textarea rows="1" id="circles"></textarea>
                         <label for="named_circles">Named Circles</label>
-                        <textarea id="named_circles"></textarea>
+                        <textarea rows="1" id="named_circles"></textarea>
                         <label for="enemy_circles">Enemy Circles</label>
-                        <textarea id="enemy_circles"></textarea><br><br>
+                        <textarea rows="1" id="enemy_circles"></textarea>
                     </details>
 
                     <details open> <!-- Gear, Possessions, and Property -->
                         <summary>Gear, Possessions, and Property</summary>
-                        <textarea id="inventory"></textarea><br><br>
+                        <textarea rows="1" id="inventory"></textarea>
                     </details>
 
                     <details open> <!-- Notes -->
                         <summary>Notes</summary>
-                        <textarea id="notes"></textarea><br><br>
+                        <textarea rows="1" id="notes"></textarea>
                     </details>
 
                     <details open> <!-- Spells -->
                         <summary>Spells</summary>
-                        <label for="spells"></label>
-                        <textarea id="spells"></textarea><br><br>
+                        <textarea rows="1" id="spells"></textarea>
                     </details>
 
                     <details open> <!-- Stats -->
                         <summary>Stats</summary><br>
+                        <h3 style="margin-bottom: 5px; margin-top: 2px; margin-right: 10px;">Will</h3>
                         <div class="form-group"> <!-- Will -->
                             <div>
-                                <h3 style="margin-bottom: 5px; margin-top: 2px;">Will</h3>
-                                <select style="width: 30px; text-align: center;" id="options" required>
+                                <select style="width: 32px; text-align: center; margin-right: 2px;" id="options"
+                                    required>
                                     <option value="B" selected>B</option>
                                     <option value="G">G</option>
                                     <option value="W">W</option>
                                 </select>
                                 <input type="text" id="name" style="width: 20px; text-align: center;">
-                                <div style="display: flex; flex-direction: row;">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="name">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="name">
-                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="name">
+                                <div class="belief_instinct_left">
+                                    <div style="display: flex; flex-direction: row;">
+                                        <input placeholder="F" id="belief_3_f">
+                                        <input placeholder="P" id="belief_3_p">
+                                        <input placeholder="D" id="belief_3_d">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="checkbox-grid" style="width: 200px; margin-left: 10px;">
+                            <div class="checkbox-grid" style="width: 200px;">
                                 <input type="text" id="name"
                                     style="width: 20px; text-align: center; margin-right: 10px;">
-                                <label>R</label>
-                                <label><input type="checkbox" name="option1" value="1"></label>
-                                <label><input type="checkbox" name="option2" value="2"></label>
-                                <label><input type="checkbox" name="option3" value="3"></label>
-                                <label><input type="checkbox" name="option4" value="4"></label>
-
-                                <input type="text" id="name" style="width: 20px; text-align: center;">
                                 <label>D</label>
                                 <label><input type="checkbox" name="option5" value="5"></label>
                                 <label><input type="checkbox" name="option6" value="6"></label>
                                 <label><input type="checkbox" name="option7" value="7"></label>
                                 <label><input type="checkbox" name="option8" value="8"></label>
 
-                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
                                 <label>C</label>
                                 <label><input type="checkbox" name="option9" value="9"></label>
                                 <label><input type="checkbox" name="option10" value="10"></label>
@@ -264,209 +248,190 @@
                             </div>
                         </div><br>
 
+                        <h3 style="margin-bottom: 5px; margin-top: 2px; margin-right: 10px;">Power</h3>
                         <div class="form-group"> <!-- Power -->
                             <div>
-                                <label for="name">Power</label>
-                                <select style="width: 30px; text-align: center;" id="options" required>
+                                <select style="width: 32px; text-align: center; margin-right: 2px;" id="options"
+                                    required>
                                     <option value="B" selected>B</option>
                                     <option value="G">G</option>
                                     <option value="W">W</option>
                                 </select>
                                 <input type="text" id="name" style="width: 20px; text-align: center;">
+                                <div class="belief_instinct_left">
+                                    <div style="display: flex; flex-direction: row;">
+                                        <input placeholder="F" id="belief_3_f">
+                                        <input placeholder="P" id="belief_3_p">
+                                        <input placeholder="D" id="belief_3_d">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="checkbox-grid" style="width: 200px;  margin: 0 10px;">
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">R</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
+                            <div class="checkbox-grid" style="width: 200px;">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>D</label>
+                                <label><input type="checkbox" name="option5" value="5"></label>
+                                <label><input type="checkbox" name="option6" value="6"></label>
+                                <label><input type="checkbox" name="option7" value="7"></label>
+                                <label><input type="checkbox" name="option8" value="8"></label>
 
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">D</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
-
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">C</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
-                            </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="F" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="P" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="D" id="name">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>C</label>
+                                <label><input type="checkbox" name="option9" value="9"></label>
+                                <label><input type="checkbox" name="option10" value="10"></label>
+                                <label><input type="checkbox" name="option11" value="11"></label>
                             </div>
                         </div><br>
 
+                        <h3 style="margin-bottom: 5px; margin-top: 2px; margin-right: 10px;">Agility</h3>
                         <div class="form-group"> <!-- Agility -->
                             <div>
-                                <label for="name">Agility</label>
-                                <select style="width: 30px; text-align: center;" id="options" required>
+                                <select style="width: 32px; text-align: center; margin-right: 2px;" id="options"
+                                    required>
                                     <option value="B" selected>B</option>
                                     <option value="G">G</option>
                                     <option value="W">W</option>
                                 </select>
                                 <input type="text" id="name" style="width: 20px; text-align: center;">
+                                <div class="belief_instinct_left">
+                                    <div style="display: flex; flex-direction: row;">
+                                        <input placeholder="F" id="belief_3_f">
+                                        <input placeholder="P" id="belief_3_p">
+                                        <input placeholder="D" id="belief_3_d">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="checkbox-grid" style="width: 200px;  margin: 0 10px;">
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">R</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
+                            <div class="checkbox-grid" style="width: 200px;">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>D</label>
+                                <label><input type="checkbox" name="option5" value="5"></label>
+                                <label><input type="checkbox" name="option6" value="6"></label>
+                                <label><input type="checkbox" name="option7" value="7"></label>
+                                <label><input type="checkbox" name="option8" value="8"></label>
 
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">D</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
-
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">C</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
-                            </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="F" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="P" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="D" id="name">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>C</label>
+                                <label><input type="checkbox" name="option9" value="9"></label>
+                                <label><input type="checkbox" name="option10" value="10"></label>
+                                <label><input type="checkbox" name="option11" value="11"></label>
                             </div>
                         </div><br>
 
+                        <h3 style="margin-bottom: 5px; margin-top: 2px; margin-right: 10px;">Perception</h3>
                         <div class="form-group"> <!-- Perception -->
                             <div>
-                                <label for="name">Perception</label>
-                                <select style="width: 30px; text-align: center;" id="options" required>
+                                <select style="width: 32px; text-align: center; margin-right: 2px;" id="options"
+                                    required>
                                     <option value="B" selected>B</option>
                                     <option value="G">G</option>
                                     <option value="W">W</option>
                                 </select>
                                 <input type="text" id="name" style="width: 20px; text-align: center;">
+                                <div class="belief_instinct_left">
+                                    <div style="display: flex; flex-direction: row;">
+                                        <input placeholder="F" id="belief_3_f">
+                                        <input placeholder="P" id="belief_3_p">
+                                        <input placeholder="D" id="belief_3_d">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="checkbox-grid" style="width: 200px; margin: 0 10px;">
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">R</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
+                            <div class="checkbox-grid" style="width: 200px;">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>D</label>
+                                <label><input type="checkbox" name="option5" value="5"></label>
+                                <label><input type="checkbox" name="option6" value="6"></label>
+                                <label><input type="checkbox" name="option7" value="7"></label>
+                                <label><input type="checkbox" name="option8" value="8"></label>
 
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">D</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
-
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">C</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
-                            </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="F" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="P" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="D" id="name">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>C</label>
+                                <label><input type="checkbox" name="option9" value="9"></label>
+                                <label><input type="checkbox" name="option10" value="10"></label>
+                                <label><input type="checkbox" name="option11" value="11"></label>
                             </div>
                         </div><br>
 
+                        <h3 style="margin-bottom: 5px; margin-top: 2px; margin-right: 10px;">Forte</h3>
                         <div class="form-group"> <!-- Forte -->
                             <div>
-                                <label for="name">Forte</label>
-                                <select style="width: 30px; text-align: center;" id="options" required>
+                                <select style="width: 32px; text-align: center; margin-right: 2px;" id="options"
+                                    required>
                                     <option value="B" selected>B</option>
                                     <option value="G">G</option>
                                     <option value="W">W</option>
                                 </select>
                                 <input type="text" id="name" style="width: 20px; text-align: center;">
+                                <div class="belief_instinct_left">
+                                    <div style="display: flex; flex-direction: row;">
+                                        <input placeholder="F" id="belief_3_f">
+                                        <input placeholder="P" id="belief_3_p">
+                                        <input placeholder="D" id="belief_3_d">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="checkbox-grid" style="width: 200px;  margin: 0 10px;">
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">R</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
+                            <div class="checkbox-grid" style="width: 200px;">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>D</label>
+                                <label><input type="checkbox" name="option5" value="5"></label>
+                                <label><input type="checkbox" name="option6" value="6"></label>
+                                <label><input type="checkbox" name="option7" value="7"></label>
+                                <label><input type="checkbox" name="option8" value="8"></label>
 
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">D</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
-
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">C</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
-                            </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="F" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="P" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="D" id="name">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>C</label>
+                                <label><input type="checkbox" name="option9" value="9"></label>
+                                <label><input type="checkbox" name="option10" value="10"></label>
+                                <label><input type="checkbox" name="option11" value="11"></label>
                             </div>
                         </div><br>
 
+                        <h3 style="margin-bottom: 5px; margin-top: 2px; margin-right: 10px;">Speed</h3>
                         <div class="form-group"> <!-- Speed -->
                             <div>
-                                <label for="name">Speed</label>
-                                <select style="width: 30px; text-align: center;" id="options" required>
+                                <select style="width: 32px; text-align: center; margin-right: 2px;" id="options"
+                                    required>
                                     <option value="B" selected>B</option>
                                     <option value="G">G</option>
                                     <option value="W">W</option>
                                 </select>
                                 <input type="text" id="name" style="width: 20px; text-align: center;">
+                                <div class="belief_instinct_left">
+                                    <div style="display: flex; flex-direction: row;">
+                                        <input placeholder="F" id="belief_3_f">
+                                        <input placeholder="P" id="belief_3_p">
+                                        <input placeholder="D" id="belief_3_d">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="checkbox-grid" style="width: 200px;  margin: 0 10px;">
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">R</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
+                            <div class="checkbox-grid" style="width: 200px;">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>D</label>
+                                <label><input type="checkbox" name="option5" value="5"></label>
+                                <label><input type="checkbox" name="option6" value="6"></label>
+                                <label><input type="checkbox" name="option7" value="7"></label>
+                                <label><input type="checkbox" name="option8" value="8"></label>
 
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">D</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
-
-                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
-                                <label style="margin: 0 5px;">C</label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
-                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
+                                <label>C</label>
+                                <label><input type="checkbox" name="option9" value="9"></label>
+                                <label><input type="checkbox" name="option10" value="10"></label>
+                                <label><input type="checkbox" name="option11" value="11"></label>
                             </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="F" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="P" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="D" id="name">
-                            </div>
+                        </div><br>
+                        <div style="display: flex; flex-direction: row; ">
+                            <label style="margin-right: 10px;">Stride</label>
+                            <input type="text" id="stride" style="width: 20px; text-align: center; margin-right: 10px;">
+                            <label style="margin-right: 10px;">Mounted Stride</label>
+                            <input type="text" id="mounted_stride" style="width: 20px; text-align: center;">
                         </div><br>
                     </details>
 
@@ -511,7 +476,7 @@
                                 <input style="width: 20px; display: inline-block; text-align: center;" type="text"
                                     placeholder="D" id="name">
                             </div>
-                        </div><br>
+                        </div>
 
                         <div class="form-group"> <!-- Steel -->
                             <div>
@@ -552,7 +517,7 @@
                                 <input style="width: 20px; display: inline-block; text-align: center;" type="text"
                                     placeholder="D" id="name">
                             </div>
-                        </div><br>
+                        </div>
 
                         <div class="form-group"> <!-- Hesitation -->
                             <label for="name">Hesitation</label>
@@ -599,16 +564,16 @@
                                 <input style="width: 20px; display: inline-block; text-align: center;" type="text"
                                     placeholder="D" id="name">
                             </div>
-                        </div><br>
+                        </div>
 
                         <div style="display: flex;"> <!-- Reputation and Affiliation -->
                             <div style="margin-right: 5px; width: 100%">
                                 <summary>Reputation</summary>
-                                <textarea id="reputation"></textarea><br><br>
+                                <textarea rows="1" id="reputation"></textarea><br><br>
                             </div>
                             <div style="margin-left: 5px; width: 100%">
                                 <summary>Affiliation</summary>
-                                <textarea id="affiliation"></textarea><br><br>
+                                <textarea rows="1" id="affiliation"></textarea><br><br>
                             </div>
                         </div>
 
@@ -651,7 +616,7 @@
                                 <input style="width: 20px; display: inline-block; text-align: center;" type="text"
                                     placeholder="D" id="name">
                             </div>
-                        </div><br>
+                        </div>
 
                         <div class="form-group"> <!-- Resources 2 -->
                             <div>
@@ -671,7 +636,7 @@
                                 <label for="name">Loans/Debt</label>
                                 <input type="text" id="loans_debt" style="width: 20px; text-align: center;">
                             </div>
-                        </div><br>
+                        </div>
 
                         <div class="form-group"> <!-- Reflexes -->
                             <div>
@@ -683,7 +648,7 @@
                                 </select>
                                 <input type="text" id="name" style="width: 20px; text-align: center;">
                             </div>
-                        </div><br>
+                        </div>
 
                         <div class="form-group"> <!-- Mortal Wounds -->
                             <div>
@@ -695,7 +660,7 @@
                                 </select>
                                 <input type="text" id="name" style="width: 20px; text-align: center;">
                             </div>
-                        </div><br>
+                        </div>
 
                         <div class="form-group"> <!-- Blank 1 -->
                             <div>
@@ -736,7 +701,7 @@
                                 <input style="width: 20px; display: inline-block; text-align: center;" type="text"
                                     placeholder="D" id="name">
                             </div>
-                        </div><br>
+                        </div>
 
                         <div class="form-group"> <!-- Blank 2 -->
                             <div>
@@ -777,7 +742,7 @@
                                 <input style="width: 20px; display: inline-block; text-align: center;" type="text"
                                     placeholder="D" id="name">
                             </div>
-                        </div><br>
+                        </div>
                     </details>
 
                     <details open> <!-- Skills -->
@@ -825,11 +790,11 @@
                             </div>
                         </div>
 
-                        <h4>Practice Log</h4>
-                        <textarea id="practice_log"></textarea>
-
                         <div id="skillsContainer"></div>
-                        <button type="button" id="addSkillBtn">+</button><br><br>
+                        <button type="button" id="addSkillBtn">+</button>
+
+                        <h4>Practice Log</h4>
+                        <textarea rows="1" id="practice_log"></textarea>
                     </details>
 
                     <details open> <!-- Physical Tolerance Grayscale -->
@@ -848,7 +813,7 @@
                             <tr>
                                 <td><input type="text" name="toleranceB1"></td>
                                 <td>B1</td>
-                                <td>
+                                <td style="white-space: nowrap;">
                                     <input type="checkbox" name="optionB1" value="1">
                                     <input type="checkbox" name="optionB1" value="2">
                                     <input type="checkbox" name="optionB1" value="3">
@@ -1070,8 +1035,8 @@
                         </table>
 
                         <p>*The first Superficial wound gives a +1 Ob penalty. The second does not give another +1 Ob.
-                            If a
-                            third Superficial wound is suffered, the obstacle penalty is replaced with a -1D penalty</p>
+                            If a third Superficial wound is suffered, the obstacle penalty is replaced with a -1D
+                            penalty</p>
                     </details>
 
                     <details open> <!-- Weapons and Armor -->
@@ -1203,22 +1168,28 @@
                             </tr>
                         </table>
                     </details>
+
+                    <details open> <!-- Info -->
+                        <summary>Info</summary>
+                        <p>This unofficial Burning Wheel character sheet runs entirely on your computer, no cloud based
+                            or
+                            server processing. You can turn off the internet and it will still work. The character sheet
+                            collects no information and saves nothing online. If you want to keep your character sheet,
+                            you need
+                            to save it to JSON with the button above. When you want to see it again you will need to
+                            upload
+                            it.<br><br>
+                            Something something browser storage, something something make sure to save.<br><br>
+                            I created this sheet for personal use because I really enjoy playing Burning Wheel but I do
+                            not like
+                            paper character sheets. Feel free to use it and share it with your friends. If you find a
+                            bug or
+                            have feedback, feel free to email me.</p>
+                    </details>
                 </form>
             </div>
 
-            <p>This unofficial Burning Wheel character sheet runs entirely on your computer, no cloud based or server
-                processing. You can turn off the internet and it will still work. The character sheet collects no
-                information and saves nothing online. If you want to keep your character sheet, you need to save it to
-                JSON
-                with the button above. When you want to see it again you will need to upload it.</br></br>
-                Something something browser storage, something something make sure to save.</br></br>
-                I created this sheet for personal use because I really enjoy playing Burning Wheel but I do not like
-                paper
-                character sheets. Feel free to use it and share it with your friends. If you find a bug or have
-                feedback,
-                feel free to email me.</br></br></p>
-
-            <script>
+            <script> // Save and Upload and Add Skills/Spells
                 document.getElementById("uploadBtn").addEventListener("click", function () {
                     document.getElementById("uploadContainer").style.display = "block";
                 });
@@ -1420,28 +1391,46 @@
 
             </script>
 
-            <script>
+            <script> // Image Upload
+                document.getElementById('plusButton').addEventListener('click', function () {
+                    document.getElementById('imageUpload').click();
+                });
 
-                // Add click event listener
-                collapsible.addEventListener("click", function () {
-                    const content = this.nextElementSibling; // Get the next sibling (the content div)
-                    if (content.style.display === "block") {
-                        content.style.display = "none"; // Hide the content
-                    } else {
-                        content.style.display = "block"; // Show the content
+                document.getElementById('imageUpload').addEventListener('change', function (event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            const imagePreview = document.getElementById('imagePreview');
+                            imagePreview.style.backgroundImage = `url(${e.target.result})`;
+                            imagePreview.style.display = 'block';
+                            document.getElementById('deleteImage').style.display = 'block';
+                            document.getElementById('plusButton').style.display = 'none';
+                        };
+                        reader.readAsDataURL(file);
                     }
                 });
 
-                document.querySelectorAll("textarea").forEach(function (textarea) {
-                    textarea.style.height = textarea.scrollHeight + "px";
-                    textarea.style.overflowY = "hidden";
+                document.getElementById('deleteImage').addEventListener('click', function () {
+                    const imagePreview = document.getElementById('imagePreview');
+                    imagePreview.style.display = 'none';
+                    document.getElementById('plusButton').style.display = 'flex';
+                    this.style.display = 'none';
+                    document.getElementById('imageUpload').value = ''; // Clear the input
+                });
+            </script>
 
-                    textarea.addEventListener("input", function () {
-                        this.style.height = "auto";
-                        this.style.height = this.scrollHeight + "px";
+            <script> // Textarea Resize
+                const textareas = document.querySelectorAll('textarea'); // Select all textareas
+
+                textareas.forEach(textarea => {
+                    textarea.addEventListener('input', function () {
+                        // Reset the height to auto to calculate the new height
+                        this.style.height = 'auto';
+                        // Set the height to the scroll height to expand the textarea
+                        this.style.height = this.scrollHeight + 'px';
                     });
                 });
-
             </script>
 
             <!-- footer -->
