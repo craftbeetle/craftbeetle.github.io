@@ -2,7 +2,7 @@
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 input,
@@ -73,25 +73,14 @@ textarea {
 
 select {
     width: 30px;
-    /* Full width */
-    height: 35px;
-    /* Full width */
     padding: 5px;
-    /* Padding for better appearance */
     background-color: black;
-    /* Background color */
     color: white;
-    /* Text color */
     border: 1px solid white;
-    /* Border color */
     border-radius: 5px;
-    /* Rounded corners */
     appearance: none;
-    /* Remove default arrow */
     cursor: pointer;
-    /* Change cursor to pointer */
     transition: border-color 0.3s;
-    /* Smooth transition for border color */
 }
 
 select:focus {

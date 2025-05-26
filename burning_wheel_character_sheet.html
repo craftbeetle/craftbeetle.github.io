@@ -16,6 +16,7 @@
     <main class="content">
         <h1><a href="/index.html" target="_self">Craft Beetle</a></h1>
         <div class="container">
+            <hr />
             <h2>Burning Wheel Character Sheet</h2>
             <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
                 <div>
@@ -59,7 +60,7 @@
 
                         <div class="form-group">
                             <label for="name">Lifepaths</label>
-                            <textarea rows="1"  id="lifepaths"></textarea>
+                            <textarea rows="1" id="lifepaths"></textarea>
                         </div>
 
                         <div class="form-group">
@@ -69,21 +70,21 @@
                     </details>
 
                     <details open> <!-- Beliefs -->
-                        <summary>Beliefs</summary><br>
+                        <summary>Beliefs</summary>
 
                         <div class="belief_instinct">
                             <div class="belief_instinct_left">
                                 <label for="belief1">Belief 1</label>
                                 <div style="display: flex; flex-direction: row;">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="name">
+                                        placeholder="F" id="belief_1_f">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="name">
+                                        placeholder="P" id="belief_1_p">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="name">
+                                        placeholder="D" id="belief_1_d">
                                 </div>
                             </div>
-                            <textarea id="features"></textarea>
+                            <textarea id="belief_1"></textarea>
                         </div>
 
                         <div class="belief_instinct">
@@ -91,14 +92,14 @@
                                 <label for="belief1">Belief 2</label>
                                 <div style="display: flex; flex-direction: row;">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="name">
+                                        placeholder="F" id="belief_2_f">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="name">
+                                        placeholder="P" id="belief_2_p">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="name">
+                                        placeholder="D" id="belief_2_d">
                                 </div>
                             </div>
-                            <textarea id="features"></textarea>
+                            <textarea id="belief_2"></textarea>
                         </div>
 
                         <div class="belief_instinct">
@@ -106,14 +107,14 @@
                                 <label for="belief1">Belief 3</label>
                                 <div style="display: flex; flex-direction: row;">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="name">
+                                        placeholder="F" id="belief_3_f">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="name">
+                                        placeholder="P" id="belief_3_p">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="name">
+                                        placeholder="D" id="belief_3_d">
                                 </div>
                             </div>
-                            <textarea id="features"></textarea>
+                            <textarea id="belief_3"></textarea>
                         </div>
 
                         <div class="belief_instinct">
@@ -121,19 +122,19 @@
                                 <label for="belief1">Belief Special</label>
                                 <div style="display: flex; flex-direction: row;">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="F" id="name">
+                                        placeholder="F" id="belief_special_f">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="P" id="name">
+                                        placeholder="P" id="belief_special_p">
                                     <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                        placeholder="D" id="name">
+                                        placeholder="D" id="belief_special_d">
                                 </div>
                             </div>
-                            <textarea id="features"></textarea>
+                            <textarea id="belief_special"></textarea>
                         </div><br>
                     </details>
 
                     <details open> <!-- Instincts -->
-                        <summary>Instincts</summary><br>
+                        <summary>Instincts</summary>
 
                         <div class="belief_instinct">
                             <div class="belief_instinct_left">
@@ -223,16 +224,25 @@
                         <summary>Stats</summary><br>
                         <div class="form-group"> <!-- Will -->
                             <div>
-                                <label for="name">Will</label>
+                                <h3 style="margin-bottom: 5px; margin-top: 2px;">Will</h3>
                                 <select style="width: 30px; text-align: center;" id="options" required>
                                     <option value="B" selected>B</option>
                                     <option value="G">G</option>
                                     <option value="W">W</option>
                                 </select>
-                                <input type="text" id="name" style="width: 20px; text-align: center; margin-right: 10px;">
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                                <div style="display: flex; flex-direction: row;">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="F" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="P" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="D" id="name">
+                                </div>
                             </div>
-                            <div class="checkbox-grid" style="width: 200px;">
-                                <input type="text" id="name" style="width: 20px; text-align: center; margin-right: 10px;">
+                            <div class="checkbox-grid" style="width: 200px; margin-left: 10px;">
+                                <input type="text" id="name"
+                                    style="width: 20px; text-align: center; margin-right: 10px;">
                                 <label>R</label>
                                 <label><input type="checkbox" name="option1" value="1"></label>
                                 <label><input type="checkbox" name="option2" value="2"></label>
@@ -247,18 +257,10 @@
                                 <label><input type="checkbox" name="option8" value="8"></label>
 
                                 <input type="text" id="name" style="width: 20px; text-align: center;">
-                                <label >C</label>
+                                <label>C</label>
                                 <label><input type="checkbox" name="option9" value="9"></label>
                                 <label><input type="checkbox" name="option10" value="10"></label>
                                 <label><input type="checkbox" name="option11" value="11"></label>
-                            </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="F" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="P" id="name">
-                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
-                                    placeholder="D" id="name">
                             </div>
                         </div><br>
 
