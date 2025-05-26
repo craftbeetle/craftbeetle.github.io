@@ -36,10 +36,12 @@
 
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input style="min-width: 150px;" type="text" id="name" required>
+                            <input type="text" id="name" required>
+                        </div>
 
-                            <label style="margin-left: 15px;" for="name">Stock</label>
-                            <input style="min-width: 150px;" type="text" id="stock">
+                        <div class="form-group">
+                            <label for="name">Stock</label>
+                            <input type="text" id="stock">
 
                             <label style="margin-left: 15px" for="name">Age</label>
                             <input style="width: 25px; display: inline-block;" type="text" id="age">
@@ -48,8 +50,10 @@
                         <div class="form-group">
                             <label for="name">Alias</label>
                             <input type="text" id="alias">
+                        </div>
 
-                            <label style="margin-left: 15px" for="name">Homeland</label>
+                        <div class="form-group">
+                            <label for="name">Homeland</label>
                             <input type="text" id="homeland">
                         </div>
 
@@ -60,7 +64,7 @@
 
                         <div class="form-group">
                             <label for="name">Features</label>
-                            <input type="text" id="features">
+                            <textarea id="features"></textarea>
                         </div><br>
                     </details>
 
@@ -70,49 +74,61 @@
                         <div class="belief_instinct">
                             <div class="belief_instinct_left">
                                 <label for="belief1">Belief 1</label>
-                                <div class="belief_instinct_radio">
-                                    <p>F</p><input type="radio" name="belief1_option" value="F">
-                                    <p>P</p><input type="radio" name="belief1_option" value="P">
-                                    <p>D</p><input type="radio" name="belief1_option" value="D">
+                                <div style="display: flex; flex-direction: row;">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="F" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="P" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="D" id="name">
                                 </div>
                             </div>
-                            <input type="text" id="belief1">
+                            <textarea id="features"></textarea>
                         </div>
 
                         <div class="belief_instinct">
                             <div class="belief_instinct_left">
-                                <label for="belief2">Belief 2</label>
-                                <div class="belief_instinct_radio">
-                                    <p>F</p><input type="radio" name="belief2_option" value="F">
-                                    <p>P</p><input type="radio" name="belief2_option" value="P">
-                                    <p>D</p><input type="radio" name="belief2_option" value="D">
+                                <label for="belief1">Belief 2</label>
+                                <div style="display: flex; flex-direction: row;">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="F" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="P" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="D" id="name">
                                 </div>
                             </div>
-                            <input type="text" id="belief2">
+                            <textarea id="features"></textarea>
                         </div>
 
                         <div class="belief_instinct">
                             <div class="belief_instinct_left">
-                                <label for="belief3">Belief 3</label>
-                                <div class="belief_instinct_radio">
-                                    <p>F</p><input type="radio" name="belief3_option" value="F">
-                                    <p>P</p><input type="radio" name="belief3_option" value="P">
-                                    <p>D</p><input type="radio" name="belief3_option" value="D">
+                                <label for="belief1">Belief 3</label>
+                                <div style="display: flex; flex-direction: row;">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="F" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="P" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="D" id="name">
                                 </div>
                             </div>
-                            <input type="text" id="belief3">
+                            <textarea id="features"></textarea>
                         </div>
 
                         <div class="belief_instinct">
                             <div class="belief_instinct_left">
-                                <label for="beliefSpecial">Belief Special</label>
-                                <div class="belief_instinct_radio">
-                                    <p>F</p><input type="radio" name="beliefSpecial_option" value="F">
-                                    <p>P</p><input type="radio" name="beliefSpecial_option" value="P">
-                                    <p>D</p><input type="radio" name="beliefSpecial_option" value="D">
+                                <label for="belief1">Belief Special</label>
+                                <div style="display: flex; flex-direction: row;">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="F" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="P" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="D" id="name">
                                 </div>
                             </div>
-                            <input type="text" id="beliefSpecial">
+                            <textarea id="features"></textarea>
                         </div><br>
                     </details>
 
@@ -121,38 +137,47 @@
 
                         <div class="belief_instinct">
                             <div class="belief_instinct_left">
-                                <label for="instinct1">Instinct 1</label>
-                                <div class="belief_instinct_radio">
-                                    <p>F</p><input type="radio" name="instinct1_option" value="F">
-                                    <p>P</p><input type="radio" name="instinct1_option" value="P">
-                                    <p>D</p><input type="radio" name="instinct1_option" value="D">
+                                <label for="belief1">Instinct 1</label>
+                                <div style="display: flex; flex-direction: row;">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="F" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="P" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="D" id="name">
                                 </div>
                             </div>
-                            <input type="text" id="instinct1">
+                            <textarea id="features"></textarea>
                         </div>
 
                         <div class="belief_instinct">
                             <div class="belief_instinct_left">
-                                <label for="instinct2">Instinct 2</label>
-                                <div class="belief_instinct_radio">
-                                    <p>F</p><input type="radio" name="instinct2_option" value="F">
-                                    <p>P</p><input type="radio" name="instinct2_option" value="P">
-                                    <p>D</p><input type="radio" name="instinct2_option" value="D">
+                                <label for="belief1">Instinct 2</label>
+                                <div style="display: flex; flex-direction: row;">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="F" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="P" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="D" id="name">
                                 </div>
                             </div>
-                            <input type="text" id="instinct2">
+                            <textarea id="features"></textarea>
                         </div>
 
                         <div class="belief_instinct">
                             <div class="belief_instinct_left">
-                                <label for="instinct3">Instinct 3</label>
-                                <div class="belief_instinct_radio">
-                                    <p>F</p><input type="radio" name="instinct3_option" value="F">
-                                    <p>P</p><input type="radio" name="instinct3_option" value="P">
-                                    <p>D</p><input type="radio" name="instinct3_option" value="D">
+                                <label for="belief1">Instinct 3</label>
+                                <div style="display: flex; flex-direction: row;">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="F" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="P" id="name">
+                                    <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                        placeholder="D" id="name">
                                 </div>
                             </div>
-                            <input type="text" id="instinct3">
+                            <textarea id="features"></textarea>
                         </div><br>
                     </details>
 
@@ -197,14 +222,16 @@
                     <details open> <!-- Stats -->
                         <summary>Stats</summary><br>
                         <div class="form-group"> <!-- Will -->
-                            <label for="name">Will</label>
-                            <select style="width: 30px; text-align: center;" id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input type="text" id="name" style="margin-left: 10px; width: 20px; text-align: center;">
-                            <div class="checkbox-grid" style="width: 200px; margin-right: 10px;">
+                            <div>
+                                <label for="name">Will</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px; margin: 0 10px;">
                                 <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
                                 <label style="margin: 0 5px;">R</label>
                                 <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
@@ -236,14 +263,16 @@
                         </div><br>
 
                         <div class="form-group"> <!-- Power -->
-                            <label for="name">Power</label>
-                            <select style="width: 30px; text-align: center;" id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input type="text" id="name" style="margin-left: 10px; width: 20px; text-align: center;">
-                            <div class="checkbox-grid" style="width: 200px; margin-right: 10px;">
+                            <div>
+                                <label for="name">Power</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px;  margin: 0 10px;">
                                 <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
                                 <label style="margin: 0 5px;">R</label>
                                 <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
@@ -275,14 +304,16 @@
                         </div><br>
 
                         <div class="form-group"> <!-- Agility -->
-                            <label for="name">Agility</label>
-                            <select style="width: 30px; text-align: center;" id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input type="text" id="name" style="margin-left: 10px; width: 20px; text-align: center;">
-                            <div class="checkbox-grid" style="width: 200px; margin-right: 10px;">
+                            <div>
+                                <label for="name">Agility</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px;  margin: 0 10px;">
                                 <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
                                 <label style="margin: 0 5px;">R</label>
                                 <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
@@ -314,14 +345,16 @@
                         </div><br>
 
                         <div class="form-group"> <!-- Perception -->
-                            <label for="name">Perception</label>
-                            <select style="width: 30px; text-align: center;" id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input type="text" id="name" style="margin-left: 10px; width: 20px; text-align: center;">
-                            <div class="checkbox-grid" style="width: 200px; margin-right: 10px;">
+                            <div>
+                                <label for="name">Perception</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px; margin: 0 10px;">
                                 <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
                                 <label style="margin: 0 5px;">R</label>
                                 <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
@@ -353,14 +386,16 @@
                         </div><br>
 
                         <div class="form-group"> <!-- Forte -->
-                            <label for="name">Forte</label>
-                            <select style="width: 30px; text-align: center;" id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input type="text" id="name" style="margin-left: 10px; width: 20px; text-align: center;">
-                            <div class="checkbox-grid" style="width: 200px; margin-right: 10px;">
+                            <div>
+                                <label for="name">Forte</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px;  margin: 0 10px;">
                                 <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
                                 <label style="margin: 0 5px;">R</label>
                                 <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
@@ -392,14 +427,16 @@
                         </div><br>
 
                         <div class="form-group"> <!-- Speed -->
-                            <label for="name">Speed</label>
-                            <select style="width: 30px; text-align: center;" id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input type="text" id="name" style="margin-left: 10px; width: 20px; text-align: center;">
-                            <div class="checkbox-grid" style="width: 200px; margin-right: 10px;">
+                            <div>
+                                <label for="name">Speed</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px;  margin: 0 10px;">
                                 <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
                                 <label style="margin: 0 5px;">R</label>
                                 <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
@@ -431,131 +468,313 @@
                         </div><br>
                     </details>
 
-                    <details> <!-- Attributes -->
+                    <details open> <!-- Attributes -->
                         <summary>Attributes</summary><br>
-                        <div class="form-group">
-                            <label for="name">Health</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
-
-                            <div class="checkbox-grid">
-                                <label>R</label>
-                                <label><input type="checkbox" name="option1" value="1"></label>
-                                <label><input type="checkbox" name="option2" value="2"></label>
-                                <label><input type="checkbox" name="option3" value="3"></label>
-                                <label><input type="checkbox" name="option4" value="4"></label>
-
-                                <label>D</label>
-                                <label><input type="checkbox" name="option5" value="5"></label>
-                                <label><input type="checkbox" name="option6" value="6"></label>
-                                <label><input type="checkbox" name="option7" value="7"></label>
-                                <label><input type="checkbox" name="option8" value="8"></label>
-
-                                <label>C</label>
-                                <label><input type="checkbox" name="option9" value="9"></label>
-                                <label><input type="checkbox" name="option10" value="10"></label>
-                                <label><input type="checkbox" name="option11" value="11"></label>
+                        <div class="form-group"> <!-- Health -->
+                            <div>
+                                <label for="name">Health</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
                             </div>
+                            <div class="checkbox-grid" style="width: 200px; margin: 0 10px;">
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">R</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
 
-                            <label style="margin-left: 15px" for="name">______</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
-                            <div class="checkbox-grid">
-                                <label>R</label>
-                                <label><input type="checkbox" name="option1" value="1"></label>
-                                <label><input type="checkbox" name="option2" value="2"></label>
-                                <label><input type="checkbox" name="option3" value="3"></label>
-                                <label><input type="checkbox" name="option4" value="4"></label>
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">D</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
 
-                                <label>D</label>
-                                <label><input type="checkbox" name="option5" value="5"></label>
-                                <label><input type="checkbox" name="option6" value="6"></label>
-                                <label><input type="checkbox" name="option7" value="7"></label>
-                                <label><input type="checkbox" name="option8" value="8"></label>
-
-                                <label>C</label>
-                                <label><input type="checkbox" name="option9" value="9"></label>
-                                <label><input type="checkbox" name="option10" value="10"></label>
-                                <label><input type="checkbox" name="option11" value="11"></label>
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">C</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
                             </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="F" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="P" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="D" id="name">
+                            </div>
+                        </div><br>
 
-                            <label style="margin-left: 15px" for="name">Reflexes</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
+                        <div class="form-group"> <!-- Steel -->
+                            <div>
+                                <label for="name">Steel</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px; margin: 0 10px;">
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">R</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
+
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">D</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
+
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">C</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="F" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="P" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="D" id="name">
+                            </div>
+                        </div><br>
+
+                        <div class="form-group"> <!-- Hesitation -->
+                            <label for="name">Hesitation</label>
+                            <input type="text" id="name" style="width: 20px; text-align: center;">
+                        </div>
+                        <p>(Hesitation = 10 - Will exp)</p>
+
+                        <div class="form-group"> <!-- Circles -->
+                            <div>
+                                <label for="name">Circles</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px; margin: 0 10px;">
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">R</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
+
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">D</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
+
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">C</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="F" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="P" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="D" id="name">
+                            </div>
+                        </div><br>
+
+                        <div style="display: flex;"> <!-- Reputation and Affiliation -->
+                            <div style="margin-right: 5px; width: 100%">
+                                <summary>Reputation</summary>
+                                <textarea id="reputation"></textarea><br><br>
+                            </div>
+                            <div style="margin-left: 5px; width: 100%">
+                                <summary>Affiliation</summary>
+                                <textarea id="affiliation"></textarea><br><br>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="name">Steel</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
-                            <div class="checkbox-grid">
-                                <label>R</label>
-                                <label><input type="checkbox" name="option1" value="1"></label>
-                                <label><input type="checkbox" name="option2" value="2"></label>
-                                <label><input type="checkbox" name="option3" value="3"></label>
-                                <label><input type="checkbox" name="option4" value="4"></label>
-
-                                <label>D</label>
-                                <label><input type="checkbox" name="option5" value="5"></label>
-                                <label><input type="checkbox" name="option6" value="6"></label>
-                                <label><input type="checkbox" name="option7" value="7"></label>
-                                <label><input type="checkbox" name="option8" value="8"></label>
-
-                                <label>C</label>
-                                <label><input type="checkbox" name="option9" value="9"></label>
-                                <label><input type="checkbox" name="option10" value="10"></label>
-                                <label><input type="checkbox" name="option11" value="11"></label>
+                        <div class="form-group"> <!-- Resources -->
+                            <div>
+                                <label for="name">Resources</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
                             </div>
+                            <div class="checkbox-grid" style="width: 200px; margin: 0 10px;">
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">R</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
 
-                            <label style="margin-left: 15px" for="name">______</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
-                            <div class="checkbox-grid">
-                                <label>R</label>
-                                <label><input type="checkbox" name="option1" value="1"></label>
-                                <label><input type="checkbox" name="option2" value="2"></label>
-                                <label><input type="checkbox" name="option3" value="3"></label>
-                                <label><input type="checkbox" name="option4" value="4"></label>
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">D</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
 
-                                <label>D</label>
-                                <label><input type="checkbox" name="option5" value="5"></label>
-                                <label><input type="checkbox" name="option6" value="6"></label>
-                                <label><input type="checkbox" name="option7" value="7"></label>
-                                <label><input type="checkbox" name="option8" value="8"></label>
-
-                                <label>C</label>
-                                <label><input type="checkbox" name="option9" value="9"></label>
-                                <label><input type="checkbox" name="option10" value="10"></label>
-                                <label><input type="checkbox" name="option11" value="11"></label>
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">C</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
                             </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="F" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="P" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="D" id="name">
+                            </div>
+                        </div><br>
 
-                            <label style="margin-left: 15px" for="name">Mortal Wounds</label>
-                            <select id="options" required>
-                                <option value="B" selected>B</option>
-                                <option value="G">G</option>
-                                <option value="W">W</option>
-                            </select>
-                            <input style="width: 25px; display: inline-block;" type="text" id="name">
+                        <div class="form-group"> <!-- Resources 2 -->
+                            <div>
+                                <label for="name">Tax</label>
+                                <input type="text" id="tax" style="width: 20px; text-align: center; margin-right: 30px">
+                            </div>
+                            <div>
+                                <label for="name">Cash</label>
+                                <input type="text" id="cash"
+                                    style="width: 20px; text-align: center; margin-right: 30px">
+                            </div>
+                            <div>
+                                <label for="name" style="margin-right: 30px">Funds/Property</label>
+                                <input type="text" id="funds_property" style="width: 20px; text-align: center;">
+                            </div>
+                            <div>
+                                <label for="name">Loans/Debt</label>
+                                <input type="text" id="loans_debt" style="width: 20px; text-align: center;">
+                            </div>
+                        </div><br>
+
+                        <div class="form-group"> <!-- Reflexes -->
+                            <div>
+                                <label for="name">Reflexes</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                        </div><br>
+
+                        <div class="form-group"> <!-- Mortal Wounds -->
+                            <div>
+                                <label for="name">Mortal Wounds</label>
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                        </div><br>
+
+                        <div class="form-group"> <!-- Blank 1 -->
+                            <div>
+                                <input type="text" id="name" style="width: 100px; text-align: center;">
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px; margin: 0 10px;">
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">R</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
+
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">D</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
+
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">C</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="F" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="P" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="D" id="name">
+                            </div>
+                        </div><br>
+
+                        <div class="form-group"> <!-- Blank 2 -->
+                            <div>
+                                <input type="text" id="name" style="width: 100px; text-align: center;">
+                                <select style="width: 30px; text-align: center;" id="options" required>
+                                    <option value="B" selected>B</option>
+                                    <option value="G">G</option>
+                                    <option value="W">W</option>
+                                </select>
+                                <input type="text" id="name" style="width: 20px; text-align: center;">
+                            </div>
+                            <div class="checkbox-grid" style="width: 200px; margin: 0 10px;">
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">R</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option1" value="1"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option2" value="2"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option3" value="3"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option4" value="4"></label>
+
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">D</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option5" value="5"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option6" value="6"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option7" value="7"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option8" value="8"></label>
+
+                                <input type="text" id="name" style="margin: 0 10px; width: 20px; text-align: center;">
+                                <label style="margin: 0 5px;">C</label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option9" value="9"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
+                                <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="F" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="P" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="D" id="name">
+                            </div>
                         </div><br>
                     </details>
 
@@ -563,11 +782,6 @@
                         <summary>Skills</summary>
 
                         <h4>Artha and Epiphanies</h4>
-
-                        <h4>Skills Being Learned</h4>
-
-                        <h4>Practice Log</h4>
-                        <textarea id="practice_log"></textarea>
 
                         <h4>Known Skills</h4>
                         <div class="form-group">
@@ -599,8 +813,18 @@
                                 <label style="margin: 0 5px;"><input type="checkbox" name="option10" value="10"></label>
                                 <label style="margin: 0 5px;"><input type="checkbox" name="option11" value="11"></label>
                             </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="F" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="P" id="name">
+                                <input style="width: 20px; display: inline-block; text-align: center;" type="text"
+                                    placeholder="D" id="name">
+                            </div>
                         </div>
 
+                        <h4>Practice Log</h4>
+                        <textarea id="practice_log"></textarea>
 
                         <div id="skillsContainer"></div>
                         <button type="button" id="addSkillBtn">+</button><br><br>
