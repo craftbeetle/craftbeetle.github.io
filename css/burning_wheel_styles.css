@@ -41,7 +41,7 @@ textarea {
     width: 100%;
     /* Use 100% width for better responsiveness */
     margin-top: 5px;
-    padding: 8px;
+    padding: 5px;
     background-color: black;
     /* Black background for input */
     color: white;
@@ -183,11 +183,6 @@ select::after {
     /* Remove space between checkbox and label */
 }
 
-.checkbox-grid label:hover {
-    background-color: #7a0711;
-    /* Change background on hover */
-}
-
 .collapsible {
     cursor: pointer;
     padding: 10px;
@@ -200,8 +195,7 @@ select::after {
 
 textarea {
     width: 100%;
-    min-height: 25px;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
