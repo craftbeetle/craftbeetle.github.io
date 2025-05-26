@@ -1,35 +1,4 @@
-body {
-    background-color: black;
-    color: white;
-    font-family:
-        JetBrains Mono,
-        monospace;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    /* Centers the content horizontally */
-    align-items: flex-start;
-    /* Aligns content to the top */
-    height: 100vh;
-    /* Full viewport height */
-    overflow-x: hidden;
-}
-
-.container {
-    width: 90vw;
-    max-width: 600px;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    /* Center-align the text */
-}
-
-h2 {
-    color: white;
-}
+/* -------------------- General -------------------- */
 
 label {
     display: block;
@@ -179,7 +148,7 @@ select::after {
 }
 
 .checkbox-grid input[type="checkbox"] {
-    margin-right: 0;
+    margin: 0;
     /* Remove space between checkbox and label */
 }
 
@@ -190,8 +159,6 @@ select::after {
     border: 1px solid #ccc;
     margin: 5px 0;
 }
-
-/* -------------------- General -------------------- */
 
 textarea {
     width: 100%;
