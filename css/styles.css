@@ -273,6 +273,25 @@ a:active {
     margin-right: 20px;
 }
 
+.floated_game button{
+    width: 200px;
+    color: white;
+    background-color: black;
+    font-family:
+        JetBrains Mono,
+        monospace;
+        border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.floated_game button:hover{
+    color: black;
+    background-color: white;
+        border: 1px solid white;
+}
+
 /* Regular Image Wrapper */
 
 .image-wrapper {
