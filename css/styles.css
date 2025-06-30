@@ -273,23 +273,23 @@ a:active {
     margin-right: 20px;
 }
 
-.floated_game button{
+.floated_game button {
     width: 200px;
     color: white;
     background-color: black;
     font-family:
         JetBrains Mono,
         monospace;
-        border: 1px solid white;
+    border: 1px solid white;
     border-radius: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.floated_game button:hover{
+.floated_game button:hover {
     color: black;
     background-color: white;
-        border: 1px solid white;
+    border: 1px solid white;
 }
 
 /* Regular Image Wrapper */
@@ -407,17 +407,20 @@ a:active {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
     gap: 10px;
-    /* Adjust the gap between images */
     padding: 10px;
     box-sizing: border-box;
 }
 
 .button-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    /* Ensures images cover the grid cell */
+    width: 88px;
+    image-rendering: -webkit-optimize-contrast;
+    /* For WebKit browsers */
+    image-rendering: crisp-edges;
+    /* For Firefox */
+    image-rendering: pixelated;
+    /* For modern browsers */
+    -ms-interpolation-mode: bicubic;
+    /* For Internet Explorer */
 }
 
 .back-to-top {
