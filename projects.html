@@ -75,7 +75,7 @@
                 };
             </script>
 
-            <!-- body -->
+            <!-- header end -->
 
             <h2 id="section1">PROJECTS</h2>
             <p>
@@ -95,8 +95,8 @@
                 </p>
 
                 <div class="slideshow-container" id="slideshow_coffee_pod_holder">
-                    <div class="mySlides fade"><img src="images/engineering/20250105_234200.webp"></div>
-                    <div class="mySlides fade"><img src="images/engineering/20250105_234304.webp"></div>
+                    <div class="mySlides fade"><img src="images/projects/20250105_234200.webp"></div>
+                    <div class="mySlides fade"><img src="images/projects/20250105_234304.webp"></div>
 
                     <a class="prev" onclick="plusSlides(-1, 'slideshow_coffee_pod_holder')">❮</a>
                     <a class="next" onclick="plusSlides(1, 'slideshow_coffee_pod_holder')">❯</a>
@@ -112,7 +112,7 @@
                 </p>
 
                 <div class="image-wrapper-tall">
-                    <img src="images/engineering/IMG_20230719_091143_01.webp" />
+                    <img src="images/projects/IMG_20230719_091143_01.webp" />
                 </div>
             </div>
 
@@ -129,9 +129,9 @@
                 </p>
 
                 <div class="slideshow-container" id="slideshow_gridfinity_loupe_holder">
-                    <div class="mySlides fade"><img src="images/engineering/gridfinity_loupe_1.webp"></div>
-                    <div class="mySlides fade"><img src="images/engineering/gridfinity_loupe_2.webp"></div>
-                    <div class="mySlides fade"><img src="images/engineering/gridfinity_loupe_3.webp"></div>
+                    <div class="mySlides fade"><img src="images/projects/gridfinity_loupe_1.webp"></div>
+                    <div class="mySlides fade"><img src="images/projects/gridfinity_loupe_2.webp"></div>
+                    <div class="mySlides fade"><img src="images/projects/gridfinity_loupe_3.webp"></div>
 
                     <a class="prev" onclick="plusSlides(-1, 'slideshow_gridfinity_loupe_holder')">❮</a>
                     <a class="next" onclick="plusSlides(1, 'slideshow_gridfinity_loupe_holder')">❯</a>
@@ -150,51 +150,52 @@
                 </p>
 
                 <div class="image-wrapper-tall">
-                    <img src="images/engineering/cat_water_fountain.webp" />
+                    <img src="images/projects/cat_water_fountain.webp" />
                 </div>
             </div>
 
-            <!-- footer -->
+            <script>
+                // Function to initialize and control the slides
+                function plusSlides(n, galleryId) {
+                    showSlides(galleryId, slideIndex[galleryId] += n);
+                }
+
+                function currentSlide(n, galleryId) {
+                    showSlides(galleryId, slideIndex[galleryId] = n);
+                }
+
+                function showSlides(galleryId, n) {
+                    let i;
+                    let slides = document.getElementById(galleryId).getElementsByClassName("mySlides");
+                    if (n > slides.length) { slideIndex[galleryId] = 1 }
+                    if (n < 1) { slideIndex[galleryId] = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex[galleryId] - 1].style.display = "block";
+                }
+
+                // Initialize slideIndex for each gallery
+                let slideIndex = {
+                    slideshow_coffee_pod_holder: 1,
+                    slideshow_gridfinity_loupe_holder: 1
+                };
+
+                // Show initial slides for each gallery
+                showSlides('slideshow_coffee_pod_holder', slideIndex.slideshow_coffee_pod_holder);
+                showSlides('slideshow_gridfinity_loupe_holder', slideIndex.slideshow_gridfinity_loupe_holder);
+
+            </script>
+
+            <!-- footer start -->
 
             <br />
             <hr />
-            <p align="center">craftbeetleofficial@gmail.com</p>
+            <p align="center">craftbeetle@protonmail.com</p>
         </div>
     </main>
-
-    <script>
-        // Function to initialize and control the slides
-        function plusSlides(n, galleryId) {
-            showSlides(galleryId, slideIndex[galleryId] += n);
-        }
-
-        function currentSlide(n, galleryId) {
-            showSlides(galleryId, slideIndex[galleryId] = n);
-        }
-
-        function showSlides(galleryId, n) {
-            let i;
-            let slides = document.getElementById(galleryId).getElementsByClassName("mySlides");
-            if (n > slides.length) { slideIndex[galleryId] = 1 }
-            if (n < 1) { slideIndex[galleryId] = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex[galleryId] - 1].style.display = "block";
-        }
-
-        // Initialize slideIndex for each gallery
-        let slideIndex = {
-            slideshow_coffee_pod_holder: 1,
-            slideshow_gridfinity_loupe_holder: 1
-        };
-
-        // Show initial slides for each gallery
-        showSlides('slideshow_coffee_pod_holder', slideIndex.slideshow_coffee_pod_holder);
-        showSlides('slideshow_gridfinity_loupe_holder', slideIndex.slideshow_gridfinity_loupe_holder);
-
-    </script>
-
 </body>
 
 </html>
+
+<!-- footer end -->

@@ -75,7 +75,7 @@
                 };
             </script>
 
-            <!-- body -->
+<!-- header end -->
 
             <h2 id="section1">GAMES</h2>
             <p>
@@ -120,6 +120,15 @@
             <div class="gallery grid" id="gallery">
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
+
+                <div class="grid-item parent playing f2025">
+                    <div id="overgrowth_game_review" class="floated">
+                        <img src="images\games\overgrowth.webp" />
+                    </div>
+                    <p> <strong>Overgrowth</strong><br /><br />
+                        Playing...
+                    </p>
+                </div>
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="mouthwashing_game_review" class="floated">
@@ -1892,81 +1901,16 @@
                     </p>
                 </div>
             </div>
+            
+            <!-- footer start -->
 
             <br />
-
-            <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-            <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-            <script>
-                var iso; // Declare the iso variable in a broader scope
-
-                window.onload = function () {
-                    // Select the grid element
-                    var grid = document.querySelector('.grid');
-
-                    // Initialize Isotope
-                    iso = new Isotope(grid, {
-                        itemSelector: '.grid-item',
-                        percentPosition: true,
-                        layoutMode: 'masonry',
-                        masonry: {
-                            columnWidth: '.grid-sizer',
-                            gutter: '.gutter-sizer',
-                        }
-                    });
-
-                    // Use imagesLoaded to ensure all images are loaded
-                    imagesLoaded(grid, function () {
-                        // Call layout once the images are loaded
-                        iso.layout();
-                    });
-
-                    // Set up filtering logic
-                    var filters = {};
-                    var filtersElem = document.querySelector(".filters");
-                    filtersElem.addEventListener("click", function (event) {
-                        var isButton = event.target.classList.contains("button");
-                        if (!isButton) return;
-
-                        var buttonGroup = event.target.closest(".button-group");
-                        var filterGroup = buttonGroup.getAttribute("data-filter-group");
-                        // Set filter for group
-                        filters[filterGroup] = event.target.getAttribute("data-filter");
-                        // Combine filters
-                        var filterValue = concatValues(filters);
-                        // Set filter for Isotope
-                        iso.arrange({ filter: filterValue });
-                    });
-
-                    // Change is-checked class on buttons
-                    var buttonGroups = document.querySelectorAll(".button-group");
-                    buttonGroups.forEach(function (buttonGroup) {
-                        buttonGroup.addEventListener("click", function (event) {
-                            var isButton = event.target.classList.contains("button");
-                            if (!isButton) return;
-                            buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
-                            event.target.classList.add("is-checked");
-                        });
-                    });
-                };
-
-                // Flatten object by concatenating values
-                function concatValues(obj) {
-                    var value = "";
-                    for (var prop in obj) {
-                        value += obj[prop];
-                    }
-                    return value;
-                }
-            </script>
-
-            <!-- footer -->
-
             <hr />
-            <p align="center">craftbeetleofficial@gmail.com</p>
+            <p align="center">craftbeetle@protonmail.com</p>
         </div>
     </main>
 </body>
 
 </html>
+
+<!-- footer end -->

@@ -75,7 +75,7 @@
                 };
             </script>
 
-            <!-- body -->
+            <!-- header end -->
 
             <h2 id="section1">CRAFTS</h2>
 
@@ -393,7 +393,8 @@
             <div id="crafts_avatar_the_last_airbender_playing_cards">
                 <h3>Avatar: The Last Airbender Playing Cards</h3>
                 <p>
-                    Many years ago I made a set of Avatar: The Last Airbender playing cards. Now, after watching the first
+                    Many years ago I made a set of Avatar: The Last Airbender playing cards. Now, after watching the
+                    first
                     season of the live action show, which was very good by the way, I decided to share these cards with
                     everyone.
                     <br /><br />
@@ -447,67 +448,70 @@
 
             <br />
 
-            <!-- footer -->
+            <script>
+                // Function to initialize and control the slides
+                function plusSlides(n, galleryId) {
+                    showSlides(galleryId, slideIndex[galleryId] += n);
+                }
 
+                function currentSlide(n, galleryId) {
+                    showSlides(galleryId, slideIndex[galleryId] = n);
+                }
+
+                function showSlides(galleryId, n) {
+                    let i;
+                    let slides = document.getElementById(galleryId).getElementsByClassName("mySlides");
+                    if (n > slides.length) { slideIndex[galleryId] = 1 }
+                    if (n < 1) { slideIndex[galleryId] = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex[galleryId] - 1].style.display = "block";
+                }
+
+                // Initialize slideIndex for each gallery
+                let slideIndex = {
+                    ThreeD_scanned_man: 1,
+                    stormcast_eternal: 1,
+                    stacked_container_slums: 1,
+                    deathwatch_watch_master: 1,
+                    industrial_terrain: 1,
+                    dragon_diorama: 1,
+                    krieg_soldier: 1,
+                    knolls: 1,
+                    village_pillage: 1,
+                    bell_tower: 1,
+                    rucksack: 1,
+                    ibn_battuta: 1,
+                    avatar_cards: 1
+                };
+
+                // Show initial slides for each gallery
+                showSlides('ThreeD_scanned_man', slideIndex.ThreeD_scanned_man);
+                showSlides('stormcast_eternal', slideIndex.stormcast_eternal);
+                showSlides('stacked_container_slums', slideIndex.stacked_container_slums);
+                showSlides('deathwatch_watch_master', slideIndex.deathwatch_watch_master);
+                showSlides('industrial_terrain', slideIndex.industrial_terrain);
+                showSlides('dragon_diorama', slideIndex.dragon_diorama);
+                showSlides('krieg_soldier', slideIndex.krieg_soldier);
+                showSlides('knolls', slideIndex.knolls);
+                showSlides('village_pillage', slideIndex.village_pillage);
+                showSlides('bell_tower', slideIndex.bell_tower);
+                showSlides('rucksack', slideIndex.rucksack);
+                showSlides('ibn_battuta', slideIndex.ibn_battuta);
+                showSlides('avatar_cards', slideIndex.avatar_cards);
+
+            </script>
+
+            <!-- footer start -->
+
+            <br />
             <hr />
-            <p align="center">craftbeetleofficial@gmail.com</p>
+            <p align="center">craftbeetle@protonmail.com</p>
         </div>
     </main>
-
-    <script>
-        // Function to initialize and control the slides
-        function plusSlides(n, galleryId) {
-            showSlides(galleryId, slideIndex[galleryId] += n);
-        }
-
-        function currentSlide(n, galleryId) {
-            showSlides(galleryId, slideIndex[galleryId] = n);
-        }
-
-        function showSlides(galleryId, n) {
-            let i;
-            let slides = document.getElementById(galleryId).getElementsByClassName("mySlides");
-            if (n > slides.length) { slideIndex[galleryId] = 1 }
-            if (n < 1) { slideIndex[galleryId] = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex[galleryId] - 1].style.display = "block";
-        }
-
-        // Initialize slideIndex for each gallery
-        let slideIndex = {
-            ThreeD_scanned_man: 1,
-            stormcast_eternal: 1,
-            stacked_container_slums: 1,
-            deathwatch_watch_master: 1,
-            industrial_terrain: 1,
-            dragon_diorama: 1,
-            krieg_soldier: 1,
-            knolls: 1,
-            village_pillage: 1,
-            bell_tower: 1,
-            rucksack: 1,
-            ibn_battuta: 1,
-            avatar_cards: 1
-        };
-
-        // Show initial slides for each gallery
-        showSlides('ThreeD_scanned_man', slideIndex.ThreeD_scanned_man);
-        showSlides('stormcast_eternal', slideIndex.stormcast_eternal);
-        showSlides('stacked_container_slums', slideIndex.stacked_container_slums);
-        showSlides('deathwatch_watch_master', slideIndex.deathwatch_watch_master);
-        showSlides('industrial_terrain', slideIndex.industrial_terrain);
-        showSlides('dragon_diorama', slideIndex.dragon_diorama);
-        showSlides('krieg_soldier', slideIndex.krieg_soldier);
-        showSlides('knolls', slideIndex.knolls);
-        showSlides('village_pillage', slideIndex.village_pillage);
-        showSlides('bell_tower', slideIndex.bell_tower);
-        showSlides('rucksack', slideIndex.rucksack);
-        showSlides('ibn_battuta', slideIndex.ibn_battuta);
-        showSlides('avatar_cards', slideIndex.avatar_cards);
-
-    </script>
 </body>
 
 </html>
+
+<!-- footer end -->

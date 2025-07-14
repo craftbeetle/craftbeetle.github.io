@@ -1,15 +1,5 @@
 .vscode/
-images/ecology_original/
-images/games_original/
-images/films_original/
-images/books_original/
-images/shows_original/
-images/blog_original/
-images/crafts_original/
-images/engineering_original/
-images/micro-blog_original/
-images/projects_original/
-images/game_dev_original/
+images_original/
 scripts/
 wip/
 .gitignore
