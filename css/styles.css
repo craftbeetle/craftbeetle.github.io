@@ -598,3 +598,77 @@ img {
     margin-bottom: 10px;
     border-radius: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.code-container {
+    position: relative;
+    color: #ffffff;
+    overflow: auto;
+}
+
+.code-block {
+    white-space: pre-wrap; /* Allows wrapping */
+    word-wrap: break-word; /* Breaks long words */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    outline: 1px;
+    border: 1px solid #FFFFFF;
+}
+
+
+
+
+
+
+
+.makes-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust min and max width */
+    padding: 0; /* Remove padding */
+    margin: 0 -5px; /* Negative margin to offset the gap on the sides */
+    gap: 10px; /* Set the gap between grid items */
+}
+
+.makes-grid-item {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0; /* Remove padding to eliminate gap */
+}
+
+.makes-grid-item img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 1; /* Ensure the image is square */
+    object-fit: cover; /* Cover the area, cropping if necessary */
+}
+
+.makes-grid-item span {
+    display: block;
+    margin: 10px 0; /* Space between image and caption */
+}
