@@ -85,6 +85,25 @@
                 decorative things.
             </p>
 
+            <div id="crafts_collaborative_paintings">
+                <h3>Collaborative Paintings</h3>
+                <p>
+                    A good college friend and I broke out the paint and canvas and got to painting together. She is
+                    incredibly talented where as I am nearly artistically bankrupt but we had a really fun time. We
+                    painted on the same canvas simultaneously which can be seen on one painting as a completely
+                    different texture on one side relative to the other, and on the other painting as swirls vs
+                    feathers. These paintings hang proudly in my living room.
+                </p>
+
+                <div class="slideshow-container" id="collaborative_paintings">
+                    <div class="mySlides fade"><img src="images/crafts/20251102_183204.webp"></div>
+                    <div class="mySlides fade"><img src="images/crafts/20251102_183219.webp"></div>
+
+                    <a class="prev" onclick="plusSlides(-1, 'collaborative_paintings')">❮</a>
+                    <a class="next" onclick="plusSlides(1, 'collaborative_paintings')">❯</a>
+                </div>
+            </div>
+
             <div id="crafts_princess">
                 <h3>Princess</h3>
                 <p>
@@ -483,7 +502,8 @@
                     bell_tower: 1,
                     rucksack: 1,
                     ibn_battuta: 1,
-                    avatar_cards: 1
+                    avatar_cards: 1,
+                    collaborative_paintings: 1
                 };
 
                 // Show initial slides for each gallery
@@ -500,6 +520,7 @@
                 showSlides('rucksack', slideIndex.rucksack);
                 showSlides('ibn_battuta', slideIndex.ibn_battuta);
                 showSlides('avatar_cards', slideIndex.avatar_cards);
+                showSlides('collaborative_paintings', slideIndex.collaborative_paintings);
 
             </script>
 
