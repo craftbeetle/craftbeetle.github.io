@@ -132,6 +132,26 @@ body {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+
+    .profile_img {
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        font-size: 11px;
+    }
+
+    .profile_img {
+        width: 150px;
+    }
+}
+
 .taxonomy {
     text-align: center;
     /* Center the text */
@@ -599,18 +619,6 @@ img {
     border-radius: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .code-container {
     position: relative;
     color: #ffffff;
@@ -638,12 +646,6 @@ button:hover {
     outline: 1px;
     border: 1px solid #FFFFFF;
 }
-
-
-
-
-
-
 
 .makes-grid-container {
     display: grid;
