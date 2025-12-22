@@ -75,13 +75,58 @@
                 };
             </script>
 
-<!-- header end -->
+            <!-- header end -->
 
             <h2 id="section1">PROJECTS</h2>
             <p>
                 I design and make things, be they physical objects or tech projects. Some of these projects are even
                 available to download for free.
             </p>
+
+            <div id="projects_tri_pot_stand">
+                <h3>Tri-Pot Stand</h3>
+                <p>
+                    Sometimes you browse IKEA and find something you like but you don't love the price. That was the
+                    case for me when I found the SATSUMAS plant stand, so I fired up SolidWorks and a few minutes later
+                    I had the parts designed and ready to print. The total project cost ended up being 28% of the IKEA
+                    version and the assembly process was just as easy.<br>
+
+                <h4>Bill Of Materials</h4>
+                <table>
+                    <tr>
+                        <td>3x Plates</td>
+                        <td>$2.18 ea</td>
+                    </tr>
+                    <tr>
+                        <td>3x Spacers</td>
+                        <td>$0.56 ea</td>
+                    </tr>
+                    <tr>
+                        <td>1" x 72" Dowel</td>
+                        <td>$7.78 ea</td>
+                    </tr>
+                    <tr>
+                        <td>12x Screws</td>
+                        <td>$5.97 per 100 pcs</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Total: $16.72</td>
+                    </tr>
+                </table>
+                
+                </p>
+
+                <div class="slideshow-container" id="slideshow_tri_pot_stand">
+                    <div class="mySlides fade"><img src="images/projects/20251221_233618.webp"></div>
+                    <div class="mySlides fade"><img src="images/projects/20251221_233633.webp"></div>
+                    <div class="mySlides fade"><img src="images/projects/20251221_233650.webp"></div>
+                    <div class="mySlides fade"><img src="images/projects/20251221_233711.webp"></div>
+
+                    <a class="prev" onclick="plusSlides(-1, 'slideshow_tri_pot_stand')">❮</a>
+                    <a class="next" onclick="plusSlides(1, 'slideshow_tri_pot_stand')">❯</a>
+                </div>
+            </div>
 
             <div id="projects_coffee_pod_holder">
                 <h3>Coffee Pod Holder</h3>
@@ -177,18 +222,20 @@
 
                 // Initialize slideIndex for each gallery
                 let slideIndex = {
+                    slideshow_tri_pot_stand: 1,
                     slideshow_coffee_pod_holder: 1,
                     slideshow_gridfinity_loupe_holder: 1
                 };
 
                 // Show initial slides for each gallery
+                showSlides('slideshow_tri_pot_stand', slideIndex.slideshow_tri_pot_stand);
                 showSlides('slideshow_coffee_pod_holder', slideIndex.slideshow_coffee_pod_holder);
                 showSlides('slideshow_gridfinity_loupe_holder', slideIndex.slideshow_gridfinity_loupe_holder);
 
             </script>
 
             <!-- footer start -->
-            
+
             <br />
             <hr />
             <p align="center">© 2024-2025 Craft Beetle | All rights reserved</p>
