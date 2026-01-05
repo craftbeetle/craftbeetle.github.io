@@ -42,9 +42,9 @@ body {
 @media only screen and (min-width: 1000px) {
     .sidebar {
         position: fixed;
-        top: 94px;
-        right: calc(50% - 500px);
-        width: 150px;
+        top: 120px;
+        right: calc(50% - 480px);
+        width: 130px;
         background-color: black;
         color: white;
         /*padding: 10px;*/
@@ -627,8 +627,10 @@ img {
 }
 
 .code-block {
-    white-space: pre-wrap; /* Allows wrapping */
-    word-wrap: break-word; /* Breaks long words */
+    white-space: pre-wrap;
+    /* Allows wrapping */
+    word-wrap: break-word;
+    /* Breaks long words */
 }
 
 button {
@@ -650,10 +652,14 @@ button:hover {
 
 .makes-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust min and max width */
-    padding: 0; /* Remove padding */
-    margin: 0 -5px; /* Negative margin to offset the gap on the sides */
-    gap: 10px; /* Set the gap between grid items */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Adjust min and max width */
+    padding: 0;
+    /* Remove padding */
+    margin: 0 -5px;
+    /* Negative margin to offset the gap on the sides */
+    gap: 10px;
+    /* Set the gap between grid items */
 }
 
 .makes-grid-item {
@@ -661,17 +667,33 @@ button:hover {
     border: 1px solid white;
     border-radius: 5px;
     text-align: center;
-    padding: 0; /* Remove padding to eliminate gap */
+    padding: 0;
+    /* Remove padding to eliminate gap */
 }
 
 .makes-grid-item img {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-    aspect-ratio: 1; /* Ensure the image is square */
-    object-fit: cover; /* Cover the area, cropping if necessary */
+    width: 100%;
+    /* Make the image fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    aspect-ratio: 1;
+    /* Ensure the image is square */
+    object-fit: cover;
+    /* Cover the area, cropping if necessary */
 }
 
 .makes-grid-item span {
     display: block;
-    margin: 10px 0; /* Space between image and caption */
+    margin: 10px 0;
+    /* Space between image and caption */
+}
+
+.change_log {
+    h4 {
+        margin-left: 15px;
+    }
+
+    li {
+        margin-left: 45px;
+    }
 }
