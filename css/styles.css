@@ -261,7 +261,7 @@ a:active {
 
 /* Optional: Adjust the text styles for a better look */
 .blog h3, .blog p {
-    margin: 0;                      /* Remove default margins from title and paragraphs */
+    margin: 5px;                      /* Remove default margins from title and paragraphs */
 }
 
 /* Remove underlines specifically from links within .blog */
