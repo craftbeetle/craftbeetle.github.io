@@ -152,25 +152,6 @@ body {
     }
 }
 
-.taxonomy {
-    text-align: center;
-    /* Center the text */
-    font-style: italic;
-    /* Italicize the text */
-    margin-top: 10px;
-}
-
-.ecology img {
-    border-radius: 15px;
-}
-
-.micro-blog {
-    padding: 20px 20px 0px 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
 .content {
     padding: 20px;
 }
@@ -227,6 +208,82 @@ a:active {
     color: white;
     /* Color when the link is clicked */
 }
+
+/* ---------------------------------------- Ecology ----------------------------------------- */
+
+.ecology img {
+    border-radius: 15px;
+}
+
+.taxonomy {
+    text-align: center;
+    /* Center the text */
+    font-style: italic;
+    /* Italicize the text */
+    margin-top: 10px;
+}
+
+/* ---------------------------------------- Ecology ----------------------------------------- */
+/* --------------------------------------- Micro-Blog --------------------------------------- */
+
+.micro-blog {
+    padding: 20px 20px 0px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* --------------------------------------- Micro-Blog --------------------------------------- */
+/* ------------------------------------------ Blog ------------------------------------------ */
+
+/* Overall blog page */
+.blog {
+    display: flex;                  /* Enable flexbox for blog items */
+    padding: 20px;                  /* Padding inside the blog item */
+    border: 1px solid white;      /* Border around the blog item */
+    border-radius: 10px;            /* Rounded corners */
+    margin-bottom: 15px;            /* Space between blog items */
+    text-decoration: none;          /* Remove underlining from text links */
+}
+
+.blog img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;             /* Space between image and text */
+    border-radius: 5px;
+}
+
+.blog div {
+    display: flex;                  /* Enable flexbox in the text container */
+    flex-direction: column;         /* Stack text elements vertically */
+    justify-content: flex-start;    /* Align text to the top */
+}
+
+/* Optional: Adjust the text styles for a better look */
+.blog h3, .blog p {
+    margin: 0;                      /* Remove default margins from title and paragraphs */
+}
+
+/* Remove underlines specifically from links within .blog */
+.blog a {
+    text-decoration: none;         /* Remove underlining from the links */
+    color: inherit;                /* Ensure the link color matches the surrounding text */
+}
+
+/* Inside the blog content */
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-img {
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+/* ------------------------------------------ Blog ------------------------------------------ */
 
 /* Scrollable container */
 .scroll-box {
@@ -604,20 +661,6 @@ img {
     background-color: black;
     color: white;
     transform: scale(0.95);
-}
-
-
-.blog-header {
-    display: flex;
-    justify-content: space-between;
-    /* This will place items on opposite sides */
-    align-items: center;
-    /* This will vertically center the items */
-}
-
-.blog-img {
-    margin-bottom: 10px;
-    border-radius: 25px;
 }
 
 .code-container {
