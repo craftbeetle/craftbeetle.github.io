@@ -238,36 +238,50 @@ a:active {
 
 /* Overall blog page */
 .blog {
-    display: flex;                  /* Enable flexbox for blog items */
-    padding: 20px;                  /* Padding inside the blog item */
-    border: 1px solid white;      /* Border around the blog item */
-    border-radius: 10px;            /* Rounded corners */
-    margin-bottom: 15px;            /* Space between blog items */
-    text-decoration: none;          /* Remove underlining from text links */
+    display: flex;
+    /* Enable flexbox for blog items */
+    padding: 20px;
+    /* Padding inside the blog item */
+    border: 1px solid white;
+    /* Border around the blog item */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 15px;
+    /* Space between blog items */
+    text-decoration: none;
+    /* Remove underlining from text links */
 }
 
 .blog img {
     width: 100px;
     height: 100px;
-    margin-right: 15px;             /* Space between image and text */
+    margin-right: 15px;
+    /* Space between image and text */
     border-radius: 5px;
 }
 
 .blog div {
-    display: flex;                  /* Enable flexbox in the text container */
-    flex-direction: column;         /* Stack text elements vertically */
-    justify-content: flex-start;    /* Align text to the top */
+    display: flex;
+    /* Enable flexbox in the text container */
+    flex-direction: column;
+    /* Stack text elements vertically */
+    justify-content: flex-start;
+    /* Align text to the top */
 }
 
 /* Optional: Adjust the text styles for a better look */
-.blog h3, .blog p {
-    margin: 5px;                      /* Remove default margins from title and paragraphs */
+.blog h3,
+.blog p {
+    margin: 5px;
+    /* Remove default margins from title and paragraphs */
 }
 
 /* Remove underlines specifically from links within .blog */
 .blog a {
-    text-decoration: none;         /* Remove underlining from the links */
-    color: inherit;                /* Ensure the link color matches the surrounding text */
+    text-decoration: none;
+    /* Remove underlining from the links */
+    color: inherit;
+    /* Ensure the link color matches the surrounding text */
 }
 
 /* Inside the blog content */
@@ -740,3 +754,48 @@ button:hover {
         margin-left: 45px;
     }
 }
+
+li {
+    margin-left: 20px;
+}
+
+
+/* --------------------------------------- Code Block --------------------------------------- */
+
+.code-container {
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+pre {
+    margin: 0;
+    overflow: auto;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.copy-button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* --------------------------------------- Code Block --------------------------------------- */
