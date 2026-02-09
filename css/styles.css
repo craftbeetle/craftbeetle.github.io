@@ -799,3 +799,24 @@ pre {
 }
 
 /* --------------------------------------- Code Block --------------------------------------- */
+/* --------------------------------------- Sillyring  --------------------------------------- */
+
+#sillyring {
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Center elements vertically */
+    justify-content: center;
+    /* Center elements horizontally */
+    margin: 0 auto;
+    /* Centers the entire div in the parent */
+}
+
+#sillyring-image {
+    width: 0px;
+    /* Adjust your desired width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* --------------------------------------- Sillyring  --------------------------------------- */
