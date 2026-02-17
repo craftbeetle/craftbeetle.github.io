@@ -4,8 +4,57 @@
         <title>Craft Beetle</title>
         <link>https://www.craftbeetle.com/</link>
         <description>A digital home for the weary. Craft Beetle delivers weekly humanity.</description>
-        <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 15 Feb 2026 00:00:00 +0000</lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <title>Weekly Update - 2026.02.15</title>
+            <link>https://www.craftbeetle.com</link>
+            <guid>https://www.craftbeetle.com</guid>
+            <description>
+            <![CDATA[
+                    <strong>Games</strong>
+                    <li>
+                        Added - Thomas Was Alone
+                    </li>
+                    <li>
+                        Added and Reviewed - Pilgrims
+                    </li>
+                    <li>
+                        Reviewed - Vampire Survivors
+                    </li><br>
+
+                    <strong>Micro-Blog</strong>
+                    <li>
+                        Added - 26.02.12
+                    </li>
+                    <li>
+                        Added - 26.02.10
+                    </li><br>
+
+                    <strong>Links</strong>
+                    <li>
+                        Added - David Graeber
+                    </li>
+                    <li>
+                        Added - Michael Parenti
+                    </li>
+                    <li>
+                        Added - Class Unity
+                    </li>
+                    <li>
+                        Added - Online Emo
+                    </li>
+                    <li>
+                        Added - Revolutionary Left Radio
+                    </li>
+                    <li>
+                        Renamed "Nature" to "Ecology"
+                    </li><br>
+            ]]>
+            </description>
+            <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+        </item>
 
         <item>
             <title>Weekly Update - 2026.02.08</title>
