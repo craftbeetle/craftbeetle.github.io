@@ -820,3 +820,29 @@ pre {
 }
 
 /* --------------------------------------- Sillyring  --------------------------------------- */
+/* ----------------------------------- Webmaster Webring  ----------------------------------- */
+
+.webmaster_webring {
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Center elements vertically */
+    justify-content: center;
+    /* Center elements horizontally */
+    margin: 0 50px;
+    gap: 10px;
+}
+
+.webmaster_webring img {
+    width: 200px;
+    image-rendering: -webkit-optimize-contrast;
+    /* For WebKit browsers */
+    image-rendering: crisp-edges;
+    /* For Firefox */
+    image-rendering: pixelated;
+    /* For modern browsers */
+    -ms-interpolation-mode: bicubic;
+    /* For Internet Explorer */
+}
+
+/* ----------------------------------- Webmaster Webring  ----------------------------------- */
