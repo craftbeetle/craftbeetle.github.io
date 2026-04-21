@@ -298,6 +298,70 @@ a:active {
 }
 
 /* ------------------------------------------ Blog ------------------------------------------ */
+/* ------------------------------------------ Wiki ------------------------------------------ */
+
+/* Overall blog page */
+.wiki {
+    display: flex;
+    /* Enable flexbox for blog items */
+    padding: 0px;
+    /* Padding inside the blog item */
+    border: 1px solid white;
+    /* Border around the blog item */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-bottom: 15px;
+    /* Space between blog items */
+    text-decoration: none;
+    /* Remove underlining from text links */
+}
+
+.wiki img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    /* Space between image and text */
+    border-radius: 5px;
+}
+
+.wiki div {
+    display: flex;
+    /* Enable flexbox in the text container */
+    flex-direction: column;
+    /* Stack text elements vertically */
+    justify-content: flex-start;
+    /* Align text to the top */
+}
+
+/* Optional: Adjust the text styles for a better look */
+.wiki h3,
+.wiki p {
+    margin: 10 5;
+    /* Remove default margins from title and paragraphs */
+}
+
+/* Remove underlines specifically from links within .blog */
+.wiki a {
+    text-decoration: none;
+    /* Remove underlining from the links */
+    color: inherit;
+    /* Ensure the link color matches the surrounding text */
+}
+
+/* Inside the blog content */
+
+.wiki-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wiki-img {
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+/* ------------------------------------------ Wiki ------------------------------------------ */
 
 /* Scrollable container */
 .scroll-box {
