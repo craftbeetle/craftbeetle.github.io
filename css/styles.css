@@ -317,11 +317,11 @@ a:active {
 }
 
 .wiki img {
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
     margin-right: 15px;
     /* Space between image and text */
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .wiki div {
