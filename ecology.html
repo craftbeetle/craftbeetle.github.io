@@ -3012,6 +3012,20 @@
                     imagesLoaded(grid, function () {
                         // Call layout once the images are loaded
                         iso.layout();
+
+                        // Handle scroll target after layout is complete
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const targetId = urlParams.get('scrollTarget');
+
+                        if (targetId) {
+                            const element = document.getElementById(targetId);
+                            if (element) {
+                                // Small delay to ensure rendering is complete
+                                setTimeout(() => {
+                                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 100);
+                            }
+                        }
                     });
                 }
 

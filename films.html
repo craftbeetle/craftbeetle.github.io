@@ -76,7 +76,7 @@
                 };
             </script>
 
-            <!-- header end -->
+<!-- header end -->
 
             <h2 id="section1">FILMS</h2>
             <p>
@@ -127,18 +127,18 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
-                    <div id="xXx_film_review" class="floated">
+                    <div id="xxx_film_review" class="floated">
                         <img src="/images/films/xXx.webp" />
                     </div>
                     <p>
                         <strong>xXx</strong><br /><br />
-                        A film that really luxuriates in bombastic action and stuns with a banging soundtrack to boot.
+                        A film that really luxuriates in bombastic action and stunts with a banging soundtrack to boot.
                         What's not to love? Vin Diesel's X is an all Amerikan action hero, that is to say he's an
                         extreme sports internet star who destroys a senator's car and thus gets press-ganged into
-                        interfering in Czech internal affairs to stop russian anarchists from using villainous chemical
-                        weapons. This of course is a consequence of the fall of the USSR which Amerika proudly caused,
-                        and we'll just ignore the bit in Columbia. None of that took away from enjoying the action and
-                        music of course, Hollywood's gotta Hollywood.
+                        interfering in Czech internal affairs to stop Russian anarchists from using villainous chemical
+                        weapons on civilians. This of course is a consequence of the fall of the USSR which Amerika
+                        proudly spurred on, and we'll just ignore the bit in Columbia. None of that took away from
+                        enjoying the action and music of course, Hollywood's gotta Hollywood.
                     </p>
                 </div>
 
@@ -1663,6 +1663,20 @@
                     imagesLoaded(grid, function () {
                         // Call layout once the images are loaded
                         iso.layout();
+
+                        // Handle scroll target after layout is complete
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const targetId = urlParams.get('scrollTarget');
+
+                        if (targetId) {
+                            const element = document.getElementById(targetId);
+                            if (element) {
+                                // Small delay to ensure rendering is complete
+                                setTimeout(() => {
+                                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 100);
+                            }
+                        }
                     });
 
                     // Set up filtering logic
@@ -1705,7 +1719,7 @@
             </script>
 
             <!-- footer start -->
-
+            
             <hr />
 
             <p align="center">© 2024-2026 Craft Beetle | All rights reserved</p>
