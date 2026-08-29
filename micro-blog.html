@@ -76,7 +76,7 @@
                 };
             </script>
 
-<!-- header end -->
+            <!-- header end -->
 
             <h2 id="section1">MICRO-BLOG</h2>
             <p>
@@ -90,7 +90,7 @@
                 <p>
                     <img src="/images/micro-blog/20260822_170309.webp" /><br><br>
                     <img src="/images/micro-blog/20260822_170337.webp" />
-                    <p align="center">"Made in dear Palestine."</p>
+                <p align="center">"Made in dear Palestine."</p>
                 </p>
 
                 <p align="right">26.08.22</p>
@@ -1726,8 +1726,28 @@
                 <p align="right">25.02.20</p>
             </div>
 
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    const params = new URLSearchParams(window.location.search);
+                    const targetId = params.get("scrollTarget");
+
+                    if (!targetId) return;
+
+                    const element = document.getElementById(targetId);
+
+                    if (!element) return;
+
+                    setTimeout(() => {
+                        element.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+                    }, 100);
+                });
+            </script>
+
             <!-- footer start -->
-            
+
             <hr />
 
             <p align="center">© 2024-2026 Craft Beetle | All rights reserved</p>
