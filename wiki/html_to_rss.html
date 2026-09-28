@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craft Beetle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.craftbeetle.com/rss.xml" />
+    <link rel="icon" type="image/x-icon" href="//images/branding/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/assets/js/style.js" defer></script>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="/ecology.html" target="_self">🍄 Ecology</a></li>
+            <li><a href="/game_dev.html" target="_self">🕹️ Game Dev.</a></li>
+            <li><a href="/wiki.html" target="_self">🛟 Wiki</a></li>
+            <li><a href="/crafts.html" target="_self">🖌️ Crafts</a></li>
+        </ul>
+        <hr />
+        <ul>
+            <li><a href="/books.html" target="_self">📚 Books</a></li>
+            <li><a href="/shows.html" target="_self">📺 Shows</a></li>
+            <li><a href="/films.html" target="_self">🎬 Films</a></li>
+            <li><a href="/games.html" target="_self">🎮 Games</a></li>
+        </ul>
+        <hr />
+        <ul>
+            <li><a href="/blog.html" target="_self">📝 Blog</a></li>
+            <li><a href="/micro-blog.html" target="_self">📃 Micro-Blog</a></li>
+            <li><a href="/about.html" target="_self">💾 About</a></li>
+            <li><a href="/links.html" target="_self">🔗 Links</a></li>
+        </ul>
+    </aside>
+    <main class="content">
+        <h1><a href="/" target="_self">Craft Beetle</a></h1>
+        <div class="container">
+            <hr />
+            <nav>
+                <table class="nav-table">
+                    <tr>
+                        <td><a href="/ecology.html" target="_self">🍄 Ecology</a></td>
+                        <td><a href="/game_dev.html" target="_self">🕹️ Game Dev.</a></td>
+                        <td><a href="/wiki.html" target="_self">🛟 Wiki</a></td>
+                        <td><a href="/crafts.html" target="_self">🖌️ Crafts</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/books.html" target="_self">📚 Books</a></td>
+                        <td><a href="/shows.html" target="_self">📺 Shows</a></td>
+                        <td><a href="/films.html" target="_self">🎬 Films</a></td>
+                        <td><a href="/games.html" target="_self">🎮 Games</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/blog.html" target="_self">📝 Blog</a></td>
+                        <td><a href="/micro-blog.html" target="_self">📃 Micro-Blog</a></td>
+                        <td><a href="/about.html" target="_self">💾 About</a></td>
+                        <td><a href="/links.html" target="_self">🔗 Links</a></td>
+                    </tr>
+                </table>
+                <hr />
+            </nav>
+            <form>
+                <button type="button" class="back-to-top-mobile" onclick="window.location.href='#top'">⤴️</button>
+            </form>
+            <script>
+                window.onscroll = function () {
+                    const button = document.querySelector(".back-to-top-mobile");
+                    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        button.style.display = "block"; // Show button
+                    } else {
+                        button.style.display = "none"; // Hide button
+                    }
+                };
+            </script>
+
+            <!-- header end -->
+            <h2>HEADER AND FOOTER UPDATING</h2>
+            <p>
+                I keep an up to date changelog and upon fan request I created a script that converts that log to RSS. It
+                doesn't put the actual contents on RSS but it will pop up on your feed as a weekly reminder to come
+                check out my website.
+            </p>
+
+            <br>
+            <div class="code-container">
+                <button class="copy-button" onclick="copyCode()">Copy</button>
+                <pre id="codeBlock">
+from datetime import datetime
+import xml.etree.ElementTree as ET
+from xml.dom import minidom
+
+def parse_html_to_rss(html_file, rss_file):
+    # Read the HTML file
+    with open(html_file, 'r', encoding='utf-8') as file:
+        html_content = file.read()
+
+    # Extract the changelog section
+    start_index = html_content.find("<!-- changelog start -->")
+    end_index = html_content.find("<!-- changelog end -->")
+
+    if start_index == -1 or end_index == -1:
+        print("Changelog section not found.")
+        return
+
+    changelog_section = html_content[start_index:end_index]
+
+    # Create the RSS feed structure
+    channel = ET.Element('channel')
+    title = ET.SubElement(channel, 'title')
+    title.text = "Craft Beetle - Change Log Feed"
+
+    link = ET.SubElement(channel, 'link')
+    link.text = "https://craftbeetle.com/"  # Replace with your website URL
+
+    description = ET.SubElement(channel, 'description')
+    description.text = "Latest updates from the change log"
+
+    details_blocks = changelog_section.split("<details")
+    
+    for block in details_blocks[1:]:  # Skip the first split (text before the first <details>)
+        summary = block.split("<summary>")[1].split("</summary>")[0].strip()
+        date_str = summary
+        
+        # Convert summary date to RSS Date format
+        pub_date = datetime.strptime(date_str, '%Y.%m.%d').strftime('%a, %d %b %Y %H:%M:%S +0000')
+
+        item = ET.Element('item')
+
+        title_item = ET.SubElement(item, 'title')
+        title_item.text = f"Update on {summary}"
+
+        link_item = ET.SubElement(item, 'link')
+        link_item.text = "https://craftbeetle.com/"  # Replace with the actual link to the changelog
+        
+        description_item = ET.SubElement(item, 'description')
+
+        updates = []
+        categories = block.split("<h4>")
+        for category_block in categories[1:]:  # Skip the first split (text before the first <h4>)
+            category = category_block.split("</h4>")[0].strip()
+            items = category_block.split('<li>')[1:]  # Skip the first split (text before the first <li>)
+            updates.append(f"{category}: " + ', '.join(item.split('</li>')[0].strip() for item in items))
+
+        description_item.text = '\n'.join(updates)
+
+        pub_date_item = ET.SubElement(item, 'pubDate')
+        pub_date_item.text = pub_date
+        
+        channel.append(item)
+
+    # Create the XML tree
+    rss = ET.Element('rss', version='2.0')
+    rss.append(channel)
+
+    # Write to RSS file with pretty printing
+    xml_str = ET.tostring(rss, encoding='utf-8', xml_declaration=True)
+    pretty_xml = minidom.parseString(xml_str).toprettyxml(indent='  ')
+
+    with open(rss_file, 'w', encoding='utf-8') as f:
+        f.write(pretty_xml)
+
+    print(f"RSS feed generated successfully: {rss_file}")
+
+if __name__ == '__main__':
+    html_file = 'index.html'   # Path to your HTML file
+    rss_file = 'rss.xml'       # Path to save the RSS file
+    parse_html_to_rss(html_file, rss_file)
+
+                </pre>
+            </div>
+            <br>
+
+            <script>
+                function copyCode() {
+                    const codeBlock = document.getElementById('codeBlock');
+                    const range = document.createRange();
+                    range.selectNode(codeBlock);
+                    window.getSelection().removeAllRanges(); // Clear existing selections
+                    window.getSelection().addRange(range); // Select the code block
+                    document.execCommand('copy'); // Copy to clipboard
+                    window.getSelection().removeAllRanges(); // Deselect
+                    alert("Code copied to clipboard!");
+                }
+            </script>
+
+            <!-- footer start -->
+
+            <hr />
+
+            <p align="center">© 2024-2026 Craft Beetle | All rights reserved</p>
+            <p align="center"><a href="mailto:email@protonmail.com">craftbeetle@protonmail.com</a> | <a
+                    href="https://www.craftbeetle.com/rss.xml" target="_blank">RSS</a></p>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<!-- footer end -->
