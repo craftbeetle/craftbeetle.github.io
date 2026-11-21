@@ -4,16 +4,34 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Craft Beetle</title>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <title>Films | Craft Beetle</title>
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.craftbeetle.com/rss.xml" />
-    <link rel="icon" type="image/x-icon" href="//images/branding/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/branding/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/assets/js/style.js" defer></script>
+    <!-- metadata start -->
+    <meta name="description"
+        content="My thoughts on the films I have watched. This list only goes back a few years but in that time I have watched a lot of movies. I don&#x27;t have a lot to say…">
+    <link rel="canonical" href="https://craftbeetle.com/films.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Craft Beetle">
+    <meta property="og:title" content="Films | Craft Beetle">
+    <meta property="og:description"
+        content="My thoughts on the films I have watched. This list only goes back a few years but in that time I have watched a lot of movies. I don&#x27;t have a lot to say…">
+    <meta property="og:url" content="https://craftbeetle.com/films.html">
+    <meta property="og:image" content="https://craftbeetle.com/images/branding/craft_beetle_logo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="422">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Films | Craft Beetle">
+    <meta name="twitter:description"
+        content="My thoughts on the films I have watched. This list only goes back a few years but in that time I have watched a lot of movies. I don&#x27;t have a lot to say…">
+    <meta name="twitter:image" content="https://craftbeetle.com/images/branding/craft_beetle_logo.jpg">
+    <!-- metadata end -->
 </head>
 
 <body>
-    <aside class="sidebar">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <aside class="sidebar" aria-label="Site sections">
         <ul>
             <li><a href="/ecology.html" target="_self">🍄 Ecology</a></li>
             <li><a href="/game_dev.html" target="_self">🕹️ Game Dev.</a></li>
@@ -35,11 +53,11 @@
             <li><a href="/links.html" target="_self">🔗 Links</a></li>
         </ul>
     </aside>
-    <main class="content">
+    <main class="content" id="main" tabindex="-1">
         <h1><a href="/" target="_self">Craft Beetle</a></h1>
         <div class="container">
             <hr />
-            <nav>
+            <nav aria-label="Sections">
                 <table class="nav-table">
                     <tr>
                         <td><a href="/ecology.html" target="_self">🍄 Ecology</a></td>
@@ -76,7 +94,7 @@
                 };
             </script>
 
-<!-- header end -->
+            <!-- header end -->
 
             <h2 id="section1">FILMS</h2>
             <p>
@@ -88,32 +106,33 @@
             <div
                 class="grid-item title thinking reviewed fiction non-fiction live-action animated f2026 f2025 f2024 f2023 f2022 f2021_and_before">
                 <div class="filters">
-                    <div class="button-group" data-filter-group="best">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".thinking">thinking</button>
-                        <button class="button" data-filter=".reviewed">reviewed</button>
+                    <div class="button-group" data-filter-group="best" role="group" aria-label="Filter by best">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".thinking">thinking</button>
+                        <button class="button" aria-pressed="false" data-filter=".reviewed">reviewed</button>
                     </div>
 
-                    <div class="button-group" data-filter-group="year">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".f2026">2026</button>
-                        <button class="button" data-filter=".f2025">2025</button>
-                        <button class="button" data-filter=".f2024">2024</button>
-                        <button class="button" data-filter=".f2023">2023</button>
-                        <button class="button" data-filter=".f2022">2022</button>
-                        <button class="button" data-filter=".f2021_and_before">2021 and Before</button>
+                    <div class="button-group" data-filter-group="year" role="group" aria-label="Filter by year">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2026">2026</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2025">2025</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2024">2024</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2023">2023</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2022">2022</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2021_and_before">2021 and
+                            Before</button>
                     </div>
 
-                    <div class="button-group" data-filter-group="type">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".fiction">fiction</button>
-                        <button class="button" data-filter=".non-fiction">non-fiction</button>
+                    <div class="button-group" data-filter-group="type" role="group" aria-label="Filter by type">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".fiction">fiction</button>
+                        <button class="button" aria-pressed="false" data-filter=".non-fiction">non-fiction</button>
                     </div>
 
-                    <div class="button-group" data-filter-group="type">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".live-action">live-action</button>
-                        <button class="button" data-filter=".animated">animated</button>
+                    <div class="button-group" data-filter-group="type" role="group" aria-label="Filter by type">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".live-action">live-action</button>
+                        <button class="button" aria-pressed="false" data-filter=".animated">animated</button>
                     </div>
                 </div>
             </div>
@@ -127,8 +146,52 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
+                    <div id="buddy_film_review" class="floated">
+                        <img src="/images/films/buddy.webp" alt="Buddy" width="150" height="221" decoding="async" />
+                    </div>
+                    <p>
+                        <strong>Buddy</strong><br /><br />
+                        I would never have watched this movie if a coworker hadn't recommended it to my wife. Having
+                        watched it I thought it was not bad, dragged a bit at the end, but it was funny.
+                    </p>
+                </div>
+
+                <div class="grid-item parent animated reviewed fiction f2026">
+                    <div id="mulan_film_review" class="floated">
+                        <img src="/images/films/mulan.webp" alt="Mulan" width="150" height="232" decoding="async" />
+                    </div>
+                    <p>
+                        <strong>Mulan</strong><br /><br />
+                        The first time I watched Mulan must have been when I was relatively young and I enjoyed it then.
+                        Re-watching it now I am somewhat surprise how simple it actually is. It's by no means bad, and
+                        the songs are still great. As usual the history is a bit odd. I don't think the Huns attacked
+                        China at the time Mulan's story was supposed to be set, and Mushu calls them Mongols which they
+                        also weren't. Anyway, the Mouse lies like it breaths, dishonor on it, dishonor on its cow. I'll
+                        Make a Man Out of You is still a banger.
+                    </p>
+                </div>
+
+                <div class="grid-item parent live-action reviewed non-fiction f2026">
+                    <div id="harriet_film_review" class="floated">
+                        <img src="/images/films/harriet.webp" alt="Harriet" width="150" height="225" decoding="async" />
+                    </div>
+                    <p>
+                        <strong>Harriet</strong><br /><br />
+                        I would not want to be in Harriet's way. I am a Muslim and so I do not believe there can be any
+                        prophets after the Prophet Muhammad Peace and Blessing be upon him, Harriet was surely guided by
+                        Allah in some way though (as we all can be if we but ask). Her bravery, her commitment, her
+                        cause, her self sacrifice, her immense effort, and her incredible results by the grace of Allah
+                        are incredible! She help about 70 slaves to freedom then lead a raid of the first African
+                        soldier and freed another 750 slaves. I'm tearing up just typing this out.<br><br>
+
+                        Now make a movie about Nat Turner.
+                    </p>
+                </div>
+
+                <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="the_pig_the_snake_and_the_pigeon_film_review" class="floated">
-                        <img src="/images/films/the_pig_the_snake_and_the_pigeon.webp" />
+                        <img src="/images/films/the_pig_the_snake_and_the_pigeon.webp"
+                            alt="The Pig, the Snake, and the Pigeon" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>The Pig, the Snake, and the Pigeon</strong><br /><br />
@@ -143,7 +206,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="a_quiet_place_part_day_one_film_review" class="floated">
-                        <img src="/images/films/a_quiet_place_day_one.webp" />
+                        <img src="/images/films/a_quiet_place_day_one.webp" alt="A Quiet Place: Day One" width="150"
+                            height="234" decoding="async" />
                     </div>
                     <p>
                         <strong>A Quiet Place: Day One</strong><br /><br />
@@ -159,7 +223,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="a_quiet_place_part_2_film_review" class="floated">
-                        <img src="/images/films/a_quiet_place_part_2.webp" />
+                        <img src="/images/films/a_quiet_place_part_2.webp" alt="A Quiet Place Part II" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>A Quiet Place Part II</strong><br /><br />
@@ -172,19 +237,24 @@
                     </p>
                 </div>
 
-                <div class="grid-item parent live-action thinking fiction f2026">
+                <div class="grid-item parent animated reviewed fiction f2026">
                     <div id="soul_film_review" class="floated">
-                        <img src="/images/films/soul.webp" />
+                        <img src="/images/films/soul.webp" alt="Soul" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>Soul</strong><br /><br />
-                        Thinking...
+                        This film proposes an interesting if not simplistic way of looking at the purpose to life. It
+                        handles the concept of the soul in an agnostic way and focuses on what we end up doing with our
+                        lives and the guarantee that life must end. Of course, being a Western children's film it does
+                        not even try to address the fact that Western life is build on global death. I didn't expect it
+                        to anyway. I still enjoyed the characters and the depiction of black culture in New York.
                     </p>
                 </div>
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="margin_call_film_review" class="floated">
-                        <img src="/images/films/margin_call.webp" />
+                        <img src="/images/films/margin_call.webp" alt="Margin Call" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Margin Call</strong><br /><br />
@@ -198,7 +268,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2026">
                     <div id="twilight_of_the_warriors_walled_in_film_review" class="floated">
-                        <img src="/images/films/twilight_of_the_warriors_walled_in.webp" />
+                        <img src="/images/films/twilight_of_the_warriors_walled_in.webp"
+                            alt="Twilight of the Warriors: Walled In" width="480" height="720" decoding="async" />
                     </div>
                     <p>
                         <strong>Twilight of the Warriors: Walled In</strong><br /><br />
@@ -206,9 +277,9 @@
                     </p>
                 </div>
 
-                <div class="grid-item parent live-action thinking non-fiction f2026">
+                <div class="grid-item parent live-action thinking fiction f2026">
                     <div id="memento_film_review" class="floated">
-                        <img src="/images/films/memento.webp" />
+                        <img src="/images/films/memento.webp" alt="Memento" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>Memento</strong><br /><br />
@@ -222,7 +293,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2026">
                     <div id="three_promises_film_review" class="floated">
-                        <img src="/images/films/three_promises.webp" />
+                        <img src="/images/films/three_promises.webp" alt="Three Promises" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Three Promises</strong><br /><br />
@@ -237,7 +309,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="a_quiet_place_film_review" class="floated">
-                        <img src="/images/films/a_quiet_place.webp" />
+                        <img src="/images/films/a_quiet_place.webp" alt="A Quiet Place" width="480" height="720"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>A Quiet Place</strong><br /><br />
@@ -253,7 +326,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="the_raid_film_review" class="floated">
-                        <img src="/images/films/the_raid.webp" />
+                        <img src="/images/films/the_raid.webp" alt="The Raid" width="150" height="224"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Raid</strong><br /><br />
@@ -269,7 +343,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2026">
                     <div id="hidden_figures_film_review" class="floated">
-                        <img src="/images/films/hidden_figures.webp" />
+                        <img src="/images/films/hidden_figures.webp" alt="Hidden Figures" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Hidden Figures</strong><br /><br />
@@ -293,7 +368,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="a_knights_tale_film_review" class="floated">
-                        <img src="/images/films/a_knights_tale.webp" />
+                        <img src="/images/films/a_knights_tale.webp" alt="A Knight's Tale" width="150" height="224"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>A Knight's Tale</strong><br /><br />
@@ -308,7 +384,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2026">
                     <div id="the_encampments_film_review" class="floated">
-                        <img src="/images/films/the_encampments.webp" />
+                        <img src="/images/films/the_encampments.webp" alt="The Encampments" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Encampments</strong><br /><br />
@@ -342,7 +419,7 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="xxx_film_review" class="floated">
-                        <img src="/images/films/xXx.webp" />
+                        <img src="/images/films/xXx.webp" alt="xXx" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>xXx</strong><br /><br />
@@ -358,7 +435,7 @@
 
                 <div class="grid-item parent animated reviewed fiction f2026">
                     <div id="flow_film_review" class="floated">
-                        <img src="/images/films/flow.webp" />
+                        <img src="/images/films/flow.webp" alt="Flow" width="150" height="219" decoding="async" />
                     </div>
                     <p>
                         <strong>Flow</strong><br /><br />
@@ -371,7 +448,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="maradonas_legs_film_review" class="floated">
-                        <img src="/images/films/maradonas_legs.webp" />
+                        <img src="/images/films/maradonas_legs.webp" alt="Maradona's Legs" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Maradona's Legs</strong><br /><br />
@@ -401,7 +479,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="eddington_film_review" class="floated">
-                        <img src="/images/films/eddington.webp" />
+                        <img src="/images/films/eddington.webp" alt="Eddington" width="150" height="222"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Eddington</strong><br /><br />
@@ -416,7 +495,8 @@
 
                 <div class="grid-item parent animated reviewed fiction f2026">
                     <div id="princess_mononoke_film_review" class="floated">
-                        <img src="/images/films/princess_mononoke.webp" />
+                        <img src="/images/films/princess_mononoke.webp" alt="Princess Mononoke" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Princess Mononoke</strong><br /><br />
@@ -442,7 +522,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="disturbia_film_review" class="floated">
-                        <img src="/images/films/disturbia.webp" />
+                        <img src="/images/films/disturbia.webp" alt="Disturbia" width="150" height="222"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Disturbia</strong><br /><br />
@@ -459,7 +540,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2026">
                     <div id="ambulance_film_review" class="floated">
-                        <img src="/images/films/ambulance.webp" />
+                        <img src="/images/films/ambulance.webp" alt="Ambulance" width="150" height="210"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Ambulance</strong><br /><br />
@@ -474,7 +556,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2026">
                     <div id="tell_your_tale_little_bird_film_review" class="floated">
-                        <img src="/images/films/tell_your_tale_little_bird.webp" />
+                        <img src="/images/films/tell_your_tale_little_bird.webp" alt="Tell Your Tale, Little Bird"
+                            width="150" height="211" decoding="async" />
                     </div>
                     <p>
                         <strong>Tell Your Tale, Little Bird</strong><br /><br />
@@ -493,7 +576,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="mickey_17_film_review" class="floated">
-                        <img src="/images/films/mickey_17.webp" />
+                        <img src="/images/films/mickey_17.webp" alt="Mickey 17" width="150" height="222"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Mickey 17</strong><br /><br />
@@ -507,7 +591,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2026">
                     <div id="the_voice_of_hind_rajab_film_review" class="floated">
-                        <img src="/images/films/the_voice_of_hind_rajab.webp" />
+                        <img src="/images/films/the_voice_of_hind_rajab.webp" alt="The Voice of Hind Rajab" width="150"
+                            height="210" decoding="async" />
                     </div>
                     <p>
                         <strong>The Voice of Hind Rajab</strong><br /><br />
@@ -535,7 +620,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="the_time_that_remains_film_review" class="floated">
-                        <img src="/images/films/the_time_that_remains.webp" />
+                        <img src="/images/films/the_time_that_remains.webp" alt="The Time That Remains" width="150"
+                            height="212" decoding="async" />
                     </div>
                     <p>
                         <strong>The Time That Remains</strong><br /><br />
@@ -554,7 +640,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2026">
                     <div id="the_king_tide_film_review" class="floated">
-                        <img src="/images/films/the_king_tide.webp" />
+                        <img src="/images/films/the_king_tide.webp" alt="The King Tide" width="150" height="217"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The King Tide</strong><br /><br />
@@ -574,7 +661,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2025">
                     <div id="gaza_is_our_home_film_review" class="floated">
-                        <img src="/images/films/gaza_is_our_home.webp" />
+                        <img src="/images/films/gaza_is_our_home.webp" alt="Gaza Is Our Home" width="150" height="200"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Gaza Is Our Home</strong><br /><br />
@@ -595,7 +683,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2025">
                     <div id="ghost_hunting_film_review" class="floated">
-                        <img src="/images/films/ghost_hunting.webp" />
+                        <img src="/images/films/ghost_hunting.webp" alt="Ghost Hunting" width="150" height="203"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Ghost Hunting</strong><br /><br />
@@ -611,7 +700,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2025">
                     <div id="children_of_shatila_film_review" class="floated">
-                        <img src="/images/films/children_of_shatila.webp" />
+                        <img src="/images/films/children_of_shatila.webp" alt="Children Of Shatila" width="150"
+                            height="220" decoding="async" />
                     </div>
                     <p>
                         <strong>Children Of Shatila</strong><br /><br />
@@ -628,7 +718,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2025">
                     <div id="resistance_why_film_review" class="floated">
-                        <img src="/images/films/resistance_why.webp" />
+                        <img src="/images/films/resistance_why.webp" alt="Resistance - Why?" width="150" height="224"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Resistance - Why?</strong><br /><br />
@@ -646,7 +737,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2025">
                     <div id="office_space_film_review" class="floated">
-                        <img src="/images/films/office_space.webp" />
+                        <img src="/images/films/office_space.webp" alt="Office Space" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Office Space</strong><br /><br />
@@ -661,7 +753,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2025">
                     <div id="superman_2025_film_review" class="floated">
-                        <img src="/images/films/superman_2025.webp" />
+                        <img src="/images/films/superman_2025.webp" alt="Superman (2025)" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Superman (2025)</strong><br /><br />
@@ -694,7 +787,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2025">
                     <div id="frontiers_of_dreams_and_fears_film_review" class="floated">
-                        <img src="/images/films/frontiers_of_dreams_and_fears.webp" />
+                        <img src="/images/films/frontiers_of_dreams_and_fears.webp" alt="Frontiers of Dreams and Fears"
+                            width="150" height="196" decoding="async" />
                     </div>
                     <p>
                         <strong>Frontiers of Dreams and Fears</strong><br /><br />
@@ -714,7 +808,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2025">
                     <div id="leila_and_the_wolves_film_review" class="floated">
-                        <img src="/images/films/leila_and_the_wolves.webp" />
+                        <img src="/images/films/leila_and_the_wolves.webp" alt="Leila and the Wolves" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>Leila and the Wolves</strong><br /><br />
@@ -733,7 +828,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2025">
                     <div id="dark_star_film_review" class="floated">
-                        <img src="/images/films/dark_star.webp" />
+                        <img src="/images/films/dark_star.webp" alt="Dark Star" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Dark Star</strong><br /><br />
@@ -744,7 +840,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2025">
                     <div id="the_thing_film_review" class="floated">
-                        <img src="/images/films/the_thing.webp" />
+                        <img src="/images/films/the_thing.webp" alt="The Thing" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Thing</strong><br /><br />
@@ -757,7 +854,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2025">
                     <div id="1948_creation_and_catastrophe_film_review" class="floated">
-                        <img src="/images/films/1948_creation_and_catastrophe.webp" />
+                        <img src="/images/films/1948_creation_and_catastrophe.webp" alt="1948: Creation and Catastrophe"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>1948: Creation and Catastrophe</strong><br /><br />
@@ -772,7 +870,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2025">
                     <div id="the_andromeda_strain_film_review" class="floated">
-                        <img src="/images/films/the_andromeda_strain.webp" />
+                        <img src="/images/films/the_andromeda_strain.webp" alt="The Andromeda Strain" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>The Andromeda Strain</strong><br /><br />
@@ -785,7 +884,7 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2025">
                     <div id="alien_film_review" class="floated">
-                        <img src="/images/films/alien.webp" />
+                        <img src="/images/films/alien.webp" alt="Alien" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Alien</strong><br /><br />
@@ -797,7 +896,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2025">
                     <div id="the_palestine_exception_film_review" class="floated">
-                        <img src="/images/films/the_palestine_exception.webp" />
+                        <img src="/images/films/the_palestine_exception.webp" alt="The Palestine Exception" width="150"
+                            height="201" decoding="async" />
                     </div>
                     <p>
                         <strong>The Palestine Exception</strong><br /><br />
@@ -811,7 +911,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2025">
                     <div id="the_eid_gift_film_review" class="floated">
-                        <img src="/images/films/the_eid_gift.webp" />
+                        <img src="/images/films/the_eid_gift.webp" alt="The Eid Gift" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Eid Gift</strong><br /><br />
@@ -827,7 +928,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2025">
                     <div id="salt_of_this_sea_film_review" class="floated">
-                        <img src="/images/films/salt_of_this_sea.webp" />
+                        <img src="/images/films/salt_of_this_sea.webp" alt="Salt of this Sea" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Salt of this Sea</strong><br /><br />
@@ -849,7 +951,8 @@
 
                 <div class="grid-item parent animated reviewed fiction f2024">
                     <div id="digimon_the_movie_film_review" class="floated">
-                        <img src="/images/films/digimon_the_movie.webp" />
+                        <img src="/images/films/digimon_the_movie.webp" alt="Digimon the Movie" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Digimon the Movie</strong><br /><br />
@@ -862,7 +965,8 @@
 
                 <div class="grid-item parent animated reviewed fiction f2024">
                     <div id="pokemon_the_first_movie_film_review" class="floated">
-                        <img src="/images/films/pokemon_the_first_movie.webp" />
+                        <img src="/images/films/pokemon_the_first_movie.webp" alt="Pokemon: Mewtwo Strikes Back"
+                            width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Pokemon: Mewtwo Strikes Back</strong><br /><br />
@@ -875,7 +979,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="beau_is_afraid_film_review" class="floated">
-                        <img src="/images/films/beau_is_afraid.webp" />
+                        <img src="/images/films/beau_is_afraid.webp" alt="Beau Is Afraid" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Beau Is Afraid</strong><br /><br />
@@ -887,7 +992,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2024">
                     <div id="killers_of_the_flower_moon_film_review" class="floated">
-                        <img src="/images/films/killers_of_the_flower_moon.webp" />
+                        <img src="/images/films/killers_of_the_flower_moon.webp" alt="Killers of the Flower Moon"
+                            width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Killers of the Flower Moon</strong><br /><br />
@@ -899,7 +1005,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="road_house_film_review" class="floated">
-                        <img src="/images/films/road_house.webp" />
+                        <img src="/images/films/road_house.webp" alt="Road House" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Road House</strong><br /><br />
@@ -910,7 +1017,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="unforgiven_film_review" class="floated">
-                        <img src="/images/films/unforgiven.webp" />
+                        <img src="/images/films/unforgiven.webp" alt="Unforgiven" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Unforgiven</strong><br /><br />
@@ -921,7 +1029,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="dinner_in_america_film_review" class="floated">
-                        <img src="/images/films/dinner_in_america.webp" />
+                        <img src="/images/films/dinner_in_america.webp" alt="Dinner in America" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Dinner in America</strong><br /><br />
@@ -933,7 +1042,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2024">
                     <div id="capitalism_a_love_story_film_review" class="floated">
-                        <img src="/images/films/capitalism_a_love_story.webp" />
+                        <img src="/images/films/capitalism_a_love_story.webp" alt="Capitalism: A Love Story" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Capitalism: A Love Story</strong><br /><br />
@@ -945,7 +1055,8 @@
 
                 <div class="grid-item parent animated reviewed fiction f2024">
                     <div id="tales_from_earthsea_film_review" class="floated">
-                        <img src="/images/films/tales_from_earthsea.webp" />
+                        <img src="/images/films/tales_from_earthsea.webp" alt="Tales from Earthsea" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Tales from Earthsea</strong><br /><br />
@@ -956,7 +1067,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2024">
                     <div id="judas_and_the_black_messiah_film_review" class="floated">
-                        <img src="/images/films/judas_and_the_black_messiah.webp" />
+                        <img src="/images/films/judas_and_the_black_messiah.webp" alt="Judas and the Black Messiah"
+                            width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Judas and the Black Messiah</strong><br /><br />
@@ -969,7 +1081,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2024">
                     <div id="war_for_the_planet_of_the_apes_film_review" class="floated">
-                        <img src="/images/films/war_for_the_planet_of_the_apes.webp" />
+                        <img src="/images/films/war_for_the_planet_of_the_apes.webp"
+                            alt="War for the Planet of the Apes" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>War for the Planet of the Apes</strong><br /><br />
@@ -979,7 +1092,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2024">
                     <div id="dawn_of_the_planet_of_the_apes_film_review" class="floated">
-                        <img src="/images/films/dawn_of_the_planet_of_the_apes.webp" />
+                        <img src="/images/films/dawn_of_the_planet_of_the_apes.webp"
+                            alt="Dawn of the Planet of the Apes" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Dawn of the Planet of the Apes</strong><br /><br />
@@ -989,7 +1103,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2024">
                     <div id="rise_of_the_planet_of_the_apes_film_review" class="floated">
-                        <img src="/images/films/rise_of_the_planet_of_the_apes.webp" />
+                        <img src="/images/films/rise_of_the_planet_of_the_apes.webp"
+                            alt="Rise of the Planet of the Apes" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Rise of the Planet of the Apes</strong><br /><br />
@@ -999,7 +1114,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="to_kill_a_mockingbird_film_review" class="floated">
-                        <img src="/images/films/to_kill_a_mockingbird.webp" />
+                        <img src="/images/films/to_kill_a_mockingbird.webp" alt="To Kill A Mockingbird" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>To Kill A Mockingbird</strong><br /><br />
@@ -1012,7 +1128,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2024">
                     <div id="infernal_affairs_film_review" class="floated">
-                        <img src="/images/films/infernal_affairs.webp" />
+                        <img src="/images/films/infernal_affairs.webp" alt="Infernal Affairs" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Infernal Affairs</strong><br /><br />
@@ -1022,7 +1139,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="falling_down_film_review" class="floated">
-                        <img src="/images/films/falling_down.webp" />
+                        <img src="/images/films/falling_down.webp" alt="Falling Down" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Falling Down</strong><br /><br />
@@ -1037,7 +1155,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="dune_part_two_film_review" class="floated">
-                        <img src="/images/films/dune_part_two.webp" />
+                        <img src="/images/films/dune_part_two.webp" alt="Dune - Part Two" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Dune - Part Two</strong><br /><br />
@@ -1050,7 +1169,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="dream_scenario_film_review" class="floated">
-                        <img src="/images/films/dream_scenario.webp" />
+                        <img src="/images/films/dream_scenario.webp" alt="Dream Scenario" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Dream Scenario</strong><br /><br />
@@ -1061,7 +1181,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2024">
                     <div id="the_manchurian_candidate_film_review" class="floated">
-                        <img src="/images/films/the_manchurian_candidate.webp" />
+                        <img src="/images/films/the_manchurian_candidate.webp" alt="The Manchurian Candidate"
+                            width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>The Manchurian Candidate</strong><br /><br />
@@ -1071,7 +1192,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="the_green_knight_film_review" class="floated">
-                        <img src="/images/films/green_knight.webp" />
+                        <img src="/images/films/green_knight.webp" alt="The Green Knight" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Green Knight</strong><br /><br />
@@ -1084,7 +1206,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="wonka_film_review" class="floated">
-                        <img src="/images/films/wonka.webp" />
+                        <img src="/images/films/wonka.webp" alt="Wonka (2023)" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Wonka (2023)</strong><br /><br />
@@ -1095,7 +1218,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="mystery_men_film_review" class="floated">
-                        <img src="/images/films/mystery_men.webp" />
+                        <img src="/images/films/mystery_men.webp" alt="Mystery Men" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Mystery Men</strong><br /><br />
@@ -1106,7 +1230,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2024">
                     <div id="the_good_the_bad_and_the_ugly_film_review" class="floated">
-                        <img src="/images/films/the_good_the_bad_and_the_ugly.webp" />
+                        <img src="/images/films/the_good_the_bad_and_the_ugly.webp"
+                            alt="The Good, The Bad, and the Ugly" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>The Good, The Bad, and the Ugly</strong><br /><br />
@@ -1116,7 +1241,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2024">
                     <div id="for_a_few_dollars_more_film_review" class="floated">
-                        <img src="/images/films/for_a_few_dollars_more.webp" />
+                        <img src="/images/films/for_a_few_dollars_more.webp" alt="For a Few Dollars More" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>For a Few Dollars More</strong><br /><br />
@@ -1126,7 +1252,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2024">
                     <div id="source_code_film_review" class="floated">
-                        <img src="/images/films/source_code.webp" />
+                        <img src="/images/films/source_code.webp" alt="Source Code" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Source Code</strong><br /><br />
@@ -1144,7 +1271,7 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="fargo_film_review" class="floated">
-                        <img src="/images/films/fargo.webp" />
+                        <img src="/images/films/fargo.webp" alt="Fargo" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Fargo</strong><br /><br />
@@ -1154,7 +1281,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="the_killer_film_review" class="floated">
-                        <img src="/images/films/the_killer.webp" />
+                        <img src="/images/films/the_killer.webp" alt="The Killer (2023)" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Killer (2023)</strong><br /><br />
@@ -1164,7 +1292,9 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="the_wonderful_story_of_henry_sugar_film_review" class="floated">
-                        <img src="/images/films/the_wonderful_story_of_henry_sugar.webp" />
+                        <img src="/images/films/the_wonderful_story_of_henry_sugar.webp"
+                            alt="Roald Dahl's The Wonderful Story of Henry Sugar" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Roald Dahl's The Wonderful Story of Henry Sugar</strong><br /><br />
@@ -1180,7 +1310,8 @@
 
                 <div class="grid-item parent animated thinking fiction f2023">
                     <div id="roh_the_wolf_brigade_film_review" class="floated">
-                        <img src="/images/films/jin-roh_the_wolf_brigade.webp" />
+                        <img src="/images/films/jin-roh_the_wolf_brigade.webp" alt="Jin-Roh: The Wolf Brigade"
+                            width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Jin-Roh: The Wolf Brigade</strong><br /><br />
@@ -1190,7 +1321,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="asteroid_city_film_review" class="floated">
-                        <img src="/images/films/asteroid_city.webp" />
+                        <img src="/images/films/asteroid_city.webp" alt="Asteroid City" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Asteroid City</strong><br /><br />
@@ -1202,7 +1334,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="sunshine_film_review" class="floated">
-                        <img src="/images/films/sunshine.webp" />
+                        <img src="/images/films/sunshine.webp" alt="Sunshine" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Sunshine</strong><br /><br />
@@ -1215,7 +1348,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="snowpiercer_film_review" class="floated">
-                        <img src="/images/films/snowpiercer.webp" />
+                        <img src="/images/films/snowpiercer.webp" alt="Snowpiercer" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Snowpiercer</strong><br /><br />
@@ -1227,7 +1361,7 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="poison_film_review" class="floated">
-                        <img src="/images/films/poison.webp" />
+                        <img src="/images/films/poison.webp" alt="Poison" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Poison</strong><br /><br />
@@ -1237,7 +1371,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="once_upon_a_time_in_hollywood_film_review" class="floated">
-                        <img src="/images/films/once_upon_a_time_in_hollywood.webp" />
+                        <img src="/images/films/once_upon_a_time_in_hollywood.webp" alt="Once Upon A Time In Hollywood"
+                            width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Once Upon A Time In Hollywood</strong><br /><br />
@@ -1251,7 +1386,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="ballerina_film_review" class="floated">
-                        <img src="/images/films/ballerina.webp" />
+                        <img src="/images/films/ballerina.webp" alt="Ballerina" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Ballerina</strong><br /><br />
@@ -1262,7 +1398,8 @@
 
                 <div class="grid-item parent animated reviewed fiction f2023">
                     <div id="spider_man_across_the_spider_verse_film_review" class="floated">
-                        <img src="/images/films/spider_man_across_the_spider_verse.webp" />
+                        <img src="/images/films/spider_man_across_the_spider_verse.webp"
+                            alt="Spider-Man: Across the Spider-Verse" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Spider-Man: Across the Spider-Verse</strong><br /><br />
@@ -1276,7 +1413,7 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="barbie_film_review" class="floated">
-                        <img src="/images/films/barbie.webp" />
+                        <img src="/images/films/barbie.webp" alt="Barbie" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Barbie</strong><br /><br />
@@ -1293,7 +1430,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="oceans_eleven_film_review" class="floated">
-                        <img src="/images/films/oceans_eleven.webp" />
+                        <img src="/images/films/oceans_eleven.webp" alt="Ocean's Eleven" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Ocean's Eleven</strong><br /><br />
@@ -1306,7 +1444,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="the_matrix_film_review" class="floated">
-                        <img src="/images/films/the_matrix.webp" />
+                        <img src="/images/films/the_matrix.webp" alt="The Matrix" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Matrix</strong><br /><br />
@@ -1316,7 +1455,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2023">
                     <div id="lean_on_me_film_review" class="floated">
-                        <img src="/images/films/lean_on_me.webp" />
+                        <img src="/images/films/lean_on_me.webp" alt="Lean on Me" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Lean on Me</strong><br /><br />
@@ -1333,7 +1473,9 @@
 
                 <div class="grid-item parent animated reviewed fiction f2023">
                     <div id="teenage_mutant_ninja_turtles_mutant_mayhem_film_review" class="floated">
-                        <img src="/images/films/teenage_mutant_ninja_turtles_mutant_mayhem.webp" />
+                        <img src="/images/films/teenage_mutant_ninja_turtles_mutant_mayhem.webp"
+                            alt="Teenage Mutant Ninja Turtles - Mutant Mayhem" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Teenage Mutant Ninja Turtles - Mutant Mayhem</strong><br /><br />
@@ -1345,7 +1487,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="2001_a_space_odyssey_film_review" class="floated">
-                        <img src="/images/films/2001_a_space_odyssey.webp" />
+                        <img src="/images/films/2001_a_space_odyssey.webp" alt="2001 - A Space Odyssey" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>2001 - A Space Odyssey</strong><br /><br />
@@ -1361,7 +1504,7 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="65_film_review" class="floated">
-                        <img src="/images/films/65.webp" />
+                        <img src="/images/films/65.webp" alt="65 (2023)" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>65 (2023)</strong><br /><br />
@@ -1371,7 +1514,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="extraction_2_film_review" class="floated">
-                        <img src="/images/films/extraction_2.webp" />
+                        <img src="/images/films/extraction_2.webp" alt="Extraction 2" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Extraction 2</strong><br /><br />
@@ -1382,7 +1526,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2023">
                     <div id="malcolm_x_film_review" class="floated">
-                        <img src="/images/films/malcolm_x.webp" />
+                        <img src="/images/films/malcolm_x.webp" alt="Malcolm X (1992)" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Malcolm X (1992)</strong><br /><br />
@@ -1397,7 +1542,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="all_the_presidents_men_film_review" class="floated">
-                        <img src="/images/films/all_the_presidents_men.webp" />
+                        <img src="/images/films/all_the_presidents_men.webp" alt="All the President's Men" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>All the President's Men</strong><br /><br />
@@ -1407,7 +1553,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="precious_film_review" class="floated">
-                        <img src="/images/films/precious.webp" />
+                        <img src="/images/films/precious.webp" alt="Precious" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Precious</strong><br /><br />
@@ -1417,7 +1564,8 @@
 
                 <div class="grid-item parent live-action reviewed non-fiction f2023">
                     <div id="the_great_escape_film_review" class="floated">
-                        <img src="/images/films/the_great_escape.webp" />
+                        <img src="/images/films/the_great_escape.webp" alt="The Great Escape" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Great Escape</strong><br /><br />
@@ -1431,7 +1579,7 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="juno_film_review" class="floated">
-                        <img src="/images/films/juno.webp" />
+                        <img src="/images/films/juno.webp" alt="Juno" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Juno</strong><br /><br />
@@ -1444,7 +1592,8 @@
 
                 <div class="grid-item parent animated reviewed fiction f2023">
                     <div id="fantastic_mr_fox_film_review" class="floated">
-                        <img src="/images/films/fantastic_mr_fox.webp" />
+                        <img src="/images/films/fantastic_mr_fox.webp" alt="The Fantastic Mr. Fox" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>The Fantastic Mr. Fox</strong><br /><br />
@@ -1456,7 +1605,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="airplane_film_review" class="floated">
-                        <img src="/images/films/airplane.webp" />
+                        <img src="/images/films/airplane.webp" alt="Airplane!" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Airplane!</strong><br /><br />
@@ -1466,7 +1616,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="dungeons_dragons_honor_among_thieves_film_review" class="floated">
-                        <img src="/images/films/dungeons_dragons_honor_among_thieves.webp" />
+                        <img src="/images/films/dungeons_dragons_honor_among_thieves.webp"
+                            alt="Dungeons & Dragons - Honor Among Thieves" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Dungeons & Dragons - Honor Among Thieves</strong><br /><br />
@@ -1479,7 +1630,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="the_french_dispatch_film_review" class="floated">
-                        <img src="/images/films/the_french_dispatch.webp" />
+                        <img src="/images/films/the_french_dispatch.webp" alt="The French Dispatch" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>The French Dispatch</strong><br /><br />
@@ -1489,7 +1641,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="catch_me_if_you_can_film_review" class="floated">
-                        <img src="/images/films/catch_me_if_you_can.webp" />
+                        <img src="/images/films/catch_me_if_you_can.webp" alt="Catch Me If You Can" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Catch Me If You Can</strong><br /><br />
@@ -1500,7 +1653,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="no_sudden_moves_film_review" class="floated">
-                        <img src="/images/films/no_sudden_moves.webp" />
+                        <img src="/images/films/no_sudden_moves.webp" alt="No Sudden Moves" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>No Sudden Moves</strong><br /><br />
@@ -1510,7 +1664,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="donnie_darko_film_review" class="floated">
-                        <img src="/images/films/donnie_darko.webp" />
+                        <img src="/images/films/donnie_darko.webp" alt="Donnie Darko" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Donnie Darko</strong><br /><br />
@@ -1521,7 +1676,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="patriot_games_film_review" class="floated">
-                        <img src="/images/films/patriot_games.webp" />
+                        <img src="/images/films/patriot_games.webp" alt="Patriot Games" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Patriot Games</strong><br /><br />
@@ -1534,7 +1690,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="nightcrawler_film_review" class="floated">
-                        <img src="/images/films/nightcrawler.webp" />
+                        <img src="/images/films/nightcrawler.webp" alt="Nightcrawler" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Nightcrawler</strong><br /><br />
@@ -1547,7 +1704,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="the_grand_budapest_hotel_film_review" class="floated">
-                        <img src="/images/films/the_grand_budapest_hotel.webp" />
+                        <img src="/images/films/the_grand_budapest_hotel.webp" alt="The Grand Budapest Hotel"
+                            width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>The Grand Budapest Hotel</strong><br /><br />
@@ -1557,7 +1715,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="see_how_they_run_film_review" class="floated">
-                        <img src="/images/films/see_how_they_run.webp" />
+                        <img src="/images/films/see_how_they_run.webp" alt="See How They Run" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>See How They Run</strong><br /><br />
@@ -1567,7 +1726,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="annihilation_film_review" class="floated">
-                        <img src="/images/films/annihilation.webp" />
+                        <img src="/images/films/annihilation.webp" alt="Annihilation" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Annihilation</strong><br /><br />
@@ -1577,7 +1737,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="the_menu_film_review" class="floated">
-                        <img src="/images/films/the_menu.webp" />
+                        <img src="/images/films/the_menu.webp" alt="The Menu" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Menu</strong><br /><br />
@@ -1588,7 +1749,8 @@
 
                 <div class="grid-item parent live-action thinking non-fiction f2023">
                     <div id="tora_tora_tora_film_review" class="floated">
-                        <img src="/images/films/tora_tora_tora.webp" />
+                        <img src="/images/films/tora_tora_tora.webp" alt="Tora Tora Tora" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Tora Tora Tora</strong><br /><br />
@@ -1598,7 +1760,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="minority_report_film_review" class="floated">
-                        <img src="/images/films/minority_report.webp" />
+                        <img src="/images/films/minority_report.webp" alt="Minority Report" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Minority Report</strong><br /><br />
@@ -1613,7 +1776,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2023">
                     <div id="the_woman_king_film_review" class="floated">
-                        <img src="/images/films/the_woman_king.webp" />
+                        <img src="/images/films/the_woman_king.webp" alt="The Woman King" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Woman King</strong><br /><br />
@@ -1623,7 +1787,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="12_angry_men_film_review" class="floated">
-                        <img src="/images/films/12_angry_men.webp" />
+                        <img src="/images/films/12_angry_men.webp" alt="12 Angry Men" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>12 Angry Men</strong><br /><br />
@@ -1635,7 +1800,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="pitch_black_film_review" class="floated">
-                        <img src="/images/films/pitch_black.webp" />
+                        <img src="/images/films/pitch_black.webp" alt="Pitch Black" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Pitch Black</strong><br /><br />
@@ -1652,7 +1818,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2023">
                     <div id="12_monkeys_film_review" class="floated">
-                        <img src="/images/films/12_monkeys.webp" />
+                        <img src="/images/films/12_monkeys.webp" alt="12 Monkeys" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>12 Monkeys</strong><br /><br />
@@ -1667,7 +1834,8 @@
 
                 <div class="grid-item parent animated reviewed fiction f2022">
                     <div id="evangelion_3010_film_review" class="floated">
-                        <img src="/images/films/evangelion_3010.webp" />
+                        <img src="/images/films/evangelion_3010.webp" alt="Evangelion - 3.0+1.0 Thrice Upon a Time"
+                            width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Evangelion - 3.0+1.0 Thrice Upon a Time</strong><br /><br />
@@ -1681,7 +1849,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2022">
                     <div id="eastern_promises_film_review" class="floated">
-                        <img src="/images/films/eastern_promises.webp" />
+                        <img src="/images/films/eastern_promises.webp" alt="Eastern Promises" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Eastern Promises</strong><br /><br />
@@ -1691,7 +1860,8 @@
 
                 <div class="grid-item parent live-action thinking fiction f2022">
                     <div id="the_northman_film_review" class="floated">
-                        <img src="/images/films/the_northman.webp" />
+                        <img src="/images/films/the_northman.webp" alt="The Northman" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Northman</strong><br /><br />
@@ -1701,7 +1871,8 @@
 
                 <div class="grid-item parent animated thinking fiction f2022">
                     <div id="sword_of_the_stranger_film_review" class="floated">
-                        <img src="/images/films/sword_of_the_stranger.webp" />
+                        <img src="/images/films/sword_of_the_stranger.webp" alt="Sword of the Stranger" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Sword of the Stranger</strong><br /><br />
@@ -1715,7 +1886,8 @@
 
                 <div class="grid-item parent animated reviewed fiction f2021_and_before">
                     <div id="kikis_delivery_service_film_review" class="floated">
-                        <img src="/images/films/kikis_delivery_service.webp" />
+                        <img src="/images/films/kikis_delivery_service.webp" alt="Kiki's Delivery Service" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Kiki's Delivery Service</strong><br /><br />
@@ -1729,7 +1901,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2021_and_before">
                     <div id="sonic_the_hedgehog_2_film_review" class="floated">
-                        <img src="/images/films/sonic_the_hedgehog_2.webp" />
+                        <img src="/images/films/sonic_the_hedgehog_2.webp" alt="Sonic The Hedgehog 2" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Sonic The Hedgehog 2</strong><br /><br />
@@ -1740,7 +1913,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2021_and_before">
                     <div id="dune_part_one_film_review" class="floated">
-                        <img src="/images/films/dune_part_one.webp" />
+                        <img src="/images/films/dune_part_one.webp" alt="Dune - Part One" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Dune - Part One</strong><br /><br />
@@ -1756,7 +1930,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2021_and_before">
                     <div id="sonic_the_hedgehog_film_review" class="floated">
-                        <img src="/images/films/sonic_the_hedgehog.webp" />
+                        <img src="/images/films/sonic_the_hedgehog.webp" alt="Sonic The Hedgehog" width="150"
+                            height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Sonic The Hedgehog</strong><br /><br />
@@ -1768,7 +1943,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2021_and_before">
                     <div id="uncut_gems_film_review" class="floated">
-                        <img src="/images/films/uncut_gems.webp" />
+                        <img src="/images/films/uncut_gems.webp" alt="Uncut Gems" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Uncut Gems</strong><br /><br />
@@ -1782,7 +1958,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2021_and_before">
                     <div id="castaway_on_the_moon_film_review" class="floated">
-                        <img src="/images/films/castaway_on_the_moon.webp" />
+                        <img src="/images/films/castaway_on_the_moon.webp" alt="Castaway on the Moon" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>Castaway on the Moon</strong><br /><br />
@@ -1795,7 +1972,7 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2021_and_before">
                     <div id="joker_film_review" class="floated">
-                        <img src="/images/films/joker.webp" />
+                        <img src="/images/films/joker.webp" alt="Joker" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Joker</strong><br /><br />
@@ -1807,7 +1984,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2021_and_before">
                     <div id="parasite_film_review" class="floated">
-                        <img src="/images/films/parasite.webp" />
+                        <img src="/images/films/parasite.webp" alt="Parasite" width="150" height="213"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Parasite</strong><br /><br />
@@ -1820,7 +1998,8 @@
 
                 <div class="grid-item parent live-action reviewed fiction f2021_and_before">
                     <div id="a_taxi_driver_film_review" class="floated">
-                        <img src="/images/films/a_taxi_driver.webp" />
+                        <img src="/images/films/a_taxi_driver.webp" alt="A Taxi Driver" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>A Taxi Driver</strong><br /><br />
@@ -1838,7 +2017,7 @@
 
                 <div class="grid-item parent animated reviewed fiction f2021_and_before">
                     <div id="ponyo_film_review" class="floated">
-                        <img src="/images/films/ponyo.webp" />
+                        <img src="/images/films/ponyo.webp" alt="Ponyo" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Ponyo</strong><br /><br />
@@ -1918,6 +2097,10 @@
                             if (!isButton) return;
                             buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
                             event.target.classList.add("is-checked");
+                            // Keep the accessible state in sync with the visible one
+                            buttonGroup.querySelectorAll(".button").forEach(function (button) {
+                                button.setAttribute("aria-pressed", button.classList.contains("is-checked") ? "true" : "false");
+                            });
                         });
                     });
                 };
@@ -1933,11 +2116,11 @@
             </script>
 
             <!-- footer start -->
-            
+
             <hr />
 
             <p align="center">© 2024-2026 Craft Beetle | All rights reserved</p>
-            <p align="center"><a href="mailto:email@protonmail.com">craftbeetle@protonmail.com</a> | <a
+            <p align="center"><a href="mailto:craftbeetle@protonmail.com">craftbeetle@protonmail.com</a> | <a
                     href="https://www.craftbeetle.com/rss.xml" target="_blank">RSS</a></p>
         </div>
     </main>

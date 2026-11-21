@@ -4,16 +4,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Craft Beetle</title>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <title>Shows | Craft Beetle</title>
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.craftbeetle.com/rss.xml" />
-    <link rel="icon" type="image/x-icon" href="//images/branding/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/branding/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/assets/js/style.js" defer></script>
+    <!-- metadata start -->
+    <meta name="description" content="Here are the TV shows that I have watched. Some of these had my full attention for the duration, while others played on a second or third monitor and were…">
+    <link rel="canonical" href="https://craftbeetle.com/shows.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Craft Beetle">
+    <meta property="og:title" content="Shows | Craft Beetle">
+    <meta property="og:description" content="Here are the TV shows that I have watched. Some of these had my full attention for the duration, while others played on a second or third monitor and were…">
+    <meta property="og:url" content="https://craftbeetle.com/shows.html">
+    <meta property="og:image" content="https://craftbeetle.com/images/branding/craft_beetle_logo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="422">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shows | Craft Beetle">
+    <meta name="twitter:description" content="Here are the TV shows that I have watched. Some of these had my full attention for the duration, while others played on a second or third monitor and were…">
+    <meta name="twitter:image" content="https://craftbeetle.com/images/branding/craft_beetle_logo.jpg">
+    <!-- metadata end -->
 </head>
 
 <body>
-    <aside class="sidebar">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <aside class="sidebar" aria-label="Site sections">
         <ul>
             <li><a href="/ecology.html" target="_self">🍄 Ecology</a></li>
             <li><a href="/game_dev.html" target="_self">🕹️ Game Dev.</a></li>
@@ -35,11 +50,11 @@
             <li><a href="/links.html" target="_self">🔗 Links</a></li>
         </ul>
     </aside>
-    <main class="content">
+    <main class="content" id="main" tabindex="-1">
         <h1><a href="/" target="_self">Craft Beetle</a></h1>
         <div class="container">
             <hr />
-            <nav>
+            <nav aria-label="Sections">
                 <table class="nav-table">
                     <tr>
                         <td><a href="/ecology.html" target="_self">🍄 Ecology</a></td>
@@ -87,26 +102,26 @@
 
             <div class="grid-item title reviewed animated live-action f2026 f2025 f2024 f2023 f2022 f2021_and_before">
                 <div class="filters">
-                    <div class="button-group" data-filter-group="best">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".watching">watching</button>
-                        <button class="button" data-filter=".reviewed">reviewed</button>
+                    <div class="button-group" data-filter-group="best" role="group" aria-label="Filter by best">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".watching">watching</button>
+                        <button class="button" aria-pressed="false" data-filter=".reviewed">reviewed</button>
                     </div>
 
-                    <div class="button-group" data-filter-group="year">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".f2026">2026</button>
-                        <button class="button" data-filter=".f2025">2025</button>
-                        <button class="button" data-filter=".f2024">2024</button>
-                        <button class="button" data-filter=".f2023">2023</button>
-                        <button class="button" data-filter=".f2022">2022</button>
-                        <button class="button" data-filter=".f2021_and_before">2021 and Before</button>
+                    <div class="button-group" data-filter-group="year" role="group" aria-label="Filter by year">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2026">2026</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2025">2025</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2024">2024</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2023">2023</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2022">2022</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2021_and_before">2021 and Before</button>
                     </div>
 
-                    <div class="button-group" data-filter-group="type">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".live-action">live-action</button>
-                        <button class="button" data-filter=".animated">animated</button>
+                    <div class="button-group" data-filter-group="type" role="group" aria-label="Filter by type">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".live-action">live-action</button>
+                        <button class="button" aria-pressed="false" data-filter=".animated">animated</button>
                     </div>
                 </div>
             </div>
@@ -120,8 +135,7 @@
                 </div>
 
                 <div class="grid-item parent reviewed animated f2026">
-                    <div id="jaadugar_a_witch_in_mongolia_show_review" class="floated"><img
-                            src="/images/shows/jaadugar_a_witch_in_mongolia.webp" />
+                    <div id="jaadugar_a_witch_in_mongolia_show_review" class="floated"><img src="/images/shows/jaadugar_a_witch_in_mongolia.webp" alt="Jaadugar: A Witch in Mongolia" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Jaadugar: A Witch in Mongolia</strong><br /><br />
@@ -134,8 +148,7 @@
                 </div>
 
                 <div class="grid-item parent watching live-action f2026">
-                    <div id="game_of_thrones_show_review" class="floated"><img
-                            src="/images/shows/game_of_thrones.webp" />
+                    <div id="game_of_thrones_show_review" class="floated"><img src="/images/shows/game_of_thrones.webp" alt="Game of Thrones" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Game of Thrones</strong><br /><br />
@@ -144,8 +157,7 @@
                 </div>
 
                 <div class="grid-item parent reviewed live-action f2026">
-                    <div id="secrets_of_the_whales_show_review" class="floated"><img
-                            src="/images/shows/secrets_of_the_whales.webp" />
+                    <div id="secrets_of_the_whales_show_review" class="floated"><img src="/images/shows/secrets_of_the_whales.webp" alt="Secrets of the Whales" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>Secrets of the Whales</strong><br /><br />
@@ -183,7 +195,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2026">
-                    <div id="gunsmith_cats_show_review" class="floated"><img src="/images/shows/gunsmith_cats.webp" />
+                    <div id="gunsmith_cats_show_review" class="floated"><img src="/images/shows/gunsmith_cats.webp" alt="Gunsmith Cats" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>Gunsmith Cats</strong><br /><br />
@@ -200,7 +212,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2025">
-                    <div id="firefly_show_review" class="floated"><img src="/images/shows/firefly.webp" /></div>
+                    <div id="firefly_show_review" class="floated"><img src="/images/shows/firefly.webp" alt="Firefly" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Firefly</strong><br /><br />
                         After years of being recommended this show and not it, I finally relented and I am
@@ -211,8 +223,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2025">
-                    <div id="creature_commandos_show_review" class="floated"><img
-                            src="/images/shows/creature_commandos.webp" /></div>
+                    <div id="creature_commandos_show_review" class="floated"><img src="/images/shows/creature_commandos.webp" alt="Creature Commandos" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Creature Commandos</strong><br /><br />
                         While the presentation is not the finest and the writing is a little basic, I did find myself
@@ -226,7 +237,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2024">
-                    <div id="mr_robot_show_review" class="floated"><img src="/images/shows/mr_robot.webp" /></div>
+                    <div id="mr_robot_show_review" class="floated"><img src="/images/shows/mr_robot.webp" alt="Mr. Robot" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Mr. Robot</strong><br /><br />
                         I was drawn to Mr. Robot because the hacking was so good, the anti-capitalist message was clear,
@@ -243,8 +254,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2024">
-                    <div id="a_good_girls_guide_to_murder_show_review" class="floated"><img
-                            src="/images/shows/a_good_girls_guide_to_murder.webp" /></div>
+                    <div id="a_good_girls_guide_to_murder_show_review" class="floated"><img src="/images/shows/a_good_girls_guide_to_murder.webp" alt="A Good Girl's Guide To Murder" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>A Good Girl's Guide To Murder</strong><br /><br />
                         A Good Girl's Guide to Murder is a great mini series that shows Myers is just as good as a
@@ -255,8 +265,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2024">
-                    <div id="house_of_the_dragon_show_review" class="floated"><img
-                            src="/images/shows/house_of_the_dragon.webp" /></div>
+                    <div id="house_of_the_dragon_show_review" class="floated"><img src="/images/shows/house_of_the_dragon.webp" alt="House of the Dragon" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>House of the Dragon</strong><br /><br />
                         After the sour taste of the last few seasons of Game of Thrones, House of the Dragon has brought
@@ -267,8 +276,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2024">
-                    <div id="future_boy_conan_show_review" class="floated"><img
-                            src="/images/shows/future_boy_conan.webp" />
+                    <div id="future_boy_conan_show_review" class="floated"><img src="/images/shows/future_boy_conan.webp" alt="Future Boy Conan" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>Future Boy Conan</strong><br /><br />
@@ -282,7 +290,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2024">
-                    <div id="station_eleven_show_review" class="floated"><img src="/images/shows/station_eleven.webp" />
+                    <div id="station_eleven_show_review" class="floated"><img src="/images/shows/station_eleven.webp" alt="Station Eleven" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Station Eleven</strong><br /><br />
@@ -293,8 +301,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2024">
-                    <div id="delicious_in_dungeon_show_review" class="floated"><img
-                            src="/images/shows/delicious_in_dungeon.webp" /></div>
+                    <div id="delicious_in_dungeon_show_review" class="floated"><img src="/images/shows/delicious_in_dungeon.webp" alt="Delicious in Dungeon" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Delicious in Dungeon</strong><br /><br />
                         It's so cute, and I have never wanted to learn to cook so much. The consistent upbeat energy,
@@ -304,8 +311,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2024">
-                    <div id="serial_experiment_lain_show_review" class="floated"><img
-                            src="/images/shows/serial_experiment_lain.webp" /></div>
+                    <div id="serial_experiment_lain_show_review" class="floated"><img src="/images/shows/serial_experiment_lain.webp" alt="Serial Experiment Lain" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Serial Experiment Lain</strong><br /><br />
                         At first I didn't understand it. Then I finished it and before I realized what I was doing I had
@@ -315,8 +321,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2024">
-                    <div id="better_call_saul_show_review" class="floated"><img
-                            src="/images/shows/better_call_saul.webp" />
+                    <div id="better_call_saul_show_review" class="floated"><img src="/images/shows/better_call_saul.webp" alt="Better Call Saul" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Better Call Saul</strong><br /><br />
@@ -329,8 +334,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2024">
-                    <div id="the_vince_staples_show_show_review" class="floated"><img
-                            src="/images/shows/the_vince_staples_show.webp" /></div>
+                    <div id="the_vince_staples_show_show_review" class="floated"><img src="/images/shows/the_vince_staples_show.webp" alt="The Vince Staples Show" width="150" height="222" decoding="async" /></div>
                     <p>
                         <strong>The Vince Staples Show</strong><br /><br />
                         You can imagine my mild surprise when I saw this show on Netflix. I assumed it was a documentary
@@ -341,8 +345,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2024">
-                    <div id="generation_kill_show_review" class="floated"><img
-                            src="/images/shows/generation_kill.webp" />
+                    <div id="generation_kill_show_review" class="floated"><img src="/images/shows/generation_kill.webp" alt="Generation Kill" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Generation Kill</strong><br /><br />
@@ -361,8 +364,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2024">
-                    <div id="avatar_the_last_airbender_live_action_show_review" class="floated"><img
-                            src="/images/shows/avatar_the_last_airbender_live_action.webp" /></div>
+                    <div id="avatar_the_last_airbender_live_action_show_review" class="floated"><img src="/images/shows/avatar_the_last_airbender_live_action.webp" alt="Avatar: The Last Air Bender (Live Action)" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Avatar: The Last Air Bender (Live Action)</strong><br /><br />
                         I loved it and I don't care what anyone says. I nearly cried every 5 minutes of the first 3
@@ -377,8 +379,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2023">
-                    <div id="blue_eye_samurai_show_review" class="floated"><img
-                            src="/images/shows/blue_eye_samurai.webp" />
+                    <div id="blue_eye_samurai_show_review" class="floated"><img src="/images/shows/blue_eye_samurai.webp" alt="Blue Eye Samurai" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Blue Eye Samurai</strong><br /><br />
@@ -390,7 +391,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2023">
-                    <div id="succession_show_review" class="floated"><img src="/images/shows/succession.webp" /></div>
+                    <div id="succession_show_review" class="floated"><img src="/images/shows/succession.webp" alt="Succession" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Succession</strong><br /><br />
                         A viper pit. A very complex and interconnected viper pit. A pit of flawed and interdependent
@@ -403,7 +404,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2023">
-                    <div id="the_wire_show_review" class="floated"><img src="/images/shows/the_wire.webp" /></div>
+                    <div id="the_wire_show_review" class="floated"><img src="/images/shows/the_wire.webp" alt="The Wire" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>The Wire</strong><br /><br />
                         If you ever wanted to understand police culture, at least in the north east in the early 2000s,
@@ -416,7 +417,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2023">
-                    <div id="paper_girls_show_review" class="floated"><img src="/images/shows/paper_girls.webp" /></div>
+                    <div id="paper_girls_show_review" class="floated"><img src="/images/shows/paper_girls.webp" alt="Paper Girls" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Paper Girls</strong><br /><br />
                         I had no idea they had made this show until I stumbled upon it on Amazon Prime. I had read the
@@ -428,7 +429,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2023">
-                    <div id="the_witcher_show_review" class="floated"><img src="/images/shows/the_witcher.webp" /></div>
+                    <div id="the_witcher_show_review" class="floated"><img src="/images/shows/the_witcher.webp" alt="The Witcher" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>The Witcher</strong><br /><br />
                         The first season was confusing, the second season was kind of forgettable. Maybe this show is
@@ -440,7 +441,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2023">
-                    <div id="the_diplomat_show_review" class="floated"><img src="/images/shows/the_diplomat.webp" />
+                    <div id="the_diplomat_show_review" class="floated"><img src="/images/shows/the_diplomat.webp" alt="The Diplomat" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>The Diplomat</strong><br /><br />
@@ -453,7 +454,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2023">
-                    <div id="dcamu_new_52_show_review" class="floated"><img src="/images/shows/dcamu_new_52.webp" />
+                    <div id="dcamu_new_52_show_review" class="floated"><img src="/images/shows/dcamu_new_52.webp" alt="DC Animated Movie Universe" width="150" height="224" decoding="async" />
                     </div>
                     <p>
                         <strong>DC Animated Movie Universe</strong><br /><br />
@@ -473,8 +474,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2023">
-                    <div id="over_the_garden_wall_show_review" class="floated"><img
-                            src="/images/shows/over_the_garden_wall.webp" /></div>
+                    <div id="over_the_garden_wall_show_review" class="floated"><img src="/images/shows/over_the_garden_wall.webp" alt="Over the Garden Wall" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Over the Garden Wall</strong><br /><br />
                         A cute little show about death. Neato! It's kinda weird and kinda good and kinda cute and very
@@ -483,7 +483,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2023">
-                    <div id="the_last_of_us_show_review" class="floated"><img src="/images/shows/the_last_of_us.webp" />
+                    <div id="the_last_of_us_show_review" class="floated"><img src="/images/shows/the_last_of_us.webp" alt="The Last of Us" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>The Last of Us</strong><br /><br />
@@ -503,7 +503,7 @@
                 </div>
 
                 <div class="grid-item parent live-action reviewed f2023">
-                    <div id="wednesday_show_review" class="floated"><img src="/images/shows/wednesday.webp" /></div>
+                    <div id="wednesday_show_review" class="floated"><img src="/images/shows/wednesday.webp" alt="Wednesday" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Wednesday</strong><br /><br />
                         I didn't think I would like this show so much. I don't like horror theme, I didn't watch the
@@ -518,8 +518,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2022">
-                    <div id="cyberpunk_edgerunners_show_review" class="floated"><img
-                            src="/images/shows/cyberpunk_edgerunners.webp" /></div>
+                    <div id="cyberpunk_edgerunners_show_review" class="floated"><img src="/images/shows/cyberpunk_edgerunners.webp" alt="Cyberpunk: Edgerunners" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Cyberpunk: Edgerunners</strong><br /><br />
                         I watched Edgerunners while I was still refusing to engage with the game so I didn't have the
@@ -533,7 +532,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2022">
-                    <div id="arcane_show_review" class="floated"><img src="/images/shows/arcane.webp" /></div>
+                    <div id="arcane_show_review" class="floated"><img src="/images/shows/arcane.webp" alt="Arcane" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>Arcane</strong><br /><br />
                         I cried so much. I still cannot even think of, let alone watch, the Powder breakdown scene
@@ -552,7 +551,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2021_and_before">
-                    <div id="bna_show_review" class="floated"><img src="/images/shows/bna.webp" /></div>
+                    <div id="bna_show_review" class="floated"><img src="/images/shows/bna.webp" alt="BNA: Brand New Animal" width="150" height="213" decoding="async" /></div>
                     <p>
                         <strong>BNA: Brand New Animal</strong><br /><br />
                         BNA was my first encounter with Studio Trigger and they did really good. Of course there is the
@@ -562,8 +561,7 @@
                 </div>
 
                 <div class="grid-item parent animated reviewed f2021_and_before">
-                    <div id="avatar_the_last_airbender_show_review" class="floated"><img
-                            src="/images/shows/avatar_the_last_airbender.webp" />
+                    <div id="avatar_the_last_airbender_show_review" class="floated"><img src="/images/shows/avatar_the_last_airbender.webp" alt="Avatar: The Last Airbender" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Avatar: The Last Airbender</strong><br /><br />
@@ -647,6 +645,10 @@
                             if (!isButton) return;
                             buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
                             event.target.classList.add("is-checked");
+                            // Keep the accessible state in sync with the visible one
+                            buttonGroup.querySelectorAll(".button").forEach(function (button) {
+                                button.setAttribute("aria-pressed", button.classList.contains("is-checked") ? "true" : "false");
+                            });
                         });
                     });
                 };
@@ -666,7 +668,7 @@
             <hr />
 
             <p align="center">© 2024-2026 Craft Beetle | All rights reserved</p>
-            <p align="center"><a href="mailto:email@protonmail.com">craftbeetle@protonmail.com</a> | <a
+            <p align="center"><a href="mailto:craftbeetle@protonmail.com">craftbeetle@protonmail.com</a> | <a
                     href="https://www.craftbeetle.com/rss.xml" target="_blank">RSS</a></p>
         </div>
     </main>

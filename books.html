@@ -4,16 +4,34 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Craft Beetle</title>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <title>Books | Craft Beetle</title>
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.craftbeetle.com/rss.xml" />
-    <link rel="icon" type="image/x-icon" href="//images/branding/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/branding/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/assets/js/style.js" defer></script>
+    <!-- metadata start -->
+    <meta name="description"
+        content="Reading is a fundamental pillar of my life and the way I was raised. I find that while other forms of media have great value and strengths, books remain…">
+    <link rel="canonical" href="https://craftbeetle.com/books.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Craft Beetle">
+    <meta property="og:title" content="Books | Craft Beetle">
+    <meta property="og:description"
+        content="Reading is a fundamental pillar of my life and the way I was raised. I find that while other forms of media have great value and strengths, books remain…">
+    <meta property="og:url" content="https://craftbeetle.com/books.html">
+    <meta property="og:image" content="https://craftbeetle.com/images/branding/craft_beetle_logo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="422">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Books | Craft Beetle">
+    <meta name="twitter:description"
+        content="Reading is a fundamental pillar of my life and the way I was raised. I find that while other forms of media have great value and strengths, books remain…">
+    <meta name="twitter:image" content="https://craftbeetle.com/images/branding/craft_beetle_logo.jpg">
+    <!-- metadata end -->
 </head>
 
 <body>
-    <aside class="sidebar">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <aside class="sidebar" aria-label="Site sections">
         <ul>
             <li><a href="/ecology.html" target="_self">🍄 Ecology</a></li>
             <li><a href="/game_dev.html" target="_self">🕹️ Game Dev.</a></li>
@@ -35,11 +53,11 @@
             <li><a href="/links.html" target="_self">🔗 Links</a></li>
         </ul>
     </aside>
-    <main class="content">
+    <main class="content" id="main" tabindex="-1">
         <h1><a href="/" target="_self">Craft Beetle</a></h1>
         <div class="container">
             <hr />
-            <nav>
+            <nav aria-label="Sections">
                 <table class="nav-table">
                     <tr>
                         <td><a href="/ecology.html" target="_self">🍄 Ecology</a></td>
@@ -76,7 +94,7 @@
                 };
             </script>
 
-<!-- header end -->
+            <!-- header end -->
 
             <h2 id="section1">BOOKS</h2>
             <p>
@@ -90,26 +108,27 @@
             <div
                 class="grid-item title reading thinking reviewed best f2026 f2025 f2024 f2023 f2022 f2021 f2020 f2019_and_before">
                 <div class="filters">
-                    <div class="button-group" data-filter-group="best">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".reading">reading</button>
-                        <button class="button" data-filter=".reviewed">reviewed</button>
+                    <div class="button-group" data-filter-group="best" role="group" aria-label="Filter by best">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".reading">reading</button>
+                        <button class="button" aria-pressed="false" data-filter=".reviewed">reviewed</button>
                     </div>
 
-                    <div class="button-group" data-filter-group="year">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".f2026">2026</button>
-                        <button class="button" data-filter=".f2025">2025</button>
-                        <button class="button" data-filter=".f2024">2024</button>
-                        <button class="button" data-filter=".f2023">2023</button>
-                        <button class="button" data-filter=".f2022">2022</button>
-                        <button class="button" data-filter=".f2021_and_before">2021 and Before</button>
+                    <div class="button-group" data-filter-group="year" role="group" aria-label="Filter by year">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2026">2026</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2025">2025</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2024">2024</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2023">2023</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2022">2022</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2021_and_before">2021 and
+                            Before</button>
                     </div>
 
-                    <div class="button-group" data-filter-group="type">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".fiction">fiction</button>
-                        <button class="button" data-filter=".non-fiction">non-fiction</button>
+                    <div class="button-group" data-filter-group="type" role="group" aria-label="Filter by type">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".fiction">fiction</button>
+                        <button class="button" aria-pressed="false" data-filter=".non-fiction">non-fiction</button>
                     </div>
                 </div>
             </div>
@@ -118,13 +137,14 @@
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
 
-                <div class="grid-item reading reviewed non-fiction fiction f2026">
+                <div class="grid-item reading reviewed non-fiction fiction thinking f2026">
                     <h3>2026</h3>
                 </div>
 
                 <div class="grid-item parent reading non-fiction f2026">
                     <div id="on_zionist_literature_book_review" class="floated"><img
-                            src="/images/books/on_zionist_literature.webp" />
+                            src="/images/books/on_zionist_literature.webp" alt="On Zionist Literature" width="150"
+                            height="240" decoding="async" />
                     </div>
                     <p>
                         <strong>On Zionist Literature</strong><br /><br />
@@ -132,19 +152,33 @@
                     </p>
                 </div>
 
-                <div class="grid-item parent thinking non-fiction f2026">
-                    <div id="bullshit_jobs_book_review" class="floated"><img
-                            src="/images/books/bullshit_jobs.webp" />
+                <div class="grid-item parent reviewed non-fiction f2026">
+                    <div id="bullshit_jobs_book_review" class="floated"><img src="/images/books/bullshit_jobs.webp"
+                            alt="Bullshit Jobs" width="150" height="226" decoding="async" />
                     </div>
                     <p>
                         <strong>Bullshit Jobs</strong><br /><br />
-                        Thinking...
+                        So much of work is bullshit, it's true. Maybe it's not so much the case in civilized countries
+                        like China and Iran, but here in the Intestine of the Beast it's bullshit. I hear many coworkers
+                        and comrades speak about the uselessness parts of their job and I admit I am not entirely free
+                        of that myself. What makes it worse is that for the bullshit we do, some of us get paid well
+                        enough to be comfortable. But it's a false comfort. It's the comfort of a mouse trapped in a
+                        cage made of sugar.<br><br>
+                        For all the time wasting and getting treats, we become husks of human beings. We are pacified by
+                        treats and lose our ability to resist genocide and imperialism. Fortunately it seems that this
+                        level of treatlerism is coming to an end, and the Westoidian citizen will be more and more
+                        squeezed. Will we choose socialism or barbarism?<br><br>
+                        David Graeber, being an anarchist, repeatedly bashed the USSR, the DPRK, and the other
+                        "Socialist Regimes". I, on the other hand, praise those who gave tens of millions of lives
+                        fighting against the fascist Germans, Japanese, and Americans. We'll reconsider Graeber's
+                        opinions on "Socialist Regimes" when an anarchist regime manages to survive a year without
+                        taking US military aid.
                     </p>
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2026">
-                    <div id="of_mice_and_men_book_review" class="floated"><img
-                            src="/images/books/of_mice_and_men.webp" />
+                    <div id="of_mice_and_men_book_review" class="floated"><img src="/images/books/of_mice_and_men.webp"
+                            alt="Of Mice and Men" width="150" height="213" decoding="async" />
                     </div>
                     <p>
                         <strong>Of Mice and Men</strong><br /><br />
@@ -159,7 +193,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2026">
                     <div id="a_predatory_state_book_review" class="floated"><img
-                            src="/images/books/a_predatory_state.webp" />
+                            src="/images/books/a_predatory_state.webp" alt="A Predatory State" width="150" height="212"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>A Predatory State</strong><br /><br />
@@ -181,7 +216,8 @@
 
                 <div class="grid-item parent reviewed fiction f2026">
                     <div id="i_love_you_forever_book_review" class="floated"><img
-                            src="/images/books/i_love_you_forever.webp" />
+                            src="/images/books/i_love_you_forever.webp" alt="I Love You Forever" width="150"
+                            height="231" decoding="async" />
                     </div>
                     <p>
                         <strong>I Love You Forever</strong><br /><br />
@@ -194,7 +230,9 @@
 
                 <div class="grid-item parent reviewed non-fiction f2026">
                     <div id="the_destruction_of_palestine_is_the_destruction_of_the_earth_book_review" class="floated">
-                        <img src="/images/books/the_destruction _of_palestine_is_the_destruction.webp" />
+                        <img src="/images/books/the_destruction _of_palestine_is_the_destruction.webp"
+                            alt="The Destruction of Palestine is the Destruction of the Earth" width="150" height="240"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Destruction of Palestine is the Destruction of the Earth</strong><br /><br />
@@ -210,7 +248,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2026">
                     <div id="the_wretched_of_the_earth_book_review" class="floated"><img
-                            src="/images/books/the_wretched_of_the_earth.webp" />
+                            src="/images/books/the_wretched_of_the_earth.webp" alt="The Wretched of the Earth"
+                            width="150" height="234" decoding="async" />
                     </div>
                     <p>
                         <strong>The Wretched of the Earth</strong><br /><br />
@@ -236,7 +275,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed non-fiction f2026">
-                    <div id="all_about_love_book_review" class="floated"><img src="/images/books/all_about_love.webp" />
+                    <div id="all_about_love_book_review" class="floated"><img src="/images/books/all_about_love.webp"
+                            alt="All About Love" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>All About Love</strong><br /><br />
@@ -274,7 +314,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2026">
                     <div id="reform_or_revolution_book_review" class="floated"><img
-                            src="/images/books/reform_or_revolution.webp" />
+                            src="/images/books/reform_or_revolution.webp" alt="Reform or Revolution" width="150"
+                            height="231" decoding="async" />
                     </div>
                     <p>
                         <strong>Reform or Revolution</strong><br /><br />
@@ -294,7 +335,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2026">
                     <div id="the_state_and_revolution_book_review" class="floated"><img
-                            src="/images/books/the_state_and_revolution.webp" />
+                            src="/images/books/the_state_and_revolution.webp" alt="The State and Revolution" width="150"
+                            height="246" decoding="async" />
                     </div>
                     <p>
                         <strong>The State and Revolution</strong><br /><br />
@@ -314,7 +356,9 @@
 
                 <div class="grid-item parent reviewed non-fiction f2026">
                     <div id="the_soviets_and_ourselves_two_commonwealths_book_review" class="floated"><img
-                            src="/images/books/the_soviets_and_ourselves_two_commonwealths.webp" />
+                            src="/images/books/the_soviets_and_ourselves_two_commonwealths.webp"
+                            alt="The Soviets and Ourselves: Two Commonwealths" width="150" height="210"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Soviets and Ourselves: Two Commonwealths</strong><br /><br />
@@ -333,7 +377,8 @@
 
                 <div class="grid-item parent reviewed fiction f2026">
                     <div id="the_richest_man_in_babylon_book_review" class="floated"><img
-                            src="/images/books/the_richest_man_in_babylon.webp" />
+                            src="/images/books/the_richest_man_in_babylon.webp" alt="The Richest Man in Babylon"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>The Richest Man in Babylon</strong><br /><br />
@@ -350,7 +395,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2026">
-                    <div id="vagabond_book_review" class="floated"><img src="/images/books/vagabond.webp" />
+                    <div id="vagabond_book_review" class="floated"><img src="/images/books/vagabond.webp" alt="Vagabond"
+                            width="150" height="215" decoding="async" />
                     </div>
                     <p>
                         <strong>Vagabond</strong><br /><br />
@@ -366,7 +412,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2026">
                     <div id="resisting_erasure_book_review" class="floated"><img
-                            src="/images/books/resisting_erasure.webp" />
+                            src="/images/books/resisting_erasure.webp" alt="Resisting Erasure" width="150" height="240"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Resisting Erasure</strong><br /><br />
@@ -380,7 +427,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2026">
                     <div id="on_contradiction_book_review" class="floated"><img
-                            src="/images/books/on_contradiction.webp" />
+                            src="/images/books/on_contradiction.webp" alt="On Contradiction" width="150" height="217"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>On Contradiction</strong><br /><br />
@@ -400,7 +448,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed non-fiction f2025">
-                    <div id="on_practice_book_review" class="floated"><img src="/images/books/on_practice.webp" />
+                    <div id="on_practice_book_review" class="floated"><img src="/images/books/on_practice.webp"
+                            alt="On Practice" width="150" height="217" decoding="async" />
                     </div>
                     <p>
                         <strong>On Practice</strong><br /><br />
@@ -414,7 +463,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2025">
                     <div id="oppose_book_worship_book_review" class="floated"><img
-                            src="/images/books/oppose_book_worship.webp" />
+                            src="/images/books/oppose_book_worship.webp" alt="Oppose Book Worship" width="150"
+                            height="236" decoding="async" />
                     </div>
                     <p>
                         <strong>Oppose Book Worship</strong><br /><br />
@@ -428,7 +478,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2025">
-                    <div id="hyperion_book_review" class="floated"><img src="/images/books/hyperion.webp" />
+                    <div id="hyperion_book_review" class="floated"><img src="/images/books/hyperion.webp" alt="Hyperion"
+                            width="150" height="260" decoding="async" />
                     </div>
                     <p>
                         <strong>Hyperion</strong><br /><br />
@@ -455,8 +506,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed non-fiction f2025">
-                    <div id="blood_in_my_eye_book_review" class="floated"><img
-                            src="/images/books/blood_in_my_eye.webp" />
+                    <div id="blood_in_my_eye_book_review" class="floated"><img src="/images/books/blood_in_my_eye.webp"
+                            alt="Blood In My Eye" width="150" height="255" decoding="async" />
                     </div>
                     <p>
                         <strong>Blood In My Eye</strong><br /><br />
@@ -473,7 +524,9 @@
 
                 <div class="grid-item parent reviewed non-fiction f2025">
                     <div id="perfect_victims_and_the_politics_of_appeal_book_review" class="floated"><img
-                            src="/images/books/perfect_victims_and_the_politics_of_appeal.webp" />
+                            src="/images/books/perfect_victims_and_the_politics_of_appeal.webp"
+                            alt="Perfect Victims and the Politics of Appeal" width="150" height="214"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Perfect Victims and the Politics of Appeal</strong><br /><br />
@@ -503,7 +556,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed non-fiction f2025">
-                    <div id="the_message_book_review" class="floated"><img src="/images/books/the_message.webp" />
+                    <div id="the_message_book_review" class="floated"><img src="/images/books/the_message.webp"
+                            alt="The Message" width="150" height="226" decoding="async" />
                     </div>
                     <p>
                         <strong>The Message</strong><br /><br />
@@ -524,7 +578,9 @@
                 </div>
 
                 <div class="grid-item parent reviewed non-fiction f2025">
-                    <div id="settlers_book_review" class="floated"><img src="/images/books/settlers.webp" />
+                    <div id="settlers_book_review" class="floated"><img src="/images/books/settlers.webp"
+                            alt="Settlers: The Mythology of the White Proletariat From Mayflower to Modern" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>Settlers: The Mythology of the White Proletariat From Mayflower to
@@ -548,7 +604,8 @@
 
                 <div class="grid-item parent reviewed fiction f2025">
                     <div id="returning_to_haifa_book_review" class="floated"><img
-                            src="/images/books/returning_to_haifa.webp" /></div>
+                            src="/images/books/returning_to_haifa.webp" alt="Returning to Haifa" width="150"
+                            height="217" decoding="async" /></div>
                     <p>
                         <strong>Returning to Haifa</strong><br /><br />
                         Heart wrenching. I felt myself fill with anger, and hate, then sadness, and mourning, then
@@ -561,7 +618,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2025">
                     <div id="blackshirts_and_reds_book_review" class="floated"><img
-                            src="/images/books/blackshirts_and_reds.webp" /></div>
+                            src="/images/books/blackshirts_and_reds.webp" alt="Blackshirts and Reds" width="150"
+                            height="218" decoding="async" /></div>
                     <p>
                         <strong>Blackshirts and Reds</strong><br /><br />
                         Parenti lays out a balanced defense of the soviet union in specific and communism in general in
@@ -576,7 +634,8 @@
 
                 <div class="grid-item parent reviewed fiction f2025">
                     <div id="the_repairer_of_reputations_book_review" class="floated"><img
-                            src="/images/books/the_repairer_of_reputations.webp" /></div>
+                            src="/images/books/the_repairer_of_reputations.webp" alt="The Repairer of Reputations"
+                            width="150" height="212" decoding="async" /></div>
                     <p>
                         <strong>The Repairer of Reputations</strong><br /><br />
                         An old classic in horror, written in the 1890s and commonly found in The King in Yellow. I
@@ -588,8 +647,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2025">
-                    <div id="hellstar_remina_book_review" class="floated"><img
-                            src="/images/books/hellstar_remina.webp" /></div>
+                    <div id="hellstar_remina_book_review" class="floated"><img src="/images/books/hellstar_remina.webp"
+                            alt="Hellstar Remina" width="150" height="230" decoding="async" /></div>
                     <p>
                         <strong>Hellstar Remina</strong><br /><br />
                         I don't like horror. All my friends know it, I avoid it as much as possible. Not because it
@@ -605,7 +664,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2025">
                     <div id="l_hegemonie_culturelle_book_review" class="floated"><img
-                            src="/images/books/l_hegemonie_culturelle.webp" /></div>
+                            src="/images/books/l_hegemonie_culturelle.webp" alt="L'Hégémonie Culturelle" width="150"
+                            height="230" decoding="async" /></div>
                     <p>
                         <strong>L'Hégémonie Culturelle</strong><br /><br />
                         This book was lent to me by a very good friend almost as a joke because he gave me the french
@@ -621,7 +681,8 @@
 
                 <div class="grid-item parent reviewed fiction f2025">
                     <div id="the_old_man_and_the_sea_book_review" class="floated"><img
-                            src="/images/books/the_old_man_and_the_sea.webp" /></div>
+                            src="/images/books/the_old_man_and_the_sea.webp" alt="The Old Man and the Sea" width="150"
+                            height="251" decoding="async" /></div>
                     <p>
                         <strong>The Old Man and the Sea</strong><br /><br />
                         Another old man trying to catch yet another fish. I won't spoil how it goes but the journey is
@@ -633,7 +694,9 @@
 
                 <div class="grid-item parent reviewed non-fiction f2025">
                     <div id="the_revolution_of_1936-1939_in_palestine_book_review" class="floated"><img
-                            src="/images/books/the_revolution_of_1936-1939_in_palestine.webp" /></div>
+                            src="/images/books/the_revolution_of_1936-1939_in_palestine.webp"
+                            alt="The Revolution of 1936-1939 in Palestine" width="150" height="233" decoding="async" />
+                    </div>
                     <p>
                         <strong>The Revolution of 1936-1939 in Palestine</strong><br /><br />
                         Ghassan Kanafani widely known in the west for fiction writing, but his non-fiction political
@@ -650,7 +713,8 @@
 
                 <div class="grid-item parent reviewed fiction f2025">
                     <div id="the_left_hand_of_darkness_book_review" class="floated"><img
-                            src="/images/books/the_left_hand_of_darkness.webp" /></div>
+                            src="/images/books/the_left_hand_of_darkness.webp" alt="The Left Hand of Darkness"
+                            width="150" height="258" decoding="async" /></div>
                     <p>
                         <strong>The Left Hand of Darkness</strong><br /><br />
                         Another of Ursula K. Le Guin's Hanish Cycle novels, The Left Hand of Darkness has many of the
@@ -660,7 +724,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed non-fiction f2025">
-                    <div id="the_green_book_book_review" class="floated"><img src="/images/books/the_green_book.webp" />
+                    <div id="the_green_book_book_review" class="floated"><img src="/images/books/the_green_book.webp"
+                            alt="The Green Book" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>The Green Book</strong><br /><br />
@@ -676,7 +741,8 @@
 
                 <div class="grid-item parent reviewed fiction f2024">
                     <div id="the_name_of_the_wind_book_review" class="floated"><img
-                            src="/images/books/the_name_of_the_wind.webp" /></div>
+                            src="/images/books/the_name_of_the_wind.webp" alt="The Name of the Wind" width="150"
+                            height="228" decoding="async" /></div>
                     <p>
                         <strong>The Name of the Wind</strong><br /><br />
                         First of all, the magic system in this world is really cool. It's what you would get if you
@@ -696,7 +762,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2024">
                     <div id="the_first_time_manager_book_review" class="floated"><img
-                            src="/images/books/the_first_time_manager.webp" /></div>
+                            src="/images/books/the_first_time_manager.webp" alt="The First Time Manager" width="150"
+                            height="224" decoding="async" /></div>
                     <p>
                         <strong>The First Time Manager</strong><br /><br />
                         This book is surprisingly good. It was another assigned reading for my job. I found it very
@@ -710,7 +777,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed non-fiction f2024">
-                    <div id="the_servant_book_review" class="floated"><img src="/images/books/the_servant.webp" /></div>
+                    <div id="the_servant_book_review" class="floated"><img src="/images/books/the_servant.webp"
+                            alt="The Servant" width="150" height="240" decoding="async" /></div>
                     <p>
                         <strong>The Servant</strong><br /><br />
                         The Servant is a book about leadership which attempt to change old corporate habits from old
@@ -724,7 +792,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2024">
                     <div id="a_dying_colonialism_book_review" class="floated"><img
-                            src="/images/books/a_dying_colonialism.webp" /></div>
+                            src="/images/books/a_dying_colonialism.webp" alt="A Dying Colonialism" width="150"
+                            height="234" decoding="async" /></div>
                     <p>
                         <strong>A Dying Colonialism</strong><br /><br />
                         As I read about the Algerian fight for liberation I gained a deeper understanding of French
@@ -753,7 +822,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2024">
-                    <div id="ishmael_book_review" class="floated"><img src="/images/books/ishmael.webp" /></div>
+                    <div id="ishmael_book_review" class="floated"><img src="/images/books/ishmael.webp" alt="Ishmael"
+                            width="150" height="233" decoding="async" /></div>
                     <p>
                         <strong>Ishmael</strong><br /><br />
                         My whole experience with Ishmael was wonderful. It started off with a conversation with great
@@ -777,7 +847,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2024">
                     <div id="value_price_and_profit_book_review" class="floated"><img
-                            src="/images/books/value_price_and_profit.webp" /></div>
+                            src="/images/books/value_price_and_profit.webp" alt="Value, Price and Profit" width="150"
+                            height="223" decoding="async" /></div>
                     <p>
                         <strong>Value, Price and Profit</strong><br /><br />
                         Marx makes the relationship of value, price, and profit very clear. We often still hear about
@@ -789,7 +860,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2024">
                     <div id="wage-labour_and_capital_book_review" class="floated"><img
-                            src="/images/books/wage-labour_and_capital.webp" /></div>
+                            src="/images/books/wage-labour_and_capital.webp" alt="Wage-Labour and Capital" width="150"
+                            height="223" decoding="async" /></div>
                     <p>
                         <strong>Wage-Labour and Capital</strong><br /><br />
                         I was already familiar with Real Wages, but I had not thought of Relative Wages which are really
@@ -802,7 +874,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2024">
                     <div id="abandoned_palestine_refugee_book_review" class="floated"><img
-                            src="/images/books/abandoned_palestine_refugee.webp" /></div>
+                            src="/images/books/abandoned_palestine_refugee.webp" alt="Abandoned Palestine Refugee"
+                            width="150" height="233" decoding="async" /></div>
                     <p>
                         <strong>Abandoned Palestine Refugee</strong><br /><br />
                         I met Ihmayed Ali and his daughter at a Palestinian book talk where they shared about their
@@ -816,7 +889,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2024">
-                    <div id="moby_dick_book_review" class="floated"><img src="/images/books/moby_dick.webp" /></div>
+                    <div id="moby_dick_book_review" class="floated"><img src="/images/books/moby_dick.webp"
+                            alt="Moby Dick" width="150" height="230" decoding="async" /></div>
                     <p>
                         <strong>Moby Dick</strong><br /><br />
                         This book is absolutely massive. Melville clearly loves and knows much about whaling and he
@@ -830,7 +904,8 @@
 
                 <div class="grid-item parent reviewed non-fiction f2024">
                     <div id="principles_of_communism_book_review" class="floated"><img
-                            src="/images/books/principles_of_communism.webp" /></div>
+                            src="/images/books/principles_of_communism.webp" alt="Principles of Communism" width="150"
+                            height="222" decoding="async" /></div>
                     <p>
                         <strong>Principles of Communism</strong><br /><br />
                         An easy introduction into communist theory. This is absolutely a must read that lays out
@@ -840,7 +915,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed non-fiction f2024">
-                    <div id="strong_towns_book_review" class="floated"><img src="/images/books/strong_towns.webp" />
+                    <div id="strong_towns_book_review" class="floated"><img src="/images/books/strong_towns.webp"
+                            alt="Strong Towns" width="150" height="225" decoding="async" />
                     </div>
                     <p>
                         <strong>Strong Towns</strong><br /><br />
@@ -855,7 +931,8 @@
 
                 <div class="grid-item parent reviewed fiction f2024">
                     <div id="to_kill_a_mockingbird_book_review" class="floated"><img
-                            src="/images/books/to_kill_a_mockingbird.webp" /></div>
+                            src="/images/books/to_kill_a_mockingbird.webp" alt="To Kill A Mockingbird" width="150"
+                            height="232" decoding="async" /></div>
                     <p>
                         <strong>To Kill A Mockingbird</strong><br /><br />
                         If ever there was a manual on how to be a good father, this would be a contender. This also goes
@@ -869,7 +946,8 @@
 
                 <div class="grid-item parent reviewed fiction f2024">
                     <div id="the_dispossessed_book_review" class="floated"><img
-                            src="/images/books/the_dispossessed.webp" />
+                            src="/images/books/the_dispossessed.webp" alt="The Dispossessed" width="150" height="249"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>The Dispossessed</strong><br /><br />
@@ -887,7 +965,8 @@
 
                 <div class="grid-item parent reviewed fiction f2023">
                     <div id="children_of_memory_book_review" class="floated"><img
-                            src="/images/books/children_of_memory.webp" /></div>
+                            src="/images/books/children_of_memory.webp" alt="Children of Memory" width="150"
+                            height="230" decoding="async" /></div>
                     <p>
                         <strong>Children of Memory</strong><br /><br />
                         So far we've had spiders, octopus, true aliens (insert "Nano Machines, Son!" audio sting), as
@@ -903,7 +982,8 @@
 
                 <div class="grid-item parent reviewed fiction f2023">
                     <div id="2001_a_space_odyssey_book_review" class="floated"><img
-                            src="/images/books/2001_a_space_odyssey.webp" /></div>
+                            src="/images/books/2001_a_space_odyssey.webp" alt="2001: A Space Odyssey" width="150"
+                            height="225" decoding="async" /></div>
                     <p>
                         <strong>2001: A Space Odyssey</strong><br /><br />
                         Written with the intent of being adapted into a film, 2001 A Space Odyssey is mostly vibes and
@@ -915,7 +995,8 @@
 
                 <div class="grid-item parent reviewed fiction f2023">
                     <div id="children_of_ruin_book_review" class="floated"><img
-                            src="/images/books/children_of_ruin.webp" />
+                            src="/images/books/children_of_ruin.webp" alt="Children of Ruin" width="150" height="230"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Children of Ruin</strong><br /><br />
@@ -934,7 +1015,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2023">
-                    <div id="born_book_review" class="floated"><img src="/images/books/born.webp" /></div>
+                    <div id="born_book_review" class="floated"><img src="/images/books/born.webp" alt="Born" width="150"
+                            height="230" decoding="async" /></div>
                     <p>
                         <strong>Born</strong><br /><br />
                         A neat view into the origins of the Punisher. One can easily see how plausible this course of
@@ -944,7 +1026,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2023">
-                    <div id="head_lopper_book_review" class="floated"><img src="/images/books/head_lopper.webp" /></div>
+                    <div id="head_lopper_book_review" class="floated"><img src="/images/books/head_lopper.webp"
+                            alt="Head Lopper" width="150" height="220" decoding="async" /></div>
                     <p>
                         <strong>Head Lopper</strong><br /><br />
                         Head Lopper achieved exactly what it set out to do. It was beautiful and entertaining. At no
@@ -955,7 +1038,8 @@
 
                 <div class="grid-item parent reviewed fiction f2023">
                     <div id="children_of_time_book_review" class="floated"><img
-                            src="/images/books/children_of_time.webp" />
+                            src="/images/books/children_of_time.webp" alt="Children of Time" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Children of Time</strong><br /><br />
@@ -970,7 +1054,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2023">
-                    <div id="1984_book_review" class="floated"><img src="/images/books/1984.webp" /></div>
+                    <div id="1984_book_review" class="floated"><img src="/images/books/1984.webp" alt="1984" width="150"
+                            height="268" decoding="async" /></div>
                     <p>
                         <strong>1984</strong><br /><br />
                         What can I say about 1984 that hadn't been said already? I originally decided to read this book
@@ -982,7 +1067,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2023">
-                    <div id="solaris_book_review" class="floated"><img src="/images/books/solaris.webp" /></div>
+                    <div id="solaris_book_review" class="floated"><img src="/images/books/solaris.webp" alt="Solaris"
+                            width="150" height="236" decoding="async" /></div>
                     <p>
                         <strong>Solaris</strong><br /><br />
                         Solaris was originally written in Russian and the translation is of disputed quality. This
@@ -993,7 +1079,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2023">
-                    <div id="elder_race_book_review" class="floated"><img src="/images/books/elder_race.webp" /></div>
+                    <div id="elder_race_book_review" class="floated"><img src="/images/books/elder_race.webp"
+                            alt="Elder Race" width="150" height="240" decoding="async" /></div>
                     <p>
                         <strong>Elder Race</strong><br /><br />
                         I was in the mall book store with a friend just killing time when the cover of this book caught
@@ -1012,7 +1099,8 @@
 
                 <div class="grid-item parent reviewed fiction f2022">
                     <div id="transmetropolitan_book_review" class="floated"><img
-                            src="/images/books/transmetropolitan.webp" />
+                            src="/images/books/transmetropolitan.webp" alt="Transmetropolitan" width="150" height="231"
+                            decoding="async" />
                     </div>
                     <p>
                         <strong>Transmetropolitan</strong><br /><br />
@@ -1024,7 +1112,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2022">
-                    <div id="snow_crash_book_review" class="floated"><img src="/images/books/snow_crash.webp" /></div>
+                    <div id="snow_crash_book_review" class="floated"><img src="/images/books/snow_crash.webp"
+                            alt="Snow Crash" width="150" height="200" decoding="async" /></div>
                     <p>
                         <strong>Snow Crash</strong><br /><br />
                         Right as the Cyberpunk 2077 conversation was warming up, and after watching Action Button's 8
@@ -1039,8 +1128,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2022">
-                    <div id="brave_new_world_book_review" class="floated"><img
-                            src="/images/books/brave_new_world.webp" />
+                    <div id="brave_new_world_book_review" class="floated"><img src="/images/books/brave_new_world.webp"
+                            alt="Brave New World" width="150" height="230" decoding="async" />
                     </div>
                     <p>
                         <strong>Brave New World</strong><br /><br />
@@ -1056,7 +1145,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2021_and_before">
-                    <div id="paper_girls_book_review" class="floated"><img src="/images/books/paper_girls.webp" /></div>
+                    <div id="paper_girls_book_review" class="floated"><img src="/images/books/paper_girls.webp"
+                            alt="Paper Girls" width="150" height="230" decoding="async" /></div>
                     <p>
                         <strong>Paper Girls</strong><br /><br />
                         Hands down one of my favorite graphic novels. I love every character and their development. The
@@ -1068,7 +1158,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2021_and_before">
-                    <div id="dune_book_review" class="floated"><img src="/images/books/dune.webp" /></div>
+                    <div id="dune_book_review" class="floated"><img src="/images/books/dune.webp" alt="Dune" width="150"
+                            height="224" decoding="async" /></div>
                     <p>
                         <strong>Dune</strong><br /><br />
                         Dune is science fiction at its finest: an exploration of real human life, relationships,
@@ -1089,7 +1180,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2021_and_before">
-                    <div id="pathfinder_book_review" class="floated"><img src="/images/books/pathfinder.webp" /></div>
+                    <div id="pathfinder_book_review" class="floated"><img src="/images/books/pathfinder.webp"
+                            alt="Pathfinder" width="150" height="226" decoding="async" /></div>
                     <p>
                         <strong>Pathfinder</strong><br /><br />
                         I remember Pathfinder as being a great science fiction novel that had a fun twist with
@@ -1099,7 +1191,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2021_and_before">
-                    <div id="enders_game_book_review" class="floated"><img src="/images/books/enders_game.webp" /></div>
+                    <div id="enders_game_book_review" class="floated"><img src="/images/books/enders_game.webp"
+                            alt="Ender's Game" width="150" height="222" decoding="async" /></div>
                     <p>
                         <strong>Ender's Game</strong><br /><br />
                         I read Ender's Game a long time ago in elementary school and I still remember it well. Card
@@ -1109,8 +1202,8 @@
                 </div>
 
                 <div class="grid-item parent reviewed fiction f2021_and_before">
-                    <div id="the_law_of_ueki_book_review" class="floated"><img
-                            src="/images/books/the_law_of_ueki.webp" />
+                    <div id="the_law_of_ueki_book_review" class="floated"><img src="/images/books/the_law_of_ueki.webp"
+                            alt="The Law of Ueki" width="150" height="227" decoding="async" />
                     </div>
                     <p>
                         <strong>The Law of Ueki</strong><br /><br />
@@ -1126,7 +1219,8 @@
 
                 <div class="grid-item parent reviewed fiction f2021_and_before">
                     <div id="majoras_mask_manga_book_review" class="floated"><img
-                            src="/images/books/majoras_mask_manga.webp" /></div>
+                            src="/images/books/majoras_mask_manga.webp" alt="The Legend of Zelda - Major's Mask Manga"
+                            width="150" height="225" decoding="async" /></div>
                     <p>
                         <strong>The Legend of Zelda - Major's Mask Manga</strong><br /><br />
                         This is a neat adaptation of Majora's Mask into a manga. I think adapting relatively linear
@@ -1205,6 +1299,10 @@
                             if (!isButton) return;
                             buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
                             event.target.classList.add("is-checked");
+                            // Keep the accessible state in sync with the visible one
+                            buttonGroup.querySelectorAll(".button").forEach(function (button) {
+                                button.setAttribute("aria-pressed", button.classList.contains("is-checked") ? "true" : "false");
+                            });
                         });
                     });
                 };
@@ -1220,11 +1318,11 @@
             </script>
 
             <!-- footer start -->
-            
+
             <hr />
 
             <p align="center">© 2024-2026 Craft Beetle | All rights reserved</p>
-            <p align="center"><a href="mailto:email@protonmail.com">craftbeetle@protonmail.com</a> | <a
+            <p align="center"><a href="mailto:craftbeetle@protonmail.com">craftbeetle@protonmail.com</a> | <a
                     href="https://www.craftbeetle.com/rss.xml" target="_blank">RSS</a></p>
         </div>
     </main>

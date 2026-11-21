@@ -4,16 +4,34 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Craft Beetle</title>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <title>Games | Craft Beetle</title>
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.craftbeetle.com/rss.xml" />
-    <link rel="icon" type="image/x-icon" href="//images/branding/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/branding/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/assets/js/style.js" defer></script>
+    <!-- metadata start -->
+    <meta name="description"
+        content="Here live some of my thoughts on the games I have completed or played enough of. Sometimes I have a lot to say about the games I spend hours playing…">
+    <link rel="canonical" href="https://craftbeetle.com/games.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Craft Beetle">
+    <meta property="og:title" content="Games | Craft Beetle">
+    <meta property="og:description"
+        content="Here live some of my thoughts on the games I have completed or played enough of. Sometimes I have a lot to say about the games I spend hours playing…">
+    <meta property="og:url" content="https://craftbeetle.com/games.html">
+    <meta property="og:image" content="https://craftbeetle.com/images/branding/craft_beetle_logo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="422">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Games | Craft Beetle">
+    <meta name="twitter:description"
+        content="Here live some of my thoughts on the games I have completed or played enough of. Sometimes I have a lot to say about the games I spend hours playing…">
+    <meta name="twitter:image" content="https://craftbeetle.com/images/branding/craft_beetle_logo.jpg">
+    <!-- metadata end -->
 </head>
 
 <body>
-    <aside class="sidebar">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <aside class="sidebar" aria-label="Site sections">
         <ul>
             <li><a href="/ecology.html" target="_self">🍄 Ecology</a></li>
             <li><a href="/game_dev.html" target="_self">🕹️ Game Dev.</a></li>
@@ -35,11 +53,11 @@
             <li><a href="/links.html" target="_self">🔗 Links</a></li>
         </ul>
     </aside>
-    <main class="content">
+    <main class="content" id="main" tabindex="-1">
         <h1><a href="/" target="_self">Craft Beetle</a></h1>
         <div class="container">
             <hr />
-            <nav>
+            <nav aria-label="Sections">
                 <table class="nav-table">
                     <tr>
                         <td><a href="/ecology.html" target="_self">🍄 Ecology</a></td>
@@ -76,7 +94,7 @@
                 };
             </script>
 
-<!-- header end -->
+            <!-- header end -->
 
             <h2 id="section1">GAMES</h2>
             <p>
@@ -88,33 +106,34 @@
             <div
                 class="grid-item title playing thinking reviewed animated live-action f2026 f2025 f2024 f2023 f2022 f2021 f2020 f2019 f2018 f2017 f2016 f2015 f2014 f2013 f2012 f2011 f2010_and_before funsorted">
                 <div class="filters">
-                    <div class="button-group" data-filter-group="best">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".playing">playing</button>
-                        <button class="button" data-filter=".thinking">thinking</button>
-                        <button class="button" data-filter=".reviewed">reviewed</button>
+                    <div class="button-group" data-filter-group="best" role="group" aria-label="Filter by best">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".playing">playing</button>
+                        <button class="button" aria-pressed="false" data-filter=".thinking">thinking</button>
+                        <button class="button" aria-pressed="false" data-filter=".reviewed">reviewed</button>
                     </div>
 
-                    <div class="button-group" data-filter-group="year">
-                        <button class="button is-checked" data-filter="">all</button>
-                        <button class="button" data-filter=".f2026">2026</button>
-                        <button class="button" data-filter=".f2025">2025</button>
-                        <button class="button" data-filter=".f2024">2024</button>
-                        <button class="button" data-filter=".f2023">2023</button>
-                        <button class="button" data-filter=".f2022">2022</button>
-                        <button class="button" data-filter=".f2021">2021</button>
-                        <button class="button" data-filter=".f2020">2020</button>
-                        <button class="button" data-filter=".f2019">2019</button>
-                        <button class="button" data-filter=".f2018">2018</button>
-                        <button class="button" data-filter=".f2017">2017</button>
-                        <button class="button" data-filter=".f2016">2016</button>
-                        <button class="button" data-filter=".f2015">2015</button>
-                        <button class="button" data-filter=".f2014">2014</button>
-                        <button class="button" data-filter=".f2013">2013</button>
-                        <button class="button" data-filter=".f2012">2012</button>
-                        <button class="button" data-filter=".f2011">2011</button>
-                        <button class="button" data-filter=".f2010_and_before">2010 and Before</button>
-                        <button class="button" data-filter=".funsorted">Unsorted</button>
+                    <div class="button-group" data-filter-group="year" role="group" aria-label="Filter by year">
+                        <button class="button is-checked" aria-pressed="true" data-filter="">all</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2026">2026</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2025">2025</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2024">2024</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2023">2023</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2022">2022</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2021">2021</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2020">2020</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2019">2019</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2018">2018</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2017">2017</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2016">2016</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2015">2015</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2014">2014</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2013">2013</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2012">2012</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2011">2011</button>
+                        <button class="button" aria-pressed="false" data-filter=".f2010_and_before">2010 and
+                            Before</button>
+                        <button class="button" aria-pressed="false" data-filter=".funsorted">Unsorted</button>
                     </div>
                 </div>
             </div>
@@ -123,13 +142,32 @@
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
 
-                <div class="grid-item reviewed playing f2026">
+                <div class="grid-item reviewed playing thinking f2026">
                     <h3>2026</h3>
+                </div>
+
+                <div class="grid-item parent reviewed f2026">
+                    <div id="half_earth_socialism_game_review" class="floated">
+                        <img src="/images/games/half_earth_socialism.webp" alt="Half-Earth Socialism" width="150"
+                            height="225" decoding="async" />
+                    </div>
+                    <p> <strong>Half-Earth Socialism</strong><br /><br />
+                        A great comrade introduced me to this game and we three spent hours playing it, pouring over the
+                        stats, debating what the next planning session should contain, and generally acting out global
+                        planning. It was amazing. I'd never been so totally engrossed in a game before and so mentally
+                        stimulated. I then spent the rest of the week playing it and replaying it, iterating, learning,
+                        experimenting. Eventually I saved the world. Then I saved the world quickly. Then I saved the
+                        world by 2055 and did it very smoothly. I learned so much in the process: the impact of certain
+                        industries on the planet, the how some technologies or ideas are not as impactful or useful as
+                        they first seem, what is a must do as soon as you start and what you can hold off until the end.
+                        I highly recommend it, and it's free!
+                    </p>
                 </div>
 
                 <div class="grid-item parent playing f2026">
                     <div id="big_walk_game_review" class="floated">
-                        <img src="images\games\big_walk.webp" />
+                        <img src="/images/games/big_walk.webp" alt="Big Walk" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Big Walk</strong><br /><br />
                         Playing...
@@ -138,7 +176,7 @@
 
                 <div class="grid-item parent playing f2026">
                     <div id="peak_game_review" class="floated">
-                        <img src="images\games\peak.webp" />
+                        <img src="/images/games/peak.webp" alt="PEAK" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>PEAK</strong><br /><br />
                         Playing...
@@ -147,7 +185,8 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="stick_fight_the_game_game_review" class="floated">
-                        <img src="images\games\stick_fight_the_game.webp" />
+                        <img src="/images/games/stick_fight_the_game.webp" alt="Stick Fight: The Game" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Stick Fight: The Game</strong><br /><br />
                         I grew up watching stop motion animations of lego and stickmen fighting and this game feels just
@@ -160,7 +199,8 @@
 
                 <div class="grid-item parent playing f2026">
                     <div id="LEGO_the_lord_of_the_rings_game_review" class="floated">
-                        <img src="images\games\lego_the_lord_of_the_rings.webp" />
+                        <img src="/images/games/lego_the_lord_of_the_rings.webp" alt="LEGO The Lord of the Rings"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>LEGO The Lord of the Rings</strong><br /><br />
                         Playing...
@@ -169,7 +209,8 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="golf_with_your_friends_game_review" class="floated">
-                        <img src="images\games\golf_with_your_friends.webp" />
+                        <img src="/images/games/golf_with_your_friends.webp" alt="Golf With Your Friends" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Golf With Your Friends</strong><br /><br />
                         At the behest of a good friend, I purchased this game on an incredible 90% off sale for $1.49.
@@ -180,7 +221,8 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="thomas_was_alone_game_review" class="floated">
-                        <img src="images\games\thomas_was_alone.webp" />
+                        <img src="/images/games/thomas_was_alone.webp" alt="Thomas Was Alone" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Thomas Was Alone</strong><br /><br />
                         I played about half of Thomas Was Alone and lost interest. The story was not enough to hook me
@@ -191,7 +233,8 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="pilgrims_game_review" class="floated">
-                        <img src="images\games\pilgrims.webp" />
+                        <img src="/images/games/pilgrims.webp" alt="Pilgrims" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Pilgrims</strong><br /><br />
                         Pilgrims is an endearing, cute, and clever game where you walk around giving things to people
@@ -204,7 +247,8 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="vampire_survivors_game_review" class="floated">
-                        <img src="images\games\vampire_survivors.webp" />
+                        <img src="/images/games/vampire_survivors.webp" alt="Vampire Survivors" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Vampire Survivors</strong><br /><br />
                         I went in expecting a kind of boring experience but I was pleasantly surprised. The only
@@ -217,7 +261,8 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="kill_knight_game_review" class="floated">
-                        <img src="images\games\kill_knight.webp" />
+                        <img src="/images/games/kill_knight.webp" alt="Kill Knight" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Kill Knight</strong><br /><br />
                         At first, when I was playing the tutorial, I thought the controls were convoluted and I expected
@@ -232,7 +277,8 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="aer_memories_of_old_game_review" class="floated">
-                        <img src="images\games\aer_memories_of_old.webp" />
+                        <img src="/images/games/aer_memories_of_old.webp" alt="AER Memories of Old" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>AER Memories of Old</strong><br /><br />
                         I flew around a bit, discovered the whole map, talked to some people, read some old scrolls and
@@ -243,7 +289,7 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="minit_game_review" class="floated">
-                        <img src="images\games\minit.webp" />
+                        <img src="/images/games/minit.webp" alt="Minit" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Minit</strong><br /><br />
                         Get up, run around smacking things, faceplant in 60 seconds. An average work day. Also what
@@ -253,7 +299,7 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="limbo_game_review" class="floated">
-                        <img src="images\games\limbo.webp" />
+                        <img src="/images/games/limbo.webp" alt="Limbo" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Limbo</strong><br /><br />
                         I was under the impression that this was a horror game but it's more of a horror themed puzzle
@@ -265,7 +311,8 @@
 
                 <div class="grid-item parent reviewed f2026">
                     <div id="brothers_a_tale_of_two_sons_game_review" class="floated">
-                        <img src="images\games\brothers_a_tale_of_two_sons.webp" />
+                        <img src="/images/games/brothers_a_tale_of_two_sons.webp" alt="Brothers: A Tale of Two Sons"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Brothers: A Tale of Two Sons</strong><br /><br />
                         I don't know why I waited so long to play this game but I'm glad I finally did. It looks
@@ -285,7 +332,7 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="celeste_game_review" class="floated">
-                        <img src="images\games\celeste.webp" />
+                        <img src="/images/games/celeste.webp" alt="Celeste" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Celeste</strong><br /><br />
                         I had originally bounced off of Celeste the first few times I tried it. Something about the
@@ -301,7 +348,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="ARC_raiders_game_review" class="floated">
-                        <img src="images\games\ARC_raiders.webp" />
+                        <img src="/images/games/ARC_raiders.webp" alt="ARC Raiders" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>ARC Raiders</strong><br /><br />
                         I got and played ARC Raiders because I wanted to hang out with a good friend and chat. In that
@@ -317,7 +365,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="hollow_night_silksong_game_review" class="floated">
-                        <img src="images\games\hollow_night_silksong.webp" />
+                        <img src="/images/games/hollow_night_silksong.webp" alt="Hollow Knight: Silksong" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Hollow Knight: Silksong</strong><br /><br />
                         What an experience! 3 months and 71 hrs later I have 100% completed Silksong. There's still a
@@ -337,7 +386,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="sonic_mania_game_review" class="floated">
-                        <img src="images\games\sonic_mania.webp" />
+                        <img src="/images/games/sonic_mania.webp" alt="Sonic Mania" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Sonic Mania</strong><br /><br />
                         Sonic Mania is popularly regarded as a great Sonic game and masterful return to form developed
@@ -355,7 +405,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="LEGO_builders_journey_game_review" class="floated">
-                        <img src="images\games\LEGO_builders_journey.webp" />
+                        <img src="/images/games/LEGO_builders_journey.webp" alt="LEGO Builder's Journey" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>LEGO Builder's Journey</strong><br /><br />
                         Played about half of the game, which isn't much considering it takes about 90 minutes to beat,
@@ -367,7 +418,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="overgrowth_game_review" class="floated">
-                        <img src="images\games\overgrowth.webp" />
+                        <img src="/images/games/overgrowth.webp" alt="Overgrowth" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Overgrowth</strong><br /><br />
                         I was first interested in Overgrowth because of the 2014 GDC talk the developer did explaining
@@ -383,7 +435,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="mouthwashing_game_review" class="floated">
-                        <img src="images\games\mouthwashing.webp" />
+                        <img src="/images/games/mouthwashing.webp" alt="Mouthwashing" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Mouthwashing</strong><br /><br />
                         I didn't intend to play this game. I heard that a new indie horror game had everyone excited and
@@ -396,7 +449,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="sludge_life_game_review" class="floated">
-                        <img src="images\games\sludge_life.webp" />
+                        <img src="/images/games/sludge_life.webp" alt="Sludge Life" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Sludge Life</strong><br /><br />
                         Folks are rude and on edge, the place sucks, there's sludge everywhere. I ate some slugs, tags
@@ -406,7 +460,7 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="dredge_game_review" class="floated">
-                        <img src="images\games\dredge.webp" />
+                        <img src="/images/games/dredge.webp" alt="Dredge" width="150" height="211" decoding="async" />
                     </div>
                     <p> <strong>Dredge</strong><br /><br />
                         It starts out simple enough, a fishing rod, an ominous fog, a hamlet with a dock. Then Dredge
@@ -419,7 +473,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="into_the_breach_game_review" class="floated">
-                        <img src="images\games\into_the_breach.webp" />
+                        <img src="/images/games/into_the_breach.webp" alt="Into The Breach" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Into The Breach</strong><br /><br />
                         Mechs on a chess board, what more can you ask for? Well, maybe it's not the greatest game ever
@@ -431,7 +486,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="darkest_dungeon_game_review" class="floated">
-                        <img src="images\games\darkest_dungeon.webp" />
+                        <img src="/images/games/darkest_dungeon.webp" alt="Darkest Dungeon" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Darkest Dungeon</strong><br /><br />
                         Sometimes a game just doesn't click. This one was such a case. I played it for a bit and didn't
@@ -442,7 +498,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="antichamber_game_review" class="floated">
-                        <img src="images\games\antichamber.webp" />
+                        <img src="/images/games/antichamber.webp" alt="Antichamber" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Antichamber</strong><br /><br />
                         I enjoyed me time with Antichamber. The puzzles were well thought out, though perhaps smarter
@@ -453,7 +510,7 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="sulfur_game_review" class="floated">
-                        <img src="images\games\sulfur.webp" />
+                        <img src="/images/games/sulfur.webp" alt="Sulfur" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Sulfur</strong><br /><br />
                         A cute little game about shooting goblins in purgatory while hunting down a witch. It's got a
@@ -466,7 +523,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="super_meat_boy_game_review" class="floated">
-                        <img src="images\games\super_meat_boy.webp" />
+                        <img src="/images/games/super_meat_boy.webp" alt="Super Meat Boy" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Super Meat Boy</strong><br /><br />
                         Maybe I'm not as young and dexterous as I use to be. It's a repeating theme in these reviews. As
@@ -480,7 +538,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="night_in_the_woods_game_review" class="floated">
-                        <img src="images\games\night_in_the_woods.webp" />
+                        <img src="/images/games/night_in_the_woods.webp" alt="Night in the Woods" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Night in the Woods</strong><br /><br />
                         All I knew about this game was a single screenshot of Mae and Gregg on a bike and the vague idea
@@ -498,7 +557,7 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="ape_out_game_review" class="floated">
-                        <img src="images\games\ape_out.webp" />
+                        <img src="/images/games/ape_out.webp" alt="Ape Out" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Ape Out</strong><br /><br />
                         Phenomenal sound design paired with a single visceral gameplay mechanic accompanied by very
@@ -509,7 +568,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="aperture_desk_job_game_review" class="floated">
-                        <img src="images\games\aperture_desk_job.webp" />
+                        <img src="/images/games/aperture_desk_job.webp" alt="Aperture Desk Job" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Aperture Desk Job</strong><br /><br />
                         Funny silly toilet desk game.
@@ -518,7 +578,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="metal_gear_rising_revengence_game_review" class="floated">
-                        <img src="images\games\metal_gear_rising_revengence.webp" />
+                        <img src="/images/games/metal_gear_rising_revengence.webp" alt="Metal Gear Rising: Revengence"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Metal Gear Rising: Revengence</strong><br /><br />
                         I admit that before playing Metal Gear Rising: Revengence, I was not a fan of Kojima's. Maybe
@@ -543,7 +604,8 @@
 
                 <div class="grid-item parent reviewed f2025">
                     <div id="olliolli_world_game_review" class="floated">
-                        <img src="images\games\olliolli_world.webp" />
+                        <img src="/images/games/olliolli_world.webp" alt="OlliOlli World" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>OlliOlli World</strong><br /><br />
                         I got OlliOlli World because I enjoyed my time with <a
@@ -564,7 +626,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="need_for_speed_III_hot_pursuit_game_review" class="floated">
-                        <img src="images\games\need_for_speed_III_hot_pursuit.webp" />
+                        <img src="/images/games/need_for_speed_III_hot_pursuit.webp"
+                            alt="Need For Speed III: Hot Pursuit" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Need For Speed III: Hot Pursuit</strong><br /><br />
                         I am a huge fan of 5th generation graphics. I didn't play video games back then so I don't have
@@ -581,7 +644,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="bad_north_game_review" class="floated">
-                        <img src="images\games\bad_north.webp" />
+                        <img src="/images/games/bad_north.webp" alt="Bad North" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Bad North</strong><br /><br />
                         It seems a little too simple at first. Just move your guys to kill their guys. The more of your
@@ -600,7 +664,7 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="VVVVVV_game_review" class="floated">
-                        <img src="images\games\VVVVVV.webp" />
+                        <img src="/images/games/VVVVVV.webp" alt="VVVVVV" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>VVVVVV</strong><br /><br />
                         A short and sweet puzzle platformer that puts all of its effort into delivering a tight
@@ -611,7 +675,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="absolute_drift_game_review" class="floated">
-                        <img src="images\games\absolute_drift.webp" />
+                        <img src="/images/games/absolute_drift.webp" alt="Absolute Drift" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Absolute Drift</strong><br /><br />
                         A great idea but a very difficult execution. Driving as hard enough from a fixed perspective,
@@ -623,7 +688,7 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="hades_game_review" class="floated">
-                        <img src="images\games\hades.webp" />
+                        <img src="/images/games/hades.webp" alt="Hades" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Hades</strong><br /><br />
                         I enjoyed my time with Hades. The art is beautiful, the writing and voice acting are natural,
@@ -636,7 +701,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="marvel_rivals_game_review" class="floated">
-                        <img src="images\games\marvel_rivals.webp" />
+                        <img src="/images/games/marvel_rivals.webp" alt="Marvel Rivals" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Marvel Rivals</strong><br /><br />
                         I enjoyed my time playing Marvel Rivals, though I am not one for Hero Shooters or competitive
@@ -647,7 +713,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="20_minutes_till_dawn_game_review" class="floated">
-                        <img src="images\games\20_minutes_till_dawn.webp" />
+                        <img src="/images/games/20_minutes_till_dawn.webp" alt="20 Minutes Till Dawn" width="150"
+                            height="224" decoding="async" />
                     </div>
                     <p> <strong>20 Minutes Till Dawn</strong><br /><br />
                         Let me start off by saying that I did in fact play this game for more than 20 minutes, but I did
@@ -659,7 +726,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="BPM_bullets_per_minute_game_review" class="floated">
-                        <img src="images\games\BPM_bullets_per_minute.webp" />
+                        <img src="/images/games/BPM_bullets_per_minute.webp" alt="BPM: Bullets Per Minute" width="150"
+                            height="211" decoding="async" />
                     </div>
                     <p> <strong>BPM: Bullets Per Minute</strong><br /><br />
                         BPM is really odd in that I understood it to be a rhythm game like Hi-Fi Rush so I started out
@@ -671,7 +739,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="battlebit_remastered_game_review" class="floated">
-                        <img src="images\games\battlebit_remastered.webp" />
+                        <img src="/images/games/battlebit_remastered.webp" alt="BattleBit Remastered" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>BattleBit Remastered</strong><br /><br />
                         Impressive how much a three man team can achieve when concerned only with good gameplay and not
@@ -690,7 +759,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="hitman_world_of_assassination_game_review" class="floated">
-                        <img src="images\games\hitman_world_of_assassination.webp" />
+                        <img src="/images/games/hitman_world_of_assassination.webp" alt="HITMAN: World of Assassination"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>HITMAN: World of Assassination</strong><br /><br />
                         Long before Hitman World of Assassination released, I played Blood Money for a bit but I was too
@@ -711,7 +781,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="axiom_verge_game_review" class="floated">
-                        <img src="images\games\axiom_verge.webp" />
+                        <img src="/images/games/axiom_verge.webp" alt="Axiom Verge" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Axiom Verge</strong><br /><br />
                         I think this game may be too retro for me. I wasn't playing games when the first Metro games
@@ -721,7 +792,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="chivalry_II_game_review" class="floated">
-                        <img src="images\games\chivalry_II.webp" />
+                        <img src="/images/games/chivalry_II.webp" alt="Chivalry 2" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Chivalry 2</strong><br /><br />
                         Chivalry 2 was much like Chivalry 1, a great time. I played it for a while longer than I did the
@@ -736,7 +808,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="final_fantasy_tactics_game_review" class="floated">
-                        <img src="images\games\final_fantasy_tactics.webp" />
+                        <img src="/images/games/final_fantasy_tactics.webp" alt="Final Fantasy Tactics" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Final Fantasy Tactics</strong><br /><br />
                         A foundational game with absolutely beautiful artwork and animations. I would watch an
@@ -748,7 +821,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="sekiro_shadows_die_twice_game_review" class="floated">
-                        <img src="images\games\sekiro_shadows_die_twice.webp" />
+                        <img src="/images/games/sekiro_shadows_die_twice.webp" alt="Sekiro: Shadows Die Twice"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Sekiro: Shadows Die Twice</strong><br /><br />
                         FromSoft nails it again with an amazing game. It was difficult from start to finish and all the
@@ -764,7 +838,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="monument_valley_game_review" class="floated">
-                        <img src="images\games\monument_valley.webp" />
+                        <img src="/images/games/monument_valley.webp" alt="Monument Valley" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Monument Valley</strong><br /><br />
                         A cute little game kill a few hours. None of the puzzles were stumpers but the vibes were clean
@@ -776,7 +851,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="downwell_game_review" class="floated">
-                        <img src="images\games\downwell.webp" />
+                        <img src="/images/games/downwell.webp" alt="Downwell" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Downwell</strong><br /><br />
                         I played a bit of Downwell on Play Pass. I found it to be okay, nothing compelling. Obviously
@@ -787,7 +863,8 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="slay_the_spire_game_review" class="floated">
-                        <img src="images\games\slay_the_spire.webp" />
+                        <img src="/images/games/slay_the_spire.webp" alt="Slay The Spire" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Slay The Spire</strong><br /><br />
                         I played this game in short bursts on my phone over the course of a week. I think that is really
@@ -800,7 +877,7 @@
 
                 <div class="grid-item parent reviewed f2024">
                     <div id="sifu_game_review" class="floated">
-                        <img src="images\games\sifu.webp" />
+                        <img src="/images/games/sifu.webp" alt="Sifu" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Sifu</strong><br /><br />
                         I had a passing interest in the game and finally decided to pick it up after Jacob Geller made a
@@ -822,7 +899,8 @@
 
                 <div class="grid-item parent reviewed f2023">
                     <div id="cyberpunk_2077_game_review" class="floated">
-                        <img src="images\games\cyberpunk_2077.webp" />
+                        <img src="/images/games/cyberpunk_2077.webp" alt="Cyberpunk 2077" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Cyberpunk 2077</strong><br /><br />
                         I have to admit I was a huge hater when this game came out. I had absolutely no hype for it,
@@ -841,7 +919,8 @@
 
                 <div class="grid-item parent reviewed f2023">
                     <div id="lethal_company_game_review" class="floated">
-                        <img src="images\games\lethal_company.webp" />
+                        <img src="/images/games/lethal_company.webp" alt="Lethal Company" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Lethal Company</strong><br /><br />
                         I bought and played Lethal Company at a good friend's insistence and enjoyed it when we played
@@ -853,7 +932,8 @@
 
                 <div class="grid-item parent reviewed f2023">
                     <div id="rain_world_game_review" class="floated">
-                        <img src="images\games\rain_world.webp" />
+                        <img src="/images/games/rain_world.webp" alt="Rain World" width="150" height="224"
+                            decoding="async" />
                     </div>
                     <p> <strong>Rain World</strong><br /><br />
                         Rain World is a game where every screenshot is a painting. You are a lone slugcat trying to
@@ -872,7 +952,8 @@
 
                 <div class="grid-item parent reviewed f2023">
                     <div id="baldur's_gate_III_game_review" class="floated">
-                        <img src="images\games\baldur's_gate_III.webp" />
+                        <img src="/images/games/baldur's_gate_III.webp" alt="Baldur's Gate III" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Baldur's Gate III</strong><br /><br />
                         I got BG3 months after its first release and after much praise from my friends. It wasn't on my
@@ -890,7 +971,8 @@
 
                 <div class="grid-item parent reviewed f2023">
                     <div id="armored_core_VI_fires_of_rubicon_game_review" class="floated">
-                        <img src="images\games\armored_core_VI_fires_of_rubicon.webp" />
+                        <img src="/images/games/armored_core_VI_fires_of_rubicon.webp"
+                            alt="Armored Core VI: Fires of Rubicon" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Armored Core VI: Fires of Rubicon</strong><br /><br />
                         This was the first Armored Core game I played. I don't do hype as a rule and I avoid all
@@ -908,7 +990,8 @@
 
                 <div class="grid-item parent thinking f2023">
                     <div id="the_legend_of_zelda_tears_of_the_kingdom_game_review" class="floated">
-                        <img src="images\games\the_legend_of_zelda_tears_of_the_kingdom.webp" />
+                        <img src="/images/games/the_legend_of_zelda_tears_of_the_kingdom.webp"
+                            alt="The Legend of Zelda: Tears of the Kingdom" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>The Legend of Zelda: Tears of the Kingdom</strong><br /><br />
                         Thinking...
@@ -917,7 +1000,8 @@
 
                 <div class="grid-item parent reviewed f2023">
                     <div id="warhammer_40000_boltgun_game_review" class="floated">
-                        <img src="images\games\warhammer_40000_boltgun.webp" />
+                        <img src="/images/games/warhammer_40000_boltgun.webp" alt="Warhammer 40,000: Boltgun"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Warhammer 40,000: Boltgun</strong><br /><br />
                         The aesthetic and presentation are on point but the gameplay is lacking. It may just be that I
@@ -930,7 +1014,7 @@
 
                 <div class="grid-item parent thinking f2023">
                     <div id="hacknet_game_review" class="floated">
-                        <img src="images\games\hacknet.webp" />
+                        <img src="/images/games/hacknet.webp" alt="Hacknet" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Hacknet</strong><br /><br />
                         Thinking...
@@ -939,7 +1023,8 @@
 
                 <div class="grid-item parent reviewed f2023">
                     <div id="shadow_tactics_aikos_choice_game_review" class="floated">
-                        <img src="images\games\shadow_tactics_aikos_choice.webp" />
+                        <img src="/images/games/shadow_tactics_aikos_choice.webp" alt="Shadow Tactics: Aiko's Choice"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Shadow Tactics: Aiko's Choice</strong><br /><br />
                         Aiko's Choice is a stand alone expansion of Blades of the Shogun and does everything right. The
@@ -953,7 +1038,7 @@
 
                 <div class="grid-item parent reviewed f2022">
                     <div id="stray_game_review" class="floated">
-                        <img src="images\games\stray.webp" />
+                        <img src="/images/games/stray.webp" alt="Stray" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Stray</strong><br /><br />
                         I got Stray the moment is released and played it through to the end that very same day. In those
@@ -966,7 +1051,8 @@
 
                 <div class="grid-item parent reviewed f2022">
                     <div id="high_hell_game_review" class="floated">
-                        <img src="images\games\high_hell.webp" />
+                        <img src="/images/games/high_hell.webp" alt="High Hell" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>High Hell</strong><br /><br />
                         Funny little game with a simple style and good enough shooting. The jokes are crude but the game
@@ -976,7 +1062,8 @@
 
                 <div class="grid-item parent reviewed f2022">
                     <div id="elden_ring_game_review" class="floated">
-                        <img src="images\games\elden_ring.webp" />
+                        <img src="/images/games/elden_ring.webp" alt="Elden Ring" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Elden Ring</strong><br /><br />
                         Elden Ring was the first souls like game I played from start to finish, and aside from two
@@ -990,7 +1077,7 @@
 
                 <div class="grid-item parent reviewed f2022">
                     <div id="kenshi_game_review" class="floated">
-                        <img src="images\games\kenshi.webp" />
+                        <img src="/images/games/kenshi.webp" alt="Kenshi" width="150" height="211" decoding="async" />
                     </div>
                     <p> <strong>Kenshi</strong><br /><br />
                         You start your saga as a broke nobody in a desert town. You run around trying to collect some
@@ -1013,7 +1100,7 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="ABZU_game_review" class="floated">
-                        <img src="images\games\ABZU.webp" />
+                        <img src="/images/games/ABZU.webp" alt="ABZÛ" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>ABZÛ</strong><br /><br />
                         Beautiful and accurate sea life. I enjoy a good aquarium and I've been to one of the world's
@@ -1028,7 +1115,8 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="loop_hero_game_review" class="floated">
-                        <img src="images\games\loop_hero.webp" />
+                        <img src="/images/games/loop_hero.webp" alt="Loop Hero" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Loop Hero</strong><br /><br />
                         At first it doesn't seem so complex. You place a mountain, you place a graveyard. Around the
@@ -1040,7 +1128,8 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="pikuniku_game_review" class="floated">
-                        <img src="images\games\pikuniku.webp" />
+                        <img src="/images/games/pikuniku.webp" alt="Pikuniku" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Pikuniku</strong><br /><br />
                         Pikuniku is a joyful game where you run around helping people and jumping about the place. It's
@@ -1050,7 +1139,8 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="halo_infinite_game_review" class="floated">
-                        <img src="images\games\halo_infinite.webp" />
+                        <img src="/images/games/halo_infinite.webp" alt="Halo Infinite" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Halo Infinite</strong><br /><br />
                         I sure am glad I never payed for this. I never was a halo fan and I haven't yet played any halo
@@ -1063,7 +1153,8 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="helltaker_game_review" class="floated">
-                        <img src="images\games\helltaker.webp" />
+                        <img src="/images/games/helltaker.webp" alt="Helltaker" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Helltaker</strong><br /><br />
                         Cute little puzzle game. Visually interesting and entertaining for its very short length. It's
@@ -1073,7 +1164,8 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="hollow_knight_game_review" class="floated">
-                        <img src="images\games\hollow_knight.webp" />
+                        <img src="/images/games/hollow_knight.webp" alt="Hollow Knight" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Hollow Knight</strong><br /><br />
                         When I first played hollow knight it didn't click at all. I don't think I even made it past
@@ -1087,7 +1179,8 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="splitgate_game_review" class="floated">
-                        <img src="images\games\splitgate.webp" />
+                        <img src="/images/games/splitgate.webp" alt="Splitgate" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Splitgate</strong><br /><br />
                         My friends and I played Splitgate regularly for a few weeks at its peek and we had a blast. We
@@ -1103,7 +1196,8 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="going_under_game_review" class="floated">
-                        <img src="images\games\going_under.webp" />
+                        <img src="/images/games/going_under.webp" alt="Going Under" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Going Under</strong><br /><br />
                         Corporate work sure is a slog. Aggro Crab's going under is a cute delve into an assortment of
@@ -1120,7 +1214,8 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="totally_accurate_battle_simulator_game_review" class="floated">
-                        <img src="images\games\totally_accurate_battle_simulator.webp" />
+                        <img src="/images/games/totally_accurate_battle_simulator.webp"
+                            alt="Totally Accurate Battle Simulator" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Totally Accurate Battle Simulator</strong><br /><br />
                         Kinda goofy, kinda dumb, kinda fun way to burn a few hours. The ability to manually control
@@ -1131,7 +1226,8 @@
 
                 <div class="grid-item parent reviewed f2021">
                     <div id="banished_game_review" class="floated">
-                        <img src="images\games\banished.webp" />
+                        <img src="/images/games/banished.webp" alt="Banished" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Banished</strong><br /><br />
                         I'm not the biggest fan of city builders as I have learned over my time trying to play them. My
@@ -1146,7 +1242,8 @@
 
                 <div class="grid-item parent reviewed f2020">
                     <div id="synthetik_game_review" class="floated">
-                        <img src="images\games\synthetik.webp" />
+                        <img src="/images/games/synthetik.webp" alt="Synthetik" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Synthetik</strong><br /><br />
                         High speed high feedback. It's like a neural jack and an adrenalin implant of a game. Really
@@ -1159,7 +1256,8 @@
 
                 <div class="grid-item parent thinking f2020">
                     <div id="heat_signature_game_review" class="floated">
-                        <img src="images\games\heat_signature.webp" />
+                        <img src="/images/games/heat_signature.webp" alt="Heat Signature" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Heat Signature</strong><br /><br />
                         Thinking...
@@ -1168,7 +1266,8 @@
 
                 <div class="grid-item parent reviewed f2020">
                     <div id="the_last_of_us_game_review" class="floated">
-                        <img src="images\games\the_last_of_us.webp" />
+                        <img src="/images/games/the_last_of_us.webp" alt="The Last of Us" width="150" height="211"
+                            decoding="async" />
                     </div>
                     <p> <strong>The Last of Us</strong><br /><br />
                         First let's address the fascist shaped elephant in the room: The Last of Us Part 1 and 2, and
@@ -1194,7 +1293,8 @@
 
                 <div class="grid-item parent reviewed f2020">
                     <div id="ghost_of_tsushima_game_review" class="floated">
-                        <img src="images\games\ghost_of_tsushima.webp" />
+                        <img src="/images/games/ghost_of_tsushima.webp" alt="Ghost of Tsushima" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Ghost of Tsushima</strong><br /><br />
                         Ghost of Tsushima is easily one of the best games I have ever played. I first played it on
@@ -1215,7 +1315,8 @@
 
                 <div class="grid-item parent reviewed f2020">
                     <div id="apex_legends_game_review" class="floated">
-                        <img src="images\games\apex_legends.webp" />
+                        <img src="/images/games/apex_legends.webp" alt="Apex Legends" width="150" height="224"
+                            decoding="async" />
                     </div>
                     <p> <strong>Apex Legends</strong><br /><br />
                         was really into Apex back when it first came out. The match making was great, characters were
@@ -1228,7 +1329,8 @@
 
                 <div class="grid-item parent reviewed f2020">
                     <div id="genshin_impact_game_review" class="floated">
-                        <img src="images\games\genshin_impact.webp" />
+                        <img src="/images/games/genshin_impact.webp" alt="Genshin Impact" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Genshin Impact</strong><br /><br />
                         I played Genshin Impact instead of studying for a math exam. I was pretty hooked for about a
@@ -1239,7 +1341,8 @@
 
                 <div class="grid-item parent thinking f2020">
                     <div id="dungeon_of_the_endless_game_review" class="floated">
-                        <img src="images\games\dungeon_of_the_endless.webp" />
+                        <img src="/images/games/dungeon_of_the_endless.webp" alt="Dungeon of the Endless" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Dungeon of the Endless</strong><br /><br />
                         Thinking...
@@ -1248,7 +1351,8 @@
 
                 <div class="grid-item parent thinking f2020">
                     <div id="risk_of_rain_2_game_review" class="floated">
-                        <img src="images\games\risk_of_rain_2.webp" />
+                        <img src="/images/games/risk_of_rain_2.webp" alt="Risk of Rain 2" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Risk of Rain 2</strong><br /><br />
                         Thinking...
@@ -1257,7 +1361,8 @@
 
                 <div class="grid-item parent reviewed f2020">
                     <div id="SUPERHOT_game_review" class="floated">
-                        <img src="images\games\SUPERHOT.webp" />
+                        <img src="/images/games/SUPERHOT.webp" alt="SUPERHOT" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>SUPERHOT</strong><br /><br />
                         The action is SUPERHOT. <br /> The mechanics are SUPERHOT. <br /> The fun is SUPERHOT.
@@ -1267,7 +1372,8 @@
 
                 <div class="grid-item parent reviewed f2020">
                     <div id="dead_cells_game_review" class="floated">
-                        <img src="images\games\dead_cells.webp" />
+                        <img src="/images/games/dead_cells.webp" alt="Dead Cells" width="150" height="224"
+                            decoding="async" />
                     </div>
                     <p> <strong>Dead Cells</strong><br /><br />
                         I've played Dead Cells on and off since release. I got one boss cell once and ever since then I
@@ -1281,7 +1387,8 @@
 
                 <div class="grid-item parent reviewed f2020">
                     <div id="shadow_tactics_blades_of_the_shogun_game_review" class="floated">
-                        <img src="images\games\shadow_tactics_blades_of_the_shogun.webp" />
+                        <img src="/images/games/shadow_tactics_blades_of_the_shogun.webp"
+                            alt="Shadow Tactics: Blades of the Shogun" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Shadow Tactics: Blades of the Shogun</strong><br /><br />
                         The mechanics of Shadow Tactics are very well designed and executed. The game expects you to
@@ -1297,7 +1404,8 @@
 
                 <div class="grid-item parent reviewed f2020">
                     <div id="disco_elysium_game_review" class="floated">
-                        <img src="images\games\disco_elysium.webp" />
+                        <img src="/images/games/disco_elysium.webp" alt="Disco Elysium" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Disco Elysium</strong><br /><br />
                         Hands down one of my favorite games of all time. My first playthrough was absolutely blind and I
@@ -1313,7 +1421,8 @@
 
                 <div class="grid-item parent reviewed f2019">
                     <div id="total_war_warhammer_1_and_2_game_review" class="floated">
-                        <img src="images\games\total_war_warhammer.webp" />
+                        <img src="/images/games/total_war_warhammer.webp" alt="Total War: Warhammer I and II"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Total War: Warhammer I and II</strong><br /><br />
                         I have played Total War Warhammer I and II combined using Mortal Empires on and off for years.
@@ -1329,7 +1438,8 @@
 
                 <div class="grid-item parent thinking f2019">
                     <div id="prison_architect_game_review" class="floated">
-                        <img src="images\games\prison_architect.webp" />
+                        <img src="/images/games/prison_architect.webp" alt="Prison Architect" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Prison Architect</strong><br /><br />
                         Thinking...
@@ -1338,7 +1448,8 @@
 
                 <div class="grid-item parent reviewed f2019">
                     <div id="enter_the_gungeon_game_review" class="floated">
-                        <img src="images\games\enter_the_gungeon.webp" />
+                        <img src="/images/games/enter_the_gungeon.webp" alt="Enter the Gungeon" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Enter the Gungeon</strong><br /><br />
                         Cute game and pretty challenging. Maybe I have grown old but I don't think I ever got passed the
@@ -1348,7 +1459,8 @@
 
                 <div class="grid-item parent reviewed f2019">
                     <div id="luftrausers_game_review" class="floated">
-                        <img src="images\games\luftrausers.webp" />
+                        <img src="/images/games/luftrausers.webp" alt="Luftrausers" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Luftrausers</strong><br /><br />
                         Nice clean fun, pure game feel. It's no surprise, Vlambeer did give the talk on it. Very
@@ -1363,7 +1475,8 @@
 
                 <div class="grid-item parent reviewed f2018">
                     <div id="return_of_the_obra_dinn_game_review" class="floated">
-                        <img src="images\games\return_of_the_obra_dinn.webp" />
+                        <img src="/images/games/return_of_the_obra_dinn.webp" alt="Return of the Obra Dinn" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Return of the Obra Dinn</strong><br /><br />
                         This game is likely the best detective game ever made. I'll never be able to play it for the
@@ -1376,7 +1489,8 @@
 
                 <div class="grid-item parent reviewed f2018">
                     <div id="human_fall_flat_game_review" class="floated">
-                        <img src="images\games\human_fall_flat.webp" />
+                        <img src="/images/games/human_fall_flat.webp" alt="Human Fall Flat" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Human Fall Flat</strong><br /><br />
                         Cute game with fun mechanics though it is much better with friends. I played it solo for a while
@@ -1386,7 +1500,8 @@
 
                 <div class="grid-item parent reviewed f2018">
                     <div id="warhammer_40000_space_marine_game_review" class="floated">
-                        <img src="images\games\warhammer_40000_space_marine.webp" />
+                        <img src="/images/games/warhammer_40000_space_marine.webp" alt="Warhammer 40,000: Space Marine"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Warhammer 40,000: Space Marine</strong><br /><br />
                         I got into Warhammer because one of my best friends got into it and dragged me along with him. I
@@ -1400,7 +1515,8 @@
 
                 <div class="grid-item parent reviewed f2018">
                     <div id="spec_ops_the_line_game_review" class="floated">
-                        <img src="images\games\spec_ops_the_line.webp" />
+                        <img src="/images/games/spec_ops_the_line.webp" alt="Spec Ops: The Line" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Spec Ops: The Line</strong><br /><br />
                         Being raised in Amerika does a funny thing to your sense of self. You begin to identify with the
@@ -1431,7 +1547,8 @@
 
                 <div class="grid-item parent reviewed f2018">
                     <div id="rivals_of_aether_game_review" class="floated">
-                        <img src="images\games\rivals_of_aether.webp" />
+                        <img src="/images/games/rivals_of_aether.webp" alt="Rivals of Aether" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Rivals of Aether</strong><br /><br />
                         I'm not the biggest fighting or brawler fan, I'm just not great at them and I prefer cooperative
@@ -1443,7 +1560,8 @@
 
                 <div class="grid-item parent thinking f2018">
                     <div id="the_legend_of_zelda_breath_of_the_wild_game_review" class="floated">
-                        <img src="images\games\the_legend_of_zelda_breath_of_the_wild.webp" />
+                        <img src="/images/games/the_legend_of_zelda_breath_of_the_wild.webp"
+                            alt="The Legend of Zelda: Breath of the Wild" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>The Legend of Zelda: Breath of the Wild</strong><br /><br />
                         Thinking...
@@ -1456,7 +1574,8 @@
 
                 <div class="grid-item parent reviewed f2017">
                     <div id="ratz_instagib_2_0_game_review" class="floated">
-                        <img src="images\games\ratz_instagib_2_0.webp" />
+                        <img src="/images/games/ratz_instagib_2_0.webp" alt="Ratz Instagib 2.0" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Ratz Instagib 2.0</strong><br /><br />
                         They're rats!<br />They gib!<br />It's instant!<br />BOOM!<br />BLAM!<br />POW!
@@ -1465,7 +1584,8 @@
 
                 <div class="grid-item parent reviewed f2017">
                     <div id="legend_of_dungeon_game_review" class="floated">
-                        <img src="images\games\legend_of_dungeon.webp" />
+                        <img src="/images/games/legend_of_dungeon.webp" alt="Legend of Dungeon" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Legend of Dungeon</strong><br /><br />
                         While Legend of Dungeon has some nice visual design elements, the gameplay itself is deeply
@@ -1476,7 +1596,8 @@
 
                 <div class="grid-item parent reviewed f2017">
                     <div id="middle_earth_shadow_of_mordor_game_review" class="floated">
-                        <img src="images\games\middle_earth_shadow_of_mordor.webp" />
+                        <img src="/images/games/middle_earth_shadow_of_mordor.webp" alt="Middle-earth: Shadow of Mordor"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Middle-earth: Shadow of Mordor</strong><br /><br />
                         I love the lord of the rings films. They hit the perfect spot for me and have shaped much of my
@@ -1493,7 +1614,7 @@
 
                 <div class="grid-item parent reviewed f2017">
                     <div id="wasted_game_review" class="floated">
-                        <img src="images\games\wasted.webp" />
+                        <img src="/images/games/wasted.webp" alt="Wasted" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Wasted</strong><br /><br />
                         Kinda fun, kinda dumb, kinda intense. I played a good bit but never really got into it. It's
@@ -1503,7 +1624,8 @@
 
                 <div class="grid-item parent reviewed f2017">
                     <div id="project_highrise_game_review" class="floated">
-                        <img src="images\games\project_highrise.webp" />
+                        <img src="/images/games/project_highrise.webp" alt="Project Highrise" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Project Highrise</strong><br /><br />
                         Perhaps the only management game in this 2D side view perspective. It reminded me of the old
@@ -1514,7 +1636,7 @@
 
                 <div class="grid-item parent thinking f2017">
                     <div id="xcom_2_game_review" class="floated">
-                        <img src="images\games\xcom_2.webp" />
+                        <img src="/images/games/xcom_2.webp" alt="XCOM 2" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>XCOM 2</strong><br /><br />
                         Thinking...
@@ -1527,7 +1649,8 @@
 
                 <div class="grid-item parent reviewed f2016">
                     <div id="warframe_game_review" class="floated">
-                        <img src="images\games\warframe.webp" />
+                        <img src="/images/games/warframe.webp" alt="Warframe" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Warframe</strong><br /><br />
                         If you had told me that some of the best movement mechanics I ever played would be free-to-play
@@ -1539,7 +1662,8 @@
 
                 <div class="grid-item parent reviewed f2016">
                     <div id="metal_slug_3_game_review" class="floated">
-                        <img src="images\games\metal_slug_3.webp" />
+                        <img src="/images/games/metal_slug_3.webp" alt="Metal Slug 3" width="150" height="224"
+                            decoding="async" />
                     </div>
                     <p> <strong>Metal Slug 3</strong><br /><br />
                         Metal Slug is one of the few games I remember playing on an arcade machine and on a PS2 at a
@@ -1556,7 +1680,8 @@
 
                 <div class="grid-item parent reviewed f2016">
                     <div id="olliolli2_game_review" class="floated">
-                        <img src="images\games\olliolli2.webp" />
+                        <img src="/images/games/olliolli2.webp" alt="OlliOlli2: Welcome to Olliwood" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>OlliOlli2: Welcome to Olliwood</strong><br /><br />
                         OlliOlli2 is a simple 2D skating game that is pretty effective. While it cannot complete with 3D
@@ -1567,7 +1692,8 @@
 
                 <div class="grid-item parent reviewed f2016">
                     <div id="fallout_3_game_review" class="floated">
-                        <img src="images\games\fallout_3.webp" />
+                        <img src="/images/games/fallout_3.webp" alt="Fallout 3" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Fallout 3</strong><br /><br />
                         The beginning was kind of boring but the world was much better. I didn't engage much with the
@@ -1583,7 +1709,8 @@
 
                 <div class="grid-item parent reviewed f2015">
                     <div id="insurgency_game_review" class="floated">
-                        <img src="images\games\insurgency.webp" />
+                        <img src="/images/games/insurgency.webp" alt="Insurgency" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Insurgency</strong><br /><br />
                         I have many great memories of playing this game at its peak. Before the sequel came out and
@@ -1596,7 +1723,8 @@
 
                 <div class="grid-item parent reviewed f2015">
                     <div id="risk_of_rain_game_review" class="floated">
-                        <img src="images\games\risk_of_rain.webp" />
+                        <img src="/images/games/risk_of_rain.webp" alt="Risk of Rain" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Risk of Rain</strong><br /><br />
                         This was one of the earliest steam games I played. I loved the enforcer the most and I finished
@@ -1608,7 +1736,8 @@
 
                 <div class="grid-item parent reviewed f2015">
                     <div id="the_stanley_parable_game_review" class="floated">
-                        <img src="images\games\the_stanley_parable.webp" />
+                        <img src="/images/games/the_stanley_parable.webp" alt="The Stanley Parable" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>The Stanley Parable</strong><br /><br />
                         Stanley clicked on the bookmarked website as he does every money and explores, looking for new
@@ -1622,7 +1751,8 @@
 
                 <div class="grid-item parent thinking f2015">
                     <div id="the_binding_of_isaac_rebirth_game_review" class="floated">
-                        <img src="images\games\the_binding_of_isaac_rebirth.webp" />
+                        <img src="/images/games/the_binding_of_isaac_rebirth.webp" alt="The Binding of Isaac: Rebirth"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>The Binding of Isaac: Rebirth</strong><br /><br />
                         Thinking...
@@ -1631,7 +1761,8 @@
 
                 <div class="grid-item parent reviewed f2015">
                     <div id="chivalry_medieval_warfare_game_review" class="floated">
-                        <img src="images\games\chivalry_medieval_warfare.webp" />
+                        <img src="/images/games/chivalry_medieval_warfare.webp" alt="Chivalry: Medieval Warfare"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Chivalry: Medieval Warfare</strong><br /><br />
                         It was chaotic and goofy and intense and a good time. Was I any good? Sometimes! It really
@@ -1641,7 +1772,8 @@
 
                 <div class="grid-item parent thinking f2015">
                     <div id="hotline_miami_2_wrong_number_game_review" class="floated">
-                        <img src="images\games\hotline_miami_2_wrong_number.webp" />
+                        <img src="/images/games/hotline_miami_2_wrong_number.webp" alt="Hotline Miami 2: Wrong Number"
+                            width="150" height="211" decoding="async" />
                     </div>
                     <p> <strong>Hotline Miami 2: Wrong Number</strong><br /><br />
                         Thinking...
@@ -1650,7 +1782,8 @@
 
                 <div class="grid-item parent reviewed f2015">
                     <div id="guns_of_icarus_online_game_review" class="floated">
-                        <img src="images\games\guns_of_icarus_online.webp" />
+                        <img src="/images/games/guns_of_icarus_online.webp" alt="Guns of Icarus Online" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Guns of Icarus Online</strong><br /><br />
                         I was invited to play Guns of Icarus by a few friends over one summer and we had an amazing
@@ -1663,7 +1796,8 @@
 
                 <div class="grid-item parent reviewed f2015">
                     <div id="keep_talking_and_nobody_explodes_game_review" class="floated">
-                        <img src="images\games\keep_talking_and_nobody_explodes.webp" />
+                        <img src="/images/games/keep_talking_and_nobody_explodes.webp"
+                            alt="Keep Talking and Nobody Explodes" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Keep Talking and Nobody Explodes</strong><br /><br />
                         My two best friends and I sat in my room. I had the game on my old laptop and I had printed a
@@ -1681,7 +1815,8 @@
 
                 <div class="grid-item parent reviewed f2014">
                     <div id="the_darkness_II_game_review" class="floated">
-                        <img src="images\games\the_darkness_II.webp" />
+                        <img src="/images/games/the_darkness_II.webp" alt="The Darkness II" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>The Darkness II</strong><br /><br />
                         Sometimes you don't want to be the good guy. Sometimes you want to be the bad guy that all the
@@ -1694,7 +1829,8 @@
 
                 <div class="grid-item parent thinking f2014">
                     <div id="gunpoint_game_review" class="floated">
-                        <img src="images\games\gunpoint.webp" />
+                        <img src="/images/games/gunpoint.webp" alt="Gunpoint" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Gunpoint</strong><br /><br />
                         Thinking...
@@ -1703,7 +1839,8 @@
 
                 <div class="grid-item parent reviewed f2014">
                     <div id="paranautical_activity_game_review" class="floated">
-                        <img src="images\games\paranautical_activity.webp" />
+                        <img src="/images/games/paranautical_activity.webp" alt="Paranautical Activity" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Paranautical Activity</strong><br /><br />
                         It's fast, it's hectic, I'm not sure what's happening and most guns don't feel amazing, but good
@@ -1713,7 +1850,8 @@
 
                 <div class="grid-item parent reviewed f2014">
                     <div id="fallout_new_vegas_game_review" class="floated">
-                        <img src="images\games\fallout_new_vegas.webp" />
+                        <img src="/images/games/fallout_new_vegas.webp" alt="Fallout: New Vegas" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Fallout: New Vegas</strong><br /><br />
                         I never was one to do the deep roleplay that some other do in games like this but I did run
@@ -1727,7 +1865,8 @@
 
                 <div class="grid-item parent reviewed f2014">
                     <div id="goat_simulator_game_review" class="floated">
-                        <img src="images\games\goat_simulator.webp" />
+                        <img src="/images/games/goat_simulator.webp" alt="Goat Simulator" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Goat Simulator</strong><br /><br />
                         Funny goat game is funny.
@@ -1736,7 +1875,8 @@
 
                 <div class="grid-item parent reviewed f2014">
                     <div id="awesomenauts_game_review" class="floated">
-                        <img src="images\games\awesomenauts.webp" />
+                        <img src="/images/games/awesomenauts.webp" alt="Awesomenauts" width="150" height="224"
+                            decoding="async" />
                     </div>
                     <p> <strong>Awesomenauts</strong><br /><br />
                         I played Awesomenauts for a while back when it was a paid game and had a fairly good time with
@@ -1747,7 +1887,8 @@
 
                 <div class="grid-item parent reviewed f2014">
                     <div id="kingdom_rush_game_review" class="floated">
-                        <img src="images\games\kingdom_rush.webp" />
+                        <img src="/images/games/kingdom_rush.webp" alt="Kingdom Rush" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Kingdom Rush</strong><br /><br />
                         One of the best mobile games I have played. It has good progression and different enough upgrade
@@ -1758,7 +1899,8 @@
 
                 <div class="grid-item parent reviewed f2014">
                     <div id="knights_of_pen_and_paper_1_game_review" class="floated">
-                        <img src="images\games\knights_of_pen_and_paper_1.webp" />
+                        <img src="/images/games/knights_of_pen_and_paper_1.webp" alt="Knights of Pen and Paper +1"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Knights of Pen and Paper +1</strong><br /><br />
                         Cute game that won't get the brain going too much. Probably best played in short bursts on a
@@ -1768,7 +1910,8 @@
 
                 <div class="grid-item parent thinking f2014">
                     <div id="batman_arkham_city_game_review" class="floated">
-                        <img src="images\games\batman_arkham_city.webp" />
+                        <img src="/images/games/batman_arkham_city.webp" alt="Batman: Arkham City" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Batman: Arkham City</strong><br /><br />
                         Thinking...
@@ -1777,7 +1920,8 @@
 
                 <div class="grid-item parent reviewed f2014">
                     <div id="deadly_30_game_review" class="floated">
-                        <img src="images\games\deadly_30.webp" />
+                        <img src="/images/games/deadly_30.webp" alt="Deadly 30" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Deadly 30</strong><br /><br />
                         When I was young I really liked Gonzossm's animations. They were crude and dumb and really
@@ -1793,7 +1937,8 @@
 
                 <div class="grid-item parent reviewed f2013">
                     <div id="deus_ex_human_revolution_game_review" class="floated">
-                        <img src="images\games\deus_ex_human_revolution.webp" />
+                        <img src="/images/games/deus_ex_human_revolution.webp" alt="Deus Ex: Human Revolution"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Deus Ex: Human Revolution</strong><br /><br />
                         This was probably my first encounter with the immersive sim genre. I was relatively young and
@@ -1808,7 +1953,8 @@
 
                 <div class="grid-item parent reviewed f2013">
                     <div id="call_of_duty_modern_warfare_2_game_review" class="floated">
-                        <img src="images\games\call_of_duty_modern_warfare_2.webp" />
+                        <img src="/images/games/call_of_duty_modern_warfare_2.webp" alt="Call of Duty: Modern Warfare 2"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Call of Duty: Modern Warfare 2</strong><br /><br />
                         This is the one Call of Duty game that I played any significant amount of, finished it multiple
@@ -1824,7 +1970,8 @@
 
                 <div class="grid-item parent thinking f2013">
                     <div id="batman_arkham_asylum_game_review" class="floated">
-                        <img src="images\games\batman_arkham_asylum.webp" />
+                        <img src="/images/games/batman_arkham_asylum.webp" alt="Batman: Arkham Asylum" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Batman: Arkham Asylum</strong><br /><br />
                         Thinking...
@@ -1833,7 +1980,8 @@
 
                 <div class="grid-item parent thinking f2013">
                     <div id="the_binding_of_isaac_game_review" class="floated">
-                        <img src="images\games\the_binding_of_isaac.webp" />
+                        <img src="/images/games/the_binding_of_isaac.webp" alt="The Binding of Isaac" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>The Binding of Isaac</strong><br /><br />
                         Thinking...
@@ -1842,7 +1990,8 @@
 
                 <div class="grid-item parent thinking f2013">
                     <div id="hotline_miami_game_review" class="floated">
-                        <img src="images\games\hotline_miami.webp" />
+                        <img src="/images/games/hotline_miami.webp" alt="Hotline Miami" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Hotline Miami</strong><br /><br />
                         Thinking...
@@ -1851,7 +2000,8 @@
 
                 <div class="grid-item parent reviewed f2013">
                     <div id="garrys_mod_game_review" class="floated">
-                        <img src="images\games\garrys_mod.webp" />
+                        <img src="/images/games/garrys_mod.webp" alt="Garry's Mod" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Garry's Mod</strong><br /><br />
                         This was a fun sandbox. I never got super into it, though I did enjoy a few games of TTT. I
@@ -1862,7 +2012,8 @@
 
                 <div class="grid-item parent reviewed f2013">
                     <div id="just_cause_2_game_review" class="floated">
-                        <img src="images\games\just_cause_2.webp" />
+                        <img src="/images/games/just_cause_2.webp" alt="Just Cause 2" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Just Cause 2</strong><br /><br />
                         We sat on the living room floor of his grandma's house. Everything smelled of cigarette smoke.
@@ -1877,7 +2028,8 @@
 
                 <div class="grid-item parent reviewed f2013">
                     <div id="borderlands_2_game_review" class="floated">
-                        <img src="images\games\borderlands_2.webp" />
+                        <img src="/images/games/borderlands_2.webp" alt="Borderlands 2" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Borderlands 2</strong><br /><br />
                         Definitely the best Borderlands game in the series. The first game was very rough and I didn't
@@ -1895,7 +2047,8 @@
 
                 <div class="grid-item parent reviewed f2012">
                     <div id="team_fortress_2_game_review" class="floated">
-                        <img src="images\games\team_fortress_2.webp" />
+                        <img src="/images/games/team_fortress_2.webp" alt="Team Fortress 2" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Team Fortress 2</strong><br /><br />
                         You've just come home from school, you get on your cheap old laptop, no graphics card, barely
@@ -1909,7 +2062,8 @@
 
                 <div class="grid-item parent reviewed f2012">
                     <div id="realm_of_the_mad_god_exalt_game_review" class="floated">
-                        <img src="images\games\realm_of_the_mad_god_exalt.webp" />
+                        <img src="/images/games/realm_of_the_mad_god_exalt.webp" alt="Realm of the Mad God Exalt"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Realm of the Mad God Exalt</strong><br /><br />
                         I never was one for MMOs, this certainly was no exception. I ran around for a while killing
@@ -1920,7 +2074,8 @@
 
                 <div class="grid-item parent reviewed f2012">
                     <div id="terraria_game_review" class="floated">
-                        <img src="images\games\terraria.webp" />
+                        <img src="/images/games/terraria.webp" alt="Terraria" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Terraria</strong><br /><br />
                         I started playing Terraria way back when it was very early in it's development. So far back that
@@ -1939,7 +2094,8 @@
 
                 <div class="grid-item parent reviewed f2012">
                     <div id="the_elder_scrolls_V_skyrim_game_review" class="floated">
-                        <img src="images\games\the_elder_scrolls_V_skyrim.webp" />
+                        <img src="/images/games/the_elder_scrolls_V_skyrim.webp" alt="The Elder Scrolls V: Skyrim"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>The Elder Scrolls V: Skyrim</strong><br /><br />
                         It was winter though it was not very cold. My laptop sat on piece of wood to keep it off the
@@ -1962,7 +2118,7 @@
 
                 <div class="grid-item parent reviewed f2011">
                     <div id="flatout_game_review" class="floated">
-                        <img src="images\games\flatout.webp" />
+                        <img src="/images/games/flatout.webp" alt="FlatOut" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>FlatOut</strong><br /><br />
                         First thing that hits you when start Flatout is <a
@@ -1982,7 +2138,8 @@
 
                 <div class="grid-item parent reviewed f2010_and_before">
                     <div id="dwarf_fortress_game_review" class="floated">
-                        <img src="images\games\dwarf_fortress.webp" />
+                        <img src="/images/games/dwarf_fortress.webp" alt="Dwarf Fortress" width="150" height="224"
+                            decoding="async" />
                     </div>
                     <p> <strong>Dwarf Fortress</strong><br /><br />
                         I have been playing Dwarf Fortress on and off since around 2010. Back then I neither understood
@@ -1996,7 +2153,8 @@
 
                 <div class="grid-item parent reviewed f2010_and_before">
                     <div id="the_legend_of_zelda_spirit_tracks_game_review" class="floated">
-                        <img src="images\games\the_legend_of_zelda_spirit_tracks.webp" />
+                        <img src="/images/games/the_legend_of_zelda_spirit_tracks.webp"
+                            alt="The Legend of Zelda: Spirit Tracks" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>The Legend of Zelda: Spirit Tracks</strong><br /><br />
                         Needless to say, after loving Phantom Hourglass, I had to play Spirit Tracks as soon as it was
@@ -2010,7 +2168,8 @@
 
                 <div class="grid-item parent reviewed f2010_and_before">
                     <div id="the_legend_of_zelda_phantom_hourglass_game_review" class="floated">
-                        <img src="images\games\the_legend_of_zelda_phantom_hourglass.webp" />
+                        <img src="/images/games/the_legend_of_zelda_phantom_hourglass.webp"
+                            alt="The Legend of Zelda: Phantom Hourglass" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>The Legend of Zelda: Phantom Hourglass</strong><br /><br />
                         The Phantom Hourglass was the first Zelda game I played and the first I finished and it's the
@@ -2025,7 +2184,8 @@
 
                 <div class="grid-item parent reviewed f2010_and_before">
                     <div id="age_of_empires_II_game_review" class="floated">
-                        <img src="images\games\age_of_empires_II.webp" />
+                        <img src="/images/games/age_of_empires_II.webp" alt="Age of Empires II" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Age of Empires II</strong><br /><br />
                         Age of Empires II has a special place in my heart. I haven't played it in a long time and I was
@@ -2043,7 +2203,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="shovel_knight_game_review" class="floated">
-                        <img src="images\games\shovel_knight.webp" />
+                        <img src="/images/games/shovel_knight.webp" alt="Shovel Knight" width="150" height="211"
+                            decoding="async" />
                     </div>
                     <p> <strong>Shovel Knight</strong><br /><br />
                         A masterclass in retro indie game development. The art styles looks like old games are
@@ -2054,7 +2215,7 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="carrion_game_review" class="floated">
-                        <img src="images\games\carrion.webp" />
+                        <img src="/images/games/carrion.webp" alt="Carrion" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Carrion</strong><br /><br />
                         I use to think that I didn't horror games, but after playing Carrion I realized that I just
@@ -2067,7 +2228,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="caveblazers_game_review" class="floated">
-                        <img src="images\games\caveblazers.webp" />
+                        <img src="/images/games/caveblazers.webp" alt="Caveblazers" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Caveblazers</strong><br /><br />
                         A surprising good game loop with tight controls. I would play a few levels, die, and immediately
@@ -2077,7 +2239,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="citizen_sleeper_game_review" class="floated">
-                        <img src="images\games\citizen_sleeper.webp" />
+                        <img src="/images/games/citizen_sleeper.webp" alt="Citizen Sleeper" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Citizen Sleeper</strong><br /><br />
                         Easily only of my favorite games of all time. Every action I took, every interaction, character,
@@ -2089,7 +2252,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="frostpunk_game_review" class="floated">
-                        <img src="images\games\frostpunk.webp" />
+                        <img src="/images/games/frostpunk.webp" alt="Frostpunk" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Frostpunk</strong><br /><br />
                         Climate change has struck but instead of global warming, it's an ice age. You find yourself
@@ -2105,7 +2269,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="FTL_faster_than_light_game_review" class="floated">
-                        <img src="images\games\FTL_faster_than_light.webp" />
+                        <img src="/images/games/FTL_faster_than_light.webp" alt="FTL: Faster Than Light" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>FTL: Faster Than Light</strong><br /><br />
                         An indie classic and a damn hard one at that. I've never beat it. Got close a few times, reached
@@ -2117,7 +2282,8 @@
 
                 <div class="grid-item parent thinking funsorted">
                     <div id="katana_zero_game_review" class="floated">
-                        <img src="images\games\katana_zero.webp" />
+                        <img src="/images/games/katana_zero.webp" alt="Katana Zero" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Katana Zero</strong><br /><br />
                         Thinking...
@@ -2126,7 +2292,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="kerbal_space_program_game_review" class="floated">
-                        <img src="images\games\kerbal_space_program.webp" />
+                        <img src="/images/games/kerbal_space_program.webp" alt="Kerbal Space Program" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Kerbal Space Program</strong><br /><br />
                         I must admit first and foremost that I am not a space fan. I know many people who are fascinated
@@ -2143,7 +2310,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="king_arthurs_gold_game_review" class="floated">
-                        <img src="images\games\king_arthurs_gold.webp" />
+                        <img src="/images/games/king_arthurs_gold.webp" alt="King Arthur's Gold" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>King Arthur's Gold</strong><br /><br />
                         Really cute art style and fun movement and combat. Unfortunately it is not a popular multiplayer
@@ -2154,7 +2322,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="magic_the_gathering_arena_game_review" class="floated">
-                        <img src="images\games\magic_the_gathering_arena.webp" />
+                        <img src="/images/games/magic_the_gathering_arena.webp" alt="Magic: The Gathering Arena"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Magic: The Gathering Arena</strong><br /><br />
                         I played MTG with friends all through high school. It was expensive, especially for a broke
@@ -2169,7 +2338,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="metro_2033_game_review" class="floated">
-                        <img src="images\games\metro_2033.webp" />
+                        <img src="/images/games/metro_2033.webp" alt="Metro 2033" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Metro 2033</strong><br /><br />
                         I never play horror games but this one is something different. Maybe it's more horror themed
@@ -2182,7 +2352,7 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="mingle_game_review" class="floated">
-                        <img src="images\games\mingle.webp" />
+                        <img src="/images/games/mingle.webp" alt="Mingle" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Mingle</strong><br /><br />
                         A cute little puzzle game I played on itch.io and enjoyed it enough to talk about it. It's a
@@ -2192,7 +2362,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="mutant_year_zero_road_to_eden_game_review" class="floated">
-                        <img src="images\games\mutant_year_zero_road_to_eden.webp" />
+                        <img src="/images/games/mutant_year_zero_road_to_eden.webp" alt="Mutant Year Zero: Road to Eden"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Mutant Year Zero: Road to Eden</strong><br /><br />
                         Mutant Year Zero is Wasteland with anthropomorphic animal characters, what's not to love? I love
@@ -2207,7 +2378,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="neo_scavenger_game_review" class="floated">
-                        <img src="images\games\neo_scavenger.webp" />
+                        <img src="/images/games/neo_scavenger.webp" alt="NEO Scavenger" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>NEO Scavenger</strong><br /><br />
                         I can't say I was any good at this game or really engaged with it on the level that it requires.
@@ -2220,7 +2392,7 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="pathway_game_review" class="floated">
-                        <img src="images\games\pathway.webp" />
+                        <img src="/images/games/pathway.webp" alt="Pathway" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Pathway</strong><br /><br />
                         Mid tier, shallow Turn-Based Strategy game in the style of XCOM. I was not impressed, nor did I
@@ -2230,7 +2402,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="rocket_league_game_review" class="floated">
-                        <img src="images\games\rocket_league.webp" />
+                        <img src="/images/games/rocket_league.webp" alt="Rocket League" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Rocket League</strong><br /><br />
                         Who knew that RC cars and soccer made such a great game? I've played a significant amount of
@@ -2242,7 +2415,8 @@
 
                 <div class="grid-item parent thinking funsorted">
                     <div id="rogue_legacy_game_review" class="floated">
-                        <img src="images\games\rogue_legacy.webp" />
+                        <img src="/images/games/rogue_legacy.webp" alt="Rogue Legacy" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Rogue Legacy</strong><br /><br />
                         Thinking...
@@ -2251,7 +2425,7 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="rust_game_review" class="floated">
-                        <img src="images\games\rust.webp" />
+                        <img src="/images/games/rust.webp" alt="Rust" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Rust</strong><br /><br />
                         I got in, was totally naked, hit a tree with a rock, built a box to live in, ran out, got eaten
@@ -2261,7 +2435,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="saints_row_the_third_game_review" class="floated">
-                        <img src="images\games\saints_row_the_third.webp" />
+                        <img src="/images/games/saints_row_the_third.webp" alt="Saints Row: The Third" width="150"
+                            height="211" decoding="async" />
                     </div>
                     <p> <strong>Saints Row: The Third</strong><br /><br />
                         You take GTA and make it very cool and awesome and epic. That's what I would have told you when
@@ -2274,7 +2449,8 @@
 
                 <div class="grid-item parent thinking funsorted">
                     <div id="shadowrun_dragonfall_game_review" class="floated">
-                        <img src="images\games\shadowrun_dragonfall.webp" />
+                        <img src="/images/games/shadowrun_dragonfall.webp" alt="Shadowrun: Dragonfall" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Shadowrun: Dragonfall</strong><br /><br />
                         Thinking...
@@ -2283,7 +2459,8 @@
 
                 <div class="grid-item parent thinking funsorted">
                     <div id="shadows_of_doubt_game_review" class="floated">
-                        <img src="images\games\shadows_of_doubt.webp" />
+                        <img src="/images/games/shadows_of_doubt.webp" alt="Shadows of Doubt" width="150" height="211"
+                            decoding="async" />
                     </div>
                     <p> <strong>Shadows of Doubt</strong><br /><br />
                         Thinking...
@@ -2292,7 +2469,8 @@
 
                 <div class="grid-item parent thinking funsorted">
                     <div id="space_pirates_and_zombies_game_review" class="floated">
-                        <img src="images\games\space_pirates_and_zombies.webp" />
+                        <img src="/images/games/space_pirates_and_zombies.webp" alt="Space Pirates and Zombies"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Space Pirates and Zombies</strong><br /><br />
                         Thinking...
@@ -2301,7 +2479,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="tabletop_simulator_game_review" class="floated">
-                        <img src="images\games\tabletop_simulator.webp" />
+                        <img src="/images/games/tabletop_simulator.webp" alt="Tabletop Simulator" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>Tabletop Simulator</strong><br /><br />
                         It's Saturday night. You join the Discord call with your friends. Dodu! Dodu! Dodu! Dodu! Dodu!
@@ -2315,7 +2494,8 @@
 
                 <div class="grid-item parent thinking funsorted">
                     <div id="teleglitch_game_review" class="floated">
-                        <img src="images\games\teleglitch.webp" />
+                        <img src="/images/games/teleglitch.webp" alt="Teleglitch" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Teleglitch</strong><br /><br />
                         Thinking...
@@ -2324,7 +2504,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="the_ascent_game_review" class="floated">
-                        <img src="images\games\the_ascent.webp" />
+                        <img src="/images/games/the_ascent.webp" alt="The Ascent" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>The Ascent</strong><br /><br />
                         The world of the ascent is beautifully detailed visually and uses depth and far off backgrounds
@@ -2341,7 +2522,8 @@
 
                 <div class="grid-item parent thinking funsorted">
                     <div id="the_life_and_suffering_of_sir_brante_game_review" class="floated">
-                        <img src="images\games\the_life_and_suffering_of_sir_brante.webp" />
+                        <img src="/images/games/the_life_and_suffering_of_sir_brante.webp"
+                            alt="The Life and Suffering of Sir Brante" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>The Life and Suffering of Sir Brante</strong><br /><br />
                         Thinking...
@@ -2350,7 +2532,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="totally_accurate_battlegrounds_game_review" class="floated">
-                        <img src="images\games\totally_accurate_battlegrounds.webp" />
+                        <img src="/images/games/totally_accurate_battlegrounds.webp"
+                            alt="Totally Accurate Battlegrounds" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Totally Accurate Battlegrounds</strong><br /><br />
                         I enjoyed TABS, so I thought this would be a good game too but I ended up finding it bland and
@@ -2360,7 +2543,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="turnip_boy_commits_tax_evasion_game_review" class="floated">
-                        <img src="images\games\turnip_boy_commits_tax_evasion.webp" />
+                        <img src="/images/games/turnip_boy_commits_tax_evasion.webp"
+                            alt="Turnip Boy Commits Tax Evasion" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Turnip Boy Commits Tax Evasion</strong><br /><br />
                         Funny little game about a turnip evading taxes in the goofiest ways.<br /><br /> Self aware,
@@ -2370,7 +2554,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="unturned_game_review" class="floated">
-                        <img src="images\games\unturned.webp" />
+                        <img src="/images/games/unturned.webp" alt="Unturned" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Unturned</strong><br /><br />
                         Surprisingly involved for a game that looks like a Roblox game mode. I was in my Zombie phase as
@@ -2381,7 +2566,7 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="verdun_game_review" class="floated">
-                        <img src="images\games\verdun.webp" />
+                        <img src="/images/games/verdun.webp" alt="Verdun" width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>Verdun</strong><br /><br />
                         World War 1 games are relatively rare compared to WW2. The guns are slow, the lines are static,
@@ -2395,7 +2580,8 @@
 
                 <div class="grid-item parent thinking funsorted">
                     <div id="void_bastards_game_review" class="floated">
-                        <img src="images\games\void_bastards.webp" />
+                        <img src="/images/games/void_bastards.webp" alt="Void Bastards" width="150" height="225"
+                            decoding="async" />
                     </div>
                     <p> <strong>Void Bastards</strong><br /><br />
                         Thinking...
@@ -2404,7 +2590,8 @@
 
                 <div class="grid-item parent reviewed funsorted">
                     <div id="what_remains_of_edith_finch_game_review" class="floated">
-                        <img src="images\games\what_remains_of_edith_finch.webp" />
+                        <img src="/images/games/what_remains_of_edith_finch.webp" alt="What Remains of Edith Finch"
+                            width="150" height="225" decoding="async" />
                     </div>
                     <p> <strong>What Remains of Edith Finch</strong><br /><br />
                         I didn't think I would be into such a narrative only game, but it was so well voice acted and
@@ -2414,7 +2601,8 @@
 
                 <div class="grid-item parent thinking funsorted">
                     <div id="XCOM_enemy_unknown_game_review" class="floated">
-                        <img src="images\games\XCOM_enemy_unknown.webp" />
+                        <img src="/images/games/XCOM_enemy_unknown.webp" alt="XCOM: Enemy Unknown" width="150"
+                            height="225" decoding="async" />
                     </div>
                     <p> <strong>XCOM: Enemy Unknown</strong><br /><br />
                         Thinking...
@@ -2489,6 +2677,10 @@
                             if (!isButton) return;
                             buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
                             event.target.classList.add("is-checked");
+                            // Keep the accessible state in sync with the visible one
+                            buttonGroup.querySelectorAll(".button").forEach(function (button) {
+                                button.setAttribute("aria-pressed", button.classList.contains("is-checked") ? "true" : "false");
+                            });
                         });
                     });
                 };
@@ -2505,11 +2697,11 @@
 
 
             <!-- footer start -->
-            
+
             <hr />
 
             <p align="center">© 2024-2026 Craft Beetle | All rights reserved</p>
-            <p align="center"><a href="mailto:email@protonmail.com">craftbeetle@protonmail.com</a> | <a
+            <p align="center"><a href="mailto:craftbeetle@protonmail.com">craftbeetle@protonmail.com</a> | <a
                     href="https://www.craftbeetle.com/rss.xml" target="_blank">RSS</a></p>
         </div>
     </main>
